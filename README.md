@@ -80,6 +80,7 @@ Step 4 is the tool exactly as published. The census measures the same thing you 
 
 - **Not "the top 3,077 packages on npm."** npm has no top-N endpoint. This is a keyword-nominated sample ranked by real downloads, and the tail runs down to 14 downloads a week. Slices are reported with their download floor so you can see what each one covers.
 - **Not a malware scan.** It reports capability, not intent. `--no-trust` is set, so no OSV lookups.
+- **Never silently truncated.** The first CI run resolved only 705 of 3,077 packages because the registry rate-limited the runner and the failures were swallowed, publishing a 705-package sample as if it were the whole thing. Resolution now retries with backoff, and the run aborts rather than publishing if it covers less than 95% of the corpus. `data/census.json` records `requested`, `resolved` and `coverage` on every run.
 - **Not exhaustive on scoped packages.** 707 of 3,077 are scoped. The nomination sweep under-samples them relative to their real share of the registry.
 
 The first version of this census excluded scoped packages entirely, and reported that the biggest scripted package was `bufferutil` at 6.8M downloads. Adding scoped packages surfaced `esbuild` at 255M and `@swc/core` at 40M. A corpus that structurally omits `@`-scoped packages is not measuring npm.

@@ -25,21 +25,40 @@ DATA = ROOT / "data"
 
 
 def latest(name: str) -> dict | None:
-    try:
-        req = urllib.request.Request(
-            f"https://registry.npmjs.org/{name}/latest", headers=UA
-        )
-        with urllib.request.urlopen(req, timeout=60) as r:
-            return json.load(r)
-    except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError):
-        return None
+    """Resolve a package's current `latest`, retrying through rate limits.
+
+    A silent None here drops the package from the lockfile and shrinks the
+    reported sample without saying so, which is why the caller also enforces a
+    coverage floor.
+    """
+    delay = 1.0
+    for attempt in range(5):
+        try:
+            req = urllib.request.Request(
+                f"https://registry.npmjs.org/{name}/latest", headers=UA
+            )
+            with urllib.request.urlopen(req, timeout=60) as r:
+                return json.load(r)
+        except urllib.error.HTTPError as e:
+            if e.code == 404:
+                return None  # unpublished; genuinely not there
+            if attempt == 4:
+                return None
+            time.sleep(delay)
+            delay *= 2
+        except (urllib.error.URLError, TimeoutError, json.JSONDecodeError):
+            if attempt == 4:
+                return None
+            time.sleep(delay)
+            delay *= 2
+    return None
 
 
 def build_lockfile(packages: list[dict], workdir: Path) -> int:
     root = {"name": "census", "version": "1.0.0", "dependencies": {}}
     out = {"": root}
     resolved = 0
-    with ThreadPoolExecutor(max_workers=8) as pool:
+    with ThreadPoolExecutor(max_workers=4) as pool:
         metas = list(pool.map(lambda p: (p["name"], latest(p["name"])), packages))
     for name, d in metas:
         if not d or "dist" not in d:
@@ -167,7 +186,16 @@ def main() -> int:
     work.mkdir(exist_ok=True)
     print(f"resolving {len(packages)} packages to their current latest...")
     resolved = build_lockfile(packages, work)
-    print(f"lockfile: {resolved} packages")
+    coverage = resolved / len(packages) if packages else 0
+    print(f"lockfile: {resolved}/{len(packages)} packages ({coverage:.1%})")
+    if coverage < 0.95:
+        print(
+            f"ABORT: only resolved {coverage:.1%} of the corpus. Publishing this "
+            "would report a silently truncated sample as if it were the whole "
+            "thing. Refusing.",
+            file=sys.stderr,
+        )
+        return 1
 
     # NPM_SCRIPT_LENS_CLI lets CI point at a checkout; otherwise npx fetches
     # the published package, which is the same thing a user would run.
@@ -187,6 +215,9 @@ def main() -> int:
     summary = summarise(data.get("results", []), downloads)
     summary["generated_utc"] = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
     summary["corpus_candidates"] = corpus.get("candidates")
+    summary["requested"] = len(packages)
+    summary["resolved"] = resolved
+    summary["coverage"] = round(coverage, 4)
     summary["audit_seconds"] = round(elapsed, 1)
 
     (DATA / "census.json").write_text(json.dumps(summary, indent=1), encoding="utf-8")
