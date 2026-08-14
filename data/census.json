@@ -1,0 +1,223 @@
+{
+ "total": 3077,
+ "bands": [
+  {
+   "band": "1-769",
+   "packages": 769,
+   "scripted": 7,
+   "risky": 4,
+   "pct_scripted": 0.9
+  },
+  {
+   "band": "770-1538",
+   "packages": 769,
+   "scripted": 9,
+   "risky": 6,
+   "pct_scripted": 1.2
+  },
+  {
+   "band": "1539-2307",
+   "packages": 769,
+   "scripted": 6,
+   "risky": 5,
+   "pct_scripted": 0.8
+  },
+  {
+   "band": "2308-3076",
+   "packages": 769,
+   "scripted": 3,
+   "risky": 3,
+   "pct_scripted": 0.4
+  },
+  {
+   "band": "3077-3077",
+   "packages": 1,
+   "scripted": 0,
+   "risky": 0,
+   "pct_scripted": 0.0
+  }
+ ],
+ "with_install_scripts": 25,
+ "risk": {
+  "SAFE": 3056,
+  "LOW": 3,
+  "MEDIUM": 0,
+  "HIGH": 18
+ },
+ "signal_classes": {
+  "exec": 40,
+  "env": 12,
+  "fs": 7,
+  "net": 7,
+  "bin": 4,
+  "gyp": 4,
+  "obf": 2
+ },
+ "top_risky": [
+  {
+   "name": "esbuild",
+   "version": "0.28.2",
+   "risk": "HIGH",
+   "downloads": 255499108,
+   "scripts": [
+    "postinstall"
+   ]
+  },
+  {
+   "name": "@swc/core",
+   "version": "1.15.47",
+   "risk": "HIGH",
+   "downloads": 40691060,
+   "scripts": [
+    "postinstall"
+   ]
+  },
+  {
+   "name": "workerd",
+   "version": "1.20260814.1",
+   "risk": "HIGH",
+   "downloads": 18988497,
+   "scripts": [
+    "postinstall"
+   ]
+  },
+  {
+   "name": "bufferutil",
+   "version": "4.1.0",
+   "risk": "HIGH",
+   "downloads": 6816139,
+   "scripts": [
+    "install"
+   ]
+  },
+  {
+   "name": "@sentry-internal/node-cpu-profiler",
+   "version": "2.4.1",
+   "risk": "HIGH",
+   "downloads": 1067902,
+   "scripts": [
+    "install"
+   ]
+  },
+  {
+   "name": "tree-sitter-json",
+   "version": "0.24.8",
+   "risk": "HIGH",
+   "downloads": 1056278,
+   "scripts": [
+    "install"
+   ]
+  },
+  {
+   "name": "@tree-sitter-grammars/tree-sitter-yaml",
+   "version": "0.7.1",
+   "risk": "HIGH",
+   "downloads": 1001950,
+   "scripts": [
+    "install"
+   ]
+  },
+  {
+   "name": "oracledb",
+   "version": "7.0.1",
+   "risk": "HIGH",
+   "downloads": 806345,
+   "scripts": [
+    "install"
+   ]
+  },
+  {
+   "name": "@pulumi/docker-build",
+   "version": "0.0.22",
+   "risk": "HIGH",
+   "downloads": 806176,
+   "scripts": [
+    "install"
+   ]
+  },
+  {
+   "name": "tree-sitter-typescript",
+   "version": "0.23.2",
+   "risk": "HIGH",
+   "downloads": 750247,
+   "scripts": [
+    "install"
+   ]
+  },
+  {
+   "name": "@salesforce/cli",
+   "version": "2.147.7",
+   "risk": "HIGH",
+   "downloads": 409668,
+   "scripts": [
+    "preinstall"
+   ]
+  },
+  {
+   "name": "react-native-enriched-markdown",
+   "version": "1.0.1",
+   "risk": "HIGH",
+   "downloads": 214015,
+   "scripts": [
+    "postinstall"
+   ]
+  },
+  {
+   "name": "classic-level",
+   "version": "3.0.0",
+   "risk": "HIGH",
+   "downloads": 171686,
+   "scripts": [
+    "install"
+   ]
+  },
+  {
+   "name": "nodent-runtime",
+   "version": "3.2.1",
+   "risk": "HIGH",
+   "downloads": 113373,
+   "scripts": [
+    "install"
+   ]
+  },
+  {
+   "name": "node-jq",
+   "version": "6.3.1",
+   "risk": "HIGH",
+   "downloads": 102942,
+   "scripts": [
+    "preinstall"
+   ]
+  },
+  {
+   "name": "tree-sitter-yaml",
+   "version": "0.5.0",
+   "risk": "HIGH",
+   "downloads": 58205,
+   "scripts": [
+    "install"
+   ]
+  },
+  {
+   "name": "swc-plugin-import-meta-env",
+   "version": "1.15.47",
+   "risk": "HIGH",
+   "downloads": 21864,
+   "scripts": [
+    "preinstall"
+   ]
+  },
+  {
+   "name": "bcrypto",
+   "version": "5.5.2",
+   "risk": "HIGH",
+   "downloads": 17275,
+   "scripts": [
+    "install"
+   ]
+  }
+ ],
+ "generated_utc": "2026-08-14T16:15:09Z",
+ "corpus_candidates": 4619,
+ "audit_seconds": 1.3
+}
