@@ -16,12 +16,35 @@ import sys
 import time
 import urllib.error
 import urllib.request
+import zlib
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 UA = {"User-Agent": "npm-script-census (github.com/Booyaka101)"}
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
+CACHE = DATA / "resolved.json"
+
+# Resolving every package on every run means thousands of unauthenticated
+# requests from one runner IP, which the registry throttles hard enough to drop
+# coverage below the floor and abort the whole census. Entries are reused for
+# TTL_DAYS and only a bounded slice is refreshed per run, so a daily run costs a
+# few hundred requests instead of the full corpus.
+TTL_DAYS = 7
+MAX_REFRESH = int(os.environ.get("CENSUS_MAX_REFRESH", "700"))
+# A cache that can never be refreshed would keep the census green while the
+# sample quietly rotted, so entries past this age stop counting as resolved.
+MAX_AGE_DAYS = 30
+
+
+def _headers() -> dict[str, str]:
+    """Registry headers, authenticated when a token is available.
+
+    Authenticated requests get a far higher rate limit, which is the difference
+    between finishing the corpus and being throttled halfway through.
+    """
+    token = os.environ.get("NPM_TOKEN") or os.environ.get("NODE_AUTH_TOKEN")
+    return {**UA, "Authorization": f"Bearer {token}"} if token else dict(UA)
 
 
 def latest(name: str) -> dict | None:
@@ -35,7 +58,7 @@ def latest(name: str) -> dict | None:
     for attempt in range(5):
         try:
             req = urllib.request.Request(
-                f"https://registry.npmjs.org/{name}/latest", headers=UA
+                f"https://registry.npmjs.org/{name}/latest", headers=_headers()
             )
             with urllib.request.urlopen(req, timeout=60) as r:
                 return json.load(r)
@@ -54,20 +77,114 @@ def latest(name: str) -> dict | None:
     return None
 
 
-def build_lockfile(packages: list[dict], workdir: Path) -> int:
+def _now() -> float:
+    return time.time()
+
+
+def _load_cache() -> dict[str, dict]:
+    if not CACHE.exists():
+        return {}
+    try:
+        return json.loads(CACHE.read_text(encoding="utf-8")).get("entries", {})
+    except (json.JSONDecodeError, OSError):
+        return {}  # a corrupt cache is a slow run, not a wrong answer
+
+
+def _save_cache(entries: dict[str, dict]) -> None:
+    CACHE.write_text(
+        json.dumps(
+            {
+                "ttl_days": TTL_DAYS,
+                "updated_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+                "entries": dict(sorted(entries.items())),
+            },
+            indent=0,
+        ),
+        encoding="utf-8",
+    )
+
+
+def _stale_at(name: str) -> float:
+    """Per-package TTL, jittered so the whole corpus never expires on one day.
+
+    crc32 rather than hash(): PYTHONHASHSEED randomises str hashing per process,
+    which would move a package's TTL every run.
+
+    The spread is wide on purpose. A seeded cache has every entry stamped at the
+    same moment, so a narrow window would expire the whole corpus over a day or
+    two and blow straight through MAX_REFRESH.
+    """
+    spread = ((zlib.crc32(name.encode()) % 601) / 601 * 2 - 1) * 3  # +/- 3 days
+    return (TTL_DAYS + spread) * 86400
+
+
+def resolve_corpus(packages: list[dict]) -> tuple[dict[str, dict], dict[str, int]]:
+    """Return usable resolutions, topping the cache up within a request budget.
+
+    Freshly resolved entries win; a stale entry is kept when the registry
+    refuses to answer, because a slightly old version is a truer sample than a
+    hole. Entries older than MAX_AGE_DAYS are dropped so the floor still bites.
+    """
+    cache = _load_cache()
+    now = _now()
+    names = [p["name"] for p in packages]
+
+    missing = [n for n in names if n not in cache]
+    stale = [n for n in names if n in cache and now - cache[n].get("at", 0) > _stale_at(n)]
+    stale.sort(key=lambda n: cache[n].get("at", 0))  # oldest first
+
+    # Missing entries are not optional: without them the sample really is short.
+    budget = max(0, MAX_REFRESH - len(missing))
+    todo = missing + stale[:budget]
+    print(
+        f"cache: {len(cache)} entries, {len(missing)} missing, {len(stale)} stale; "
+        f"refreshing {len(todo)}"
+    )
+
+    refreshed = 0
+    if todo:
+        with ThreadPoolExecutor(max_workers=4) as pool:
+            for name, d in pool.map(lambda n: (n, latest(n)), todo):
+                if d and "dist" in d:
+                    cache[name] = {
+                        "version": d["version"],
+                        "tarball": d["dist"]["tarball"],
+                        "integrity": d["dist"].get("integrity"),
+                        "at": now,
+                    }
+                    refreshed += 1
+        _save_cache(cache)
+
+    usable, expired = {}, 0
+    for n in names:
+        e = cache.get(n)
+        if not e:
+            continue
+        if now - e.get("at", 0) > MAX_AGE_DAYS * 86400:
+            expired += 1
+            continue
+        usable[n] = e
+    return usable, {
+        "refreshed": refreshed,
+        "from_cache": len(usable) - refreshed,
+        "expired": expired,
+    }
+
+
+def build_lockfile(packages: list[dict], workdir: Path) -> tuple[int, dict[str, int]]:
     root = {"name": "census", "version": "1.0.0", "dependencies": {}}
     out = {"": root}
     resolved = 0
-    with ThreadPoolExecutor(max_workers=4) as pool:
-        metas = list(pool.map(lambda p: (p["name"], latest(p["name"])), packages))
-    for name, d in metas:
-        if not d or "dist" not in d:
+    usable, stats = resolve_corpus(packages)
+    for p in packages:
+        e = usable.get(p["name"])
+        if not e:
             continue
-        root["dependencies"][name] = "^" + d["version"]
-        out[f"node_modules/{name}"] = {
-            "version": d["version"],
-            "resolved": d["dist"]["tarball"],
-            "integrity": d["dist"].get("integrity"),
+        root["dependencies"][p["name"]] = "^" + e["version"]
+        out[f"node_modules/{p['name']}"] = {
+            "version": e["version"],
+            "resolved": e["tarball"],
+            "integrity": e["integrity"],
         }
         resolved += 1
     (workdir / "package-lock.json").write_text(
@@ -82,7 +199,7 @@ def build_lockfile(packages: list[dict], workdir: Path) -> int:
         ),
         encoding="utf-8",
     )
-    return resolved
+    return resolved, stats
 
 
 def band_stats(results: list[dict], order: list[str]) -> list[dict]:
@@ -185,9 +302,14 @@ def main() -> int:
     work = ROOT / ".run"
     work.mkdir(exist_ok=True)
     print(f"resolving {len(packages)} packages to their current latest...")
-    resolved = build_lockfile(packages, work)
+    resolved, resolve_stats = build_lockfile(packages, work)
     coverage = resolved / len(packages) if packages else 0
-    print(f"lockfile: {resolved}/{len(packages)} packages ({coverage:.1%})")
+    print(
+        f"lockfile: {resolved}/{len(packages)} packages ({coverage:.1%}) "
+        f"[{resolve_stats['refreshed']} refreshed, "
+        f"{resolve_stats['from_cache']} cached, "
+        f"{resolve_stats['expired']} expired]"
+    )
     if coverage < 0.95:
         print(
             f"ABORT: only resolved {coverage:.1%} of the corpus. Publishing this "
@@ -218,6 +340,8 @@ def main() -> int:
     summary["requested"] = len(packages)
     summary["resolved"] = resolved
     summary["coverage"] = round(coverage, 4)
+    # How much of the sample is live versus reused, so a reader can tell.
+    summary["resolution"] = resolve_stats
     summary["audit_seconds"] = round(elapsed, 1)
 
     (DATA / "census.json").write_text(json.dumps(summary, indent=1), encoding="utf-8")
