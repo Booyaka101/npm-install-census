@@ -61,7 +61,12 @@ jobs:
           python tools/pool.py
           python tools/rank.py
 
+      # NPM_TOKEN is optional. With it the registry allows a much higher request
+      # rate, which is what keeps resolution above the coverage floor; without
+      # it the run still works, just leaning harder on data/resolved.json.
       - name: Run the census
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: python tools/census.py
 
       - name: Commit

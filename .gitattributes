@@ -1,0 +1,3 @@
+# Machine-written resolution cache. Around 500 entries change every day, which
+# would otherwise bury the real diff in tools/ and README.md.
+data/resolved.json linguist-generated=true
