@@ -65,7 +65,7 @@
   },
   {
    "name": "@swc/core",
-   "version": "1.15.47",
+   "version": "1.16.0",
    "risk": "HIGH",
    "downloads": 40691060,
    "scripts": [
@@ -74,7 +74,7 @@
   },
   {
    "name": "workerd",
-   "version": "1.20260814.1",
+   "version": "1.20260815.1",
    "risk": "HIGH",
    "downloads": 18988497,
    "scripts": [
@@ -217,10 +217,15 @@
    ]
   }
  ],
- "generated_utc": "2026-08-14T16:20:56Z",
+ "generated_utc": "2026-08-15T05:54:44Z",
  "corpus_candidates": 4619,
  "requested": 3077,
  "resolved": 3077,
  "coverage": 1.0,
- "audit_seconds": 53.3
+ "resolution": {
+  "refreshed": 0,
+  "from_cache": 3077,
+  "expired": 0
+ },
+ "audit_seconds": 33.9
 }
