@@ -1,56 +1,56 @@
 {
- "total": 3077,
+ "total": 2941,
  "bands": [
   {
-   "band": "1-769",
-   "packages": 769,
+   "band": "1-735",
+   "packages": 735,
    "scripted": 7,
    "risky": 4,
-   "pct_scripted": 0.9
+   "pct_scripted": 1.0
   },
   {
-   "band": "770-1538",
-   "packages": 769,
-   "scripted": 9,
-   "risky": 6,
-   "pct_scripted": 1.2
+   "band": "736-1470",
+   "packages": 735,
+   "scripted": 7,
+   "risky": 4,
+   "pct_scripted": 1.0
   },
   {
-   "band": "1539-2307",
-   "packages": 769,
+   "band": "1471-2205",
+   "packages": 735,
    "scripted": 6,
    "risky": 5,
    "pct_scripted": 0.8
   },
   {
-   "band": "2308-3076",
-   "packages": 769,
+   "band": "2206-2940",
+   "packages": 735,
    "scripted": 3,
    "risky": 3,
    "pct_scripted": 0.4
   },
   {
-   "band": "3077-3077",
+   "band": "2941-2941",
    "packages": 1,
    "scripted": 0,
    "risky": 0,
    "pct_scripted": 0.0
   }
  ],
- "with_install_scripts": 25,
+ "with_install_scripts": 23,
  "risk": {
-  "SAFE": 3056,
+  "SAFE": 2922,
   "LOW": 3,
   "MEDIUM": 0,
-  "HIGH": 18
+  "HIGH": 16
  },
  "signal_classes": {
-  "exec": 43,
-  "env": 13,
+  "exec": 36,
+  "env": 11,
+  "net": 9,
   "fs": 7,
-  "net": 7,
-  "bin": 5,
   "gyp": 4,
+  "bin": 4,
   "obf": 2
  },
  "top_risky": [
@@ -64,10 +64,10 @@
    ]
   },
   {
-   "name": "@swc/core",
-   "version": "1.16.0",
+   "name": "@sentry/cli",
+   "version": "3.6.2",
    "risk": "HIGH",
-   "downloads": 40691060,
+   "downloads": 23636768,
    "scripts": [
     "postinstall"
    ]
@@ -91,28 +91,10 @@
    ]
   },
   {
-   "name": "@sentry-internal/node-cpu-profiler",
-   "version": "2.4.1",
-   "risk": "HIGH",
-   "downloads": 1067902,
-   "scripts": [
-    "install"
-   ]
-  },
-  {
    "name": "tree-sitter-json",
    "version": "0.24.8",
    "risk": "HIGH",
    "downloads": 1056278,
-   "scripts": [
-    "install"
-   ]
-  },
-  {
-   "name": "@tree-sitter-grammars/tree-sitter-yaml",
-   "version": "0.7.1",
-   "risk": "HIGH",
-   "downloads": 1001950,
    "scripts": [
     "install"
    ]
@@ -145,15 +127,6 @@
    ]
   },
   {
-   "name": "@salesforce/cli",
-   "version": "2.147.7",
-   "risk": "HIGH",
-   "downloads": 409668,
-   "scripts": [
-    "preinstall"
-   ]
-  },
-  {
    "name": "react-native-enriched-markdown",
    "version": "1.0.1",
    "risk": "HIGH",
@@ -169,6 +142,15 @@
    "downloads": 171686,
    "scripts": [
     "install"
+   ]
+  },
+  {
+   "name": "@microsoft/m365agentstoolkit-cli",
+   "version": "1.1.15",
+   "risk": "HIGH",
+   "downloads": 158227,
+   "scripts": [
+    "postinstall"
    ]
   },
   {
@@ -217,15 +199,15 @@
    ]
   }
  ],
- "generated_utc": "2026-08-15T06:01:47Z",
- "corpus_candidates": 4619,
- "requested": 3077,
- "resolved": 3077,
+ "generated_utc": "2026-08-16T05:21:04Z",
+ "corpus_candidates": 4639,
+ "requested": 2941,
+ "resolved": 2941,
  "coverage": 1.0,
  "resolution": {
-  "refreshed": 0,
-  "from_cache": 3077,
+  "refreshed": 381,
+  "from_cache": 2560,
   "expired": 0
  },
- "audit_seconds": 133.8
+ "audit_seconds": 43.0
 }
