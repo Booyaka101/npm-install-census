@@ -1,6 +1,6 @@
 {
- "generated": "2026-08-16T05:20:09Z",
- "candidates": 4639,
+ "generated": "2026-08-23T05:08:26Z",
+ "candidates": 4727,
  "method": "npm search keyword sweep nominates; npm downloads API ranks by real weekly downloads",
  "packages": [
   {
@@ -808,6 +808,10 @@
    "downloads": 50122710
   },
   {
+   "name": "@grpc/grpc-js",
+   "downloads": 50054270
+  },
+  {
    "name": "@flmngr/flmngr-react",
    "downloads": 49095843
   },
@@ -1392,6 +1396,10 @@
    "downloads": 22172493
   },
   {
+   "name": "turbo",
+   "downloads": 22132900
+  },
+  {
    "name": "clean-css",
    "downloads": 22089669
   },
@@ -1518,6 +1526,10 @@
   {
    "name": "postcss-merge-rules",
    "downloads": 18397651
+  },
+  {
+   "name": "postcss-unique-selectors",
+   "downloads": 18390869
   },
   {
    "name": "@octokit/rest",
@@ -2208,6 +2220,10 @@
    "downloads": 9209234
   },
   {
+   "name": "@react-aria/focus",
+   "downloads": 9193846
+  },
+  {
    "name": "markdown-extensions",
    "downloads": 9179517
   },
@@ -2252,12 +2268,20 @@
    "downloads": 8771619
   },
   {
+   "name": "node-html-parser",
+   "downloads": 8767952
+  },
+  {
    "name": "prettier-plugin-tailwindcss",
    "downloads": 8733629
   },
   {
    "name": "unfetch",
    "downloads": 8729162
+  },
+  {
+   "name": "turndown",
+   "downloads": 8710162
   },
   {
    "name": "@firebase/remote-config-compat",
@@ -3078,6 +3102,10 @@
   {
    "name": "string-template",
    "downloads": 3724965
+  },
+  {
+   "name": "cls-hooked",
+   "downloads": 3724637
   },
   {
    "name": "peek-stream",
@@ -3976,6 +4004,10 @@
    "downloads": 1741652
   },
   {
+   "name": "@formatjs/ts-transformer",
+   "downloads": 1734859
+  },
+  {
    "name": "image-meta",
    "downloads": 1719634
   },
@@ -4168,6 +4200,10 @@
    "downloads": 1473006
   },
   {
+   "name": "hawk",
+   "downloads": 1466593
+  },
+  {
    "name": "eslint-plugin-svelte",
    "downloads": 1455128
   },
@@ -4254,6 +4290,10 @@
   {
    "name": "node",
    "downloads": 1396315
+  },
+  {
+   "name": "@sveltejs/load-config",
+   "downloads": 1394157
   },
   {
    "name": "json-2-csv",
@@ -4760,6 +4800,10 @@
    "downloads": 969735
   },
   {
+   "name": "@builder.io/vite-plugin-jsx-loc",
+   "downloads": 969691
+  },
+  {
    "name": "level-iterator-stream",
    "downloads": 966739
   },
@@ -4794,6 +4838,10 @@
   {
    "name": "cli-progress-footer",
    "downloads": 929970
+  },
+  {
+   "name": "node-addon-native-custom-loader",
+   "downloads": 928170
   },
   {
    "name": "typescript-language-server",
@@ -4946,6 +4994,10 @@
   {
    "name": "test-renderer",
    "downloads": 859738
+  },
+  {
+   "name": "@sanity/bifur-client",
+   "downloads": 853618
   },
   {
    "name": "@nuxt/eslint-plugin",
@@ -5188,6 +5240,10 @@
    "downloads": 728444
   },
   {
+   "name": "@deepseek-ai/dsh-typert-loader",
+   "downloads": 727330
+  },
+  {
    "name": "caldate",
    "downloads": 726943
   },
@@ -5210,6 +5266,10 @@
   {
    "name": "@textlint/markdown-to-ast",
    "downloads": 711990
+  },
+  {
+   "name": "@deepseek-ai/cordis-plugin-loader",
+   "downloads": 710637
   },
   {
    "name": "@vue/babel-sugar-composition-api-inject-h",
@@ -5330,6 +5390,10 @@
   {
    "name": "svgo-loader",
    "downloads": 647229
+  },
+  {
+   "name": "@ng-bootstrap/ng-bootstrap",
+   "downloads": 645921
   },
   {
    "name": "web3-providers-ws",
@@ -5998,6 +6062,14 @@
   {
    "name": "destroyable-server",
    "downloads": 435415
+  },
+  {
+   "name": "@google-cloud/logging-api",
+   "downloads": 433910
+  },
+  {
+   "name": "monitor-event-loop-delay",
+   "downloads": 433632
   },
   {
    "name": "async-value",
@@ -6832,6 +6904,10 @@
    "downloads": 250672
   },
   {
+   "name": "@swagger-api/apidom-parser-adapter-a2a-yaml-1",
+   "downloads": 249269
+  },
+  {
    "name": "apollo-angular",
    "downloads": 249234
   },
@@ -6846,6 +6922,10 @@
   {
    "name": "vite-plugin-monaco-editor",
    "downloads": 247634
+  },
+  {
+   "name": "rollup-plugin-bundle-stats",
+   "downloads": 247493
   },
   {
    "name": "real-cancellable-promise",
@@ -7346,6 +7426,10 @@
   {
    "name": "crypto-md5",
    "downloads": 172367
+  },
+  {
+   "name": "@fumari/image-size",
+   "downloads": 172172
   },
   {
    "name": "@rozenite/runtime",
@@ -7864,6 +7948,10 @@
    "downloads": 123832
   },
   {
+   "name": "zip-webpack-plugin",
+   "downloads": 122942
+  },
+  {
    "name": "babel-plugin-espower",
    "downloads": 122746
   },
@@ -7940,6 +8028,10 @@
    "downloads": 118630
   },
   {
+   "name": "stylelint-config-standard-vue",
+   "downloads": 118125
+  },
+  {
    "name": "tiny-queue",
    "downloads": 117489
   },
@@ -7996,6 +8088,10 @@
    "downloads": 113828
   },
   {
+   "name": "ember-tracked-storage-polyfill",
+   "downloads": 113805
+  },
+  {
    "name": "node-hook",
    "downloads": 113794
   },
@@ -8026,6 +8122,10 @@
   {
    "name": "local-web-server",
    "downloads": 112362
+  },
+  {
+   "name": "@alwaysmeticulous/cli",
+   "downloads": 112246
   },
   {
    "name": "@antv/color-util",
@@ -8272,6 +8372,10 @@
    "downloads": 98736
   },
   {
+   "name": "graphql-js-tree",
+   "downloads": 98605
+  },
+  {
    "name": "eas-build-cache-provider",
    "downloads": 98459
   },
@@ -8374,6 +8478,10 @@
   {
    "name": "smartling-api-sdk-nodejs",
    "downloads": 92071
+  },
+  {
+   "name": "@stylexjs/unplugin",
+   "downloads": 92046
   },
   {
    "name": "@config-plugins/react-native-blob-util",
@@ -8546,6 +8654,10 @@
   {
    "name": "relaxed-json",
    "downloads": 80647
+  },
+  {
+   "name": "@aws-amplify/graphql-predictions-transformer",
+   "downloads": 80387
   },
   {
    "name": "@vaadin/date-picker",
@@ -8768,6 +8880,10 @@
    "downloads": 68316
   },
   {
+   "name": "fumadocs-typescript",
+   "downloads": 68143
+  },
+  {
    "name": "rollup-plugin-includepaths",
    "downloads": 68084
   },
@@ -8810,6 +8926,10 @@
   {
    "name": "requestidlecallback-polyfill",
    "downloads": 66202
+  },
+  {
+   "name": "@openapi-codegen/typescript",
+   "downloads": 66179
   },
   {
    "name": "markdown-it-table",
@@ -8902,6 +9022,10 @@
   {
    "name": "@astrojs/compiler-binding-linux-arm64-musl",
    "downloads": 61108
+  },
+  {
+   "name": "react-native-turbo-image",
+   "downloads": 60971
   },
   {
    "name": "rollup-plugin-brotli",
@@ -9144,6 +9268,10 @@
    "downloads": 52563
   },
   {
+   "name": "@quartz-community/created-modified-date",
+   "downloads": 52556
+  },
+  {
    "name": "@date-vir/duration",
    "downloads": 52274
   },
@@ -9186,6 +9314,10 @@
   {
    "name": "apollo-server-testing",
    "downloads": 51141
+  },
+  {
+   "name": "remark-lint-no-reference-like-url",
+   "downloads": 50959
   },
   {
    "name": "convert-array-to-csv",
@@ -9238,6 +9370,10 @@
   {
    "name": "react-async-button",
    "downloads": 49535
+  },
+  {
+   "name": "rollup-plugin-pure",
+   "downloads": 49022
   },
   {
    "name": "is-image",
@@ -9300,6 +9436,10 @@
    "downloads": 46802
   },
   {
+   "name": "compression-streams-polyfill",
+   "downloads": 46761
+  },
+  {
    "name": "verdaccio-auth-memory",
    "downloads": 46638
   },
@@ -9318,6 +9458,10 @@
   {
    "name": "worker-rspack-loader",
    "downloads": 45824
+  },
+  {
+   "name": "jest-mock-promise",
+   "downloads": 45819
   },
   {
    "name": "my-server",
@@ -9400,6 +9544,10 @@
    "downloads": 43010
   },
   {
+   "name": "svelte-markdown",
+   "downloads": 42947
+  },
+  {
    "name": "vite-plugin-relay",
    "downloads": 42826
   },
@@ -9462,6 +9610,10 @@
   {
    "name": "graphql-validation-complexity",
    "downloads": 40395
+  },
+  {
+   "name": "markdown-it-async",
+   "downloads": 40326
   },
   {
    "name": "angular-mentions",
@@ -9664,6 +9816,10 @@
    "downloads": 35160
   },
   {
+   "name": "esbuild-plugin-replace",
+   "downloads": 35081
+  },
+  {
    "name": "gojs-angular",
    "downloads": 35071
   },
@@ -9788,6 +9944,10 @@
    "downloads": 31616
   },
   {
+   "name": "@better-auth/mcp",
+   "downloads": 31593
+  },
+  {
    "name": "calc-image-stats",
    "downloads": 31475
   },
@@ -9908,6 +10068,10 @@
    "downloads": 27760
   },
   {
+   "name": "@soda-gql/runtime",
+   "downloads": 27709
+  },
+  {
    "name": "@matter-server/ws-client",
    "downloads": 27681
   },
@@ -9996,6 +10160,10 @@
    "downloads": 25527
   },
   {
+   "name": "image-client-api",
+   "downloads": 25476
+  },
+  {
    "name": "csv-file-validator",
    "downloads": 25445
   },
@@ -10044,6 +10212,10 @@
    "downloads": 23929
   },
   {
+   "name": "@napi-rs/image-linux-x64-musl",
+   "downloads": 23836
+  },
+  {
    "name": "nconf-yaml",
    "downloads": 23828
   },
@@ -10066,6 +10238,10 @@
   {
    "name": "decap-cms-ui-auth",
    "downloads": 23228
+  },
+  {
+   "name": "@rnx-kit/metro-serializer-esbuild",
+   "downloads": 23126
   },
   {
    "name": "raml-xml-validation",
@@ -10094,6 +10270,10 @@
   {
    "name": "esbuild-plugin-lodash",
    "downloads": 22499
+  },
+  {
+   "name": "luhn-validation",
+   "downloads": 22437
   },
   {
    "name": "oc-template-es6",
@@ -10130,6 +10310,10 @@
   {
    "name": "types",
    "downloads": 22025
+  },
+  {
+   "name": "@storybook-astro/framework",
+   "downloads": 21987
   },
   {
    "name": "fast-async",
@@ -10198,6 +10382,14 @@
   {
    "name": "babel-plugin-date-fns",
    "downloads": 20596
+  },
+  {
+   "name": "@better-auth/cimd",
+   "downloads": 20594
+  },
+  {
+   "name": "angular-animations",
+   "downloads": 20494
   },
   {
    "name": "anylogger",
@@ -10324,6 +10516,10 @@
    "downloads": 17498
   },
   {
+   "name": "@effect-aws/powertools-logger",
+   "downloads": 17476
+  },
+  {
    "name": "rvfc-polyfill",
    "downloads": 17444
   },
@@ -10366,6 +10562,10 @@
   {
    "name": "yaml-validator",
    "downloads": 16981
+  },
+  {
+   "name": "@better-auth/test-utils",
+   "downloads": 16968
   },
   {
    "name": "incremental-csv-parser",
@@ -10472,6 +10672,10 @@
    "downloads": 14281
   },
   {
+   "name": "@prisma/orm-toolchain",
+   "downloads": 14160
+  },
+  {
    "name": "eslint-plugin-no-async-foreach",
    "downloads": 14103
   },
@@ -10480,12 +10684,20 @@
    "downloads": 14098
   },
   {
+   "name": "x-address-codec",
+   "downloads": 13787
+  },
+  {
    "name": "@sanity/validation",
    "downloads": 13781
   },
   {
    "name": "yaml-jest",
    "downloads": 13762
+  },
+  {
+   "name": "@veryfront/ext-node-websocket-ws",
+   "downloads": 13739
   },
   {
    "name": "graphql-hooks",
@@ -10498,6 +10710,10 @@
   {
    "name": "@astryxdesign/build",
    "downloads": 13386
+  },
+  {
+   "name": "tdesign-vue",
+   "downloads": 12966
   },
   {
    "name": "@date-io/hijri",
@@ -10514,6 +10730,10 @@
   {
    "name": "logger",
    "downloads": 12845
+  },
+  {
+   "name": "@hapi/nes",
+   "downloads": 12819
   },
   {
    "name": "oc-vite-compiler",
@@ -10546,6 +10766,10 @@
   {
    "name": "esbuild-postcss",
    "downloads": 12440
+  },
+  {
+   "name": "@mikro-orm/migrations-mongodb",
+   "downloads": 12407
   },
   {
    "name": "prettier-plugin-yaml",
@@ -10720,12 +10944,20 @@
    "downloads": 10189
   },
   {
+   "name": "@osdlabel/validation",
+   "downloads": 10143
+  },
+  {
    "name": "merge-yaml",
    "downloads": 10066
   },
   {
    "name": "promise-writable",
    "downloads": 10017
+  },
+  {
+   "name": "promise-duplex",
+   "downloads": 9913
   },
   {
    "name": "apollo-link-queue",
@@ -10742,6 +10974,10 @@
   {
    "name": "react-use-websocket-lite",
    "downloads": 9736
+  },
+  {
+   "name": "@mikro-orm/libsql",
+   "downloads": 9719
   },
   {
    "name": "@mastra/auth-clerk",
@@ -10762,6 +10998,10 @@
   {
    "name": "read-yaml",
    "downloads": 9526
+  },
+  {
+   "name": "@midnight-ntwrk/compact-runtime",
+   "downloads": 9367
   },
   {
    "name": "async-arrays",
@@ -10788,6 +11028,10 @@
    "downloads": 9060
   },
   {
+   "name": "constructive-test",
+   "downloads": 9022
+  },
+  {
    "name": "test-utils",
    "downloads": 9009
   },
@@ -10798,6 +11042,10 @@
   {
    "name": "@cubejs-backend/bigquery-driver",
    "downloads": 8974
+  },
+  {
+   "name": "priority-queue-typescript",
+   "downloads": 8950
   },
   {
    "name": "html-template-tag",
@@ -10854,6 +11102,10 @@
   {
    "name": "@adonisjs/framework",
    "downloads": 8461
+  },
+  {
+   "name": "@types/http-auth",
+   "downloads": 8433
   },
   {
    "name": "aurelia-validation",
@@ -10988,6 +11240,10 @@
    "downloads": 6739
   },
   {
+   "name": "@ddd-framework/collections",
+   "downloads": 6582
+  },
+  {
    "name": "@steedos/auth",
    "downloads": 6509
   },
@@ -11016,6 +11272,10 @@
    "downloads": 6377
   },
   {
+   "name": "async-request",
+   "downloads": 6345
+  },
+  {
    "name": "@nebular/date-fns",
    "downloads": 6319
   },
@@ -11038,6 +11298,10 @@
   {
    "name": "knex-tiny-logger",
    "downloads": 6126
+  },
+  {
+   "name": "oc-template-esm-compiler",
+   "downloads": 6101
   },
   {
    "name": "hello-csv",
@@ -11078,6 +11342,10 @@
   {
    "name": "null-logger",
    "downloads": 5560
+  },
+  {
+   "name": "@hyperjump/uri-template",
+   "downloads": 5549
   },
   {
    "name": "websocket-polyfill",
@@ -11192,6 +11460,14 @@
    "downloads": 4423
   },
   {
+   "name": "@amazon/vinyl-validation",
+   "downloads": 4406
+  },
+  {
+   "name": "@pikku/websocket",
+   "downloads": 4354
+  },
+  {
    "name": "@roots/bud-swc",
    "downloads": 4293
   },
@@ -11250,6 +11526,10 @@
   {
    "name": "react-native-csv",
    "downloads": 3947
+  },
+  {
+   "name": "@bagelink/auth",
+   "downloads": 3903
   },
   {
    "name": "orm",
@@ -11524,12 +11804,20 @@
    "downloads": 1936
   },
   {
+   "name": "angular5-csv",
+   "downloads": 1907
+  },
+  {
    "name": "oc-template-react",
    "downloads": 1890
   },
   {
    "name": "crypto-conditions",
    "downloads": 1886
+  },
+  {
+   "name": "@vect/vector-init",
+   "downloads": 1879
   },
   {
    "name": "rerobe-js-orm",
@@ -11604,6 +11892,14 @@
    "downloads": 1393
   },
   {
+   "name": "@neaps/tide-database",
+   "downloads": 1388
+  },
+  {
+   "name": "w-serv-orm",
+   "downloads": 1384
+  },
+  {
    "name": "browser-crypto",
    "downloads": 1379
   },
@@ -11628,6 +11924,14 @@
    "downloads": 1215
   },
   {
+   "name": "@ne1410s/crypto",
+   "downloads": 1201
+  },
+  {
+   "name": "@powerlines/plugin-swc",
+   "downloads": 1195
+  },
+  {
    "name": "priority-queue-typed",
    "downloads": 1189
   },
@@ -11646,6 +11950,10 @@
   {
    "name": "@browsery/util",
    "downloads": 1062
+  },
+  {
+   "name": "vuex-orm-json-api",
+   "downloads": 1061
   },
   {
    "name": "ts-swc-loaders",
@@ -11720,6 +12028,14 @@
    "downloads": 456
   },
   {
+   "name": "@stonyx/orm",
+   "downloads": 418
+  },
+  {
+   "name": "@dxos/async",
+   "downloads": 413
+  },
+  {
    "name": "database",
    "downloads": 353
   },
@@ -11740,8 +12056,20 @@
    "downloads": 270
   },
   {
+   "name": "@swc/plugin-swc-sdk",
+   "downloads": 240
+  },
+  {
+   "name": "@mjhls/mjh-framework",
+   "downloads": 239
+  },
+  {
    "name": "@builder/webpack-plugin-swc",
    "downloads": 224
+  },
+  {
+   "name": "@swc/plugin-swc-confidential",
+   "downloads": 216
   },
   {
    "name": "@swc/plugin-swc-magic",
@@ -11760,12 +12088,24 @@
    "downloads": 111
   },
   {
+   "name": "framework",
+   "downloads": 81
+  },
+  {
+   "name": "lookout-artifactory-test",
+   "downloads": 77
+  },
+  {
    "name": "stout-orm",
    "downloads": 42
   },
   {
    "name": "mysql-model-orm",
    "downloads": 14
+  },
+  {
+   "name": "stockshark-util",
+   "downloads": 4
   }
  ]
 }

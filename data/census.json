@@ -1,37 +1,37 @@
 {
- "total": 2941,
+ "total": 3026,
  "bands": [
   {
-   "band": "1-735",
-   "packages": 735,
+   "band": "1-756",
+   "packages": 756,
    "scripted": 7,
    "risky": 4,
-   "pct_scripted": 1.0
+   "pct_scripted": 0.9
   },
   {
-   "band": "736-1470",
-   "packages": 735,
+   "band": "757-1512",
+   "packages": 756,
    "scripted": 7,
    "risky": 4,
-   "pct_scripted": 1.0
+   "pct_scripted": 0.9
   },
   {
-   "band": "1471-2205",
-   "packages": 735,
+   "band": "1513-2268",
+   "packages": 756,
    "scripted": 6,
    "risky": 5,
    "pct_scripted": 0.8
   },
   {
-   "band": "2206-2940",
-   "packages": 735,
+   "band": "2269-3024",
+   "packages": 756,
    "scripted": 3,
    "risky": 3,
    "pct_scripted": 0.4
   },
   {
-   "band": "2941-2941",
-   "packages": 1,
+   "band": "3025-3026",
+   "packages": 2,
    "scripted": 0,
    "risky": 0,
    "pct_scripted": 0.0
@@ -39,7 +39,7 @@
  ],
  "with_install_scripts": 23,
  "risk": {
-  "SAFE": 2922,
+  "SAFE": 3007,
   "LOW": 3,
   "MEDIUM": 0,
   "HIGH": 16
@@ -74,7 +74,7 @@
   },
   {
    "name": "workerd",
-   "version": "1.20260815.1",
+   "version": "1.20260823.1",
    "risk": "HIGH",
    "downloads": 18988497,
    "scripts": [
@@ -128,7 +128,7 @@
   },
   {
    "name": "react-native-enriched-markdown",
-   "version": "1.0.1",
+   "version": "1.0.2",
    "risk": "HIGH",
    "downloads": 214015,
    "scripts": [
@@ -199,15 +199,15 @@
    ]
   }
  ],
- "generated_utc": "2026-08-22T05:06:53Z",
- "corpus_candidates": 4639,
- "requested": 2941,
- "resolved": 2941,
+ "generated_utc": "2026-08-23T05:09:41Z",
+ "corpus_candidates": 4727,
+ "requested": 3026,
+ "resolved": 3026,
  "coverage": 1.0,
  "resolution": {
-  "refreshed": 515,
-  "from_cache": 2426,
+  "refreshed": 580,
+  "from_cache": 2446,
   "expired": 0
  },
- "audit_seconds": 30.2
+ "audit_seconds": 53.4
 }
