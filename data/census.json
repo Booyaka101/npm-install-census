@@ -1,52 +1,52 @@
 {
- "total": 3026,
+ "total": 3093,
  "bands": [
   {
-   "band": "1-756",
-   "packages": 756,
+   "band": "1-773",
+   "packages": 773,
    "scripted": 7,
    "risky": 4,
    "pct_scripted": 0.9
   },
   {
-   "band": "757-1512",
-   "packages": 756,
+   "band": "774-1546",
+   "packages": 773,
    "scripted": 7,
    "risky": 4,
    "pct_scripted": 0.9
   },
   {
-   "band": "1513-2268",
-   "packages": 756,
-   "scripted": 6,
-   "risky": 5,
-   "pct_scripted": 0.8
+   "band": "1547-2319",
+   "packages": 773,
+   "scripted": 8,
+   "risky": 6,
+   "pct_scripted": 1.0
   },
   {
-   "band": "2269-3024",
-   "packages": 756,
+   "band": "2320-3092",
+   "packages": 773,
    "scripted": 3,
-   "risky": 3,
+   "risky": 2,
    "pct_scripted": 0.4
   },
   {
-   "band": "3025-3026",
-   "packages": 2,
+   "band": "3093-3093",
+   "packages": 1,
    "scripted": 0,
    "risky": 0,
    "pct_scripted": 0.0
   }
  ],
- "with_install_scripts": 23,
+ "with_install_scripts": 25,
  "risk": {
-  "SAFE": 3007,
-  "LOW": 3,
+  "SAFE": 3073,
+  "LOW": 4,
   "MEDIUM": 0,
   "HIGH": 16
  },
  "signal_classes": {
   "exec": 36,
-  "env": 11,
+  "env": 12,
   "net": 9,
   "fs": 7,
   "gyp": 4,
@@ -199,15 +199,15 @@
    ]
   }
  ],
- "generated_utc": "2026-08-29T05:02:48Z",
- "corpus_candidates": 4727,
- "requested": 3026,
- "resolved": 3026,
+ "generated_utc": "2026-08-30T05:03:33Z",
+ "corpus_candidates": 4794,
+ "requested": 3093,
+ "resolved": 3093,
  "coverage": 1.0,
  "resolution": {
-  "refreshed": 395,
-  "from_cache": 2631,
+  "refreshed": 365,
+  "from_cache": 2728,
   "expired": 0
  },
- "audit_seconds": 50.3
+ "audit_seconds": 53.2
 }

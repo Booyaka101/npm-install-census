@@ -5,9 +5,9 @@
 npm v12 flipped install scripts off by default. You now approve them one by one via `allowScripts`. Nobody had published what that approval queue actually looks like across the ecosystem, so this measures it, daily.
 
 <!-- auto:headline -->
-> **23 of 3,026** packages in the current sample run an install script. **16** score HIGH. The most-installed one is `esbuild` at 255.5M downloads a week.
+> **25 of 3,093** packages in the current sample run an install script. **16** score HIGH. The most-installed one is `esbuild` at 255.5M downloads a week.
 >
-> <sub>Rebuilt 2026-08-29.</sub>
+> <sub>Rebuilt 2026-08-30.</sub>
 <!-- /auto:headline -->
 
 Every number here is produced by [npm-script-lens](https://github.com/Booyaka101/npm-script-lens) run unmodified against packages pulled from the public registry. Raw output is in [`data/census.json`](data/census.json).
