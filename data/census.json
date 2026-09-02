@@ -4,9 +4,9 @@
   {
    "band": "1-773",
    "packages": 773,
-   "scripted": 7,
+   "scripted": 6,
    "risky": 4,
-   "pct_scripted": 0.9
+   "pct_scripted": 0.8
   },
   {
    "band": "774-1546",
@@ -37,16 +37,16 @@
    "pct_scripted": 0.0
   }
  ],
- "with_install_scripts": 25,
+ "with_install_scripts": 24,
  "risk": {
-  "SAFE": 3073,
-  "LOW": 4,
+  "SAFE": 3074,
+  "LOW": 3,
   "MEDIUM": 0,
   "HIGH": 16
  },
  "signal_classes": {
   "exec": 36,
-  "env": 12,
+  "env": 11,
   "net": 9,
   "fs": 7,
   "gyp": 4,
@@ -199,15 +199,15 @@
    ]
   }
  ],
- "generated_utc": "2026-09-01T05:02:51Z",
+ "generated_utc": "2026-09-02T05:03:16Z",
  "corpus_candidates": 4794,
  "requested": 3093,
  "resolved": 3093,
  "coverage": 1.0,
  "resolution": {
-  "refreshed": 91,
-  "from_cache": 3002,
+  "refreshed": 700,
+  "from_cache": 2393,
   "expired": 0
  },
- "audit_seconds": 41.8
+ "audit_seconds": 63.8
 }
