@@ -39,10 +39,11 @@
  ],
  "with_install_scripts": 24,
  "risk": {
-  "SAFE": 3074,
+  "SAFE": 3072,
   "LOW": 3,
   "MEDIUM": 0,
-  "HIGH": 16
+  "HIGH": 16,
+  "ERROR": 2
  },
  "signal_classes": {
   "exec": 36,
@@ -199,15 +200,15 @@
    ]
   }
  ],
- "generated_utc": "2026-09-03T05:35:35Z",
+ "generated_utc": "2026-09-04T05:04:33Z",
  "corpus_candidates": 4794,
  "requested": 3093,
  "resolved": 3093,
  "coverage": 1.0,
  "resolution": {
-  "refreshed": 300,
-  "from_cache": 2793,
+  "refreshed": 700,
+  "from_cache": 2393,
   "expired": 0
  },
- "audit_seconds": 38.6
+ "audit_seconds": 147.4
 }
