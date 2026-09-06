@@ -1,52 +1,52 @@
 {
- "total": 3093,
+ "total": 3126,
  "bands": [
   {
-   "band": "1-773",
-   "packages": 773,
+   "band": "1-781",
+   "packages": 781,
    "scripted": 6,
    "risky": 4,
    "pct_scripted": 0.8
   },
   {
-   "band": "774-1546",
-   "packages": 773,
+   "band": "782-1562",
+   "packages": 781,
    "scripted": 7,
    "risky": 4,
    "pct_scripted": 0.9
   },
   {
-   "band": "1547-2319",
-   "packages": 773,
-   "scripted": 8,
+   "band": "1563-2343",
+   "packages": 781,
+   "scripted": 9,
    "risky": 6,
-   "pct_scripted": 1.0
+   "pct_scripted": 1.2
   },
   {
-   "band": "2320-3092",
-   "packages": 773,
-   "scripted": 3,
-   "risky": 2,
-   "pct_scripted": 0.4
+   "band": "2344-3124",
+   "packages": 781,
+   "scripted": 4,
+   "risky": 3,
+   "pct_scripted": 0.5
   },
   {
-   "band": "3093-3093",
-   "packages": 1,
+   "band": "3125-3126",
+   "packages": 2,
    "scripted": 0,
    "risky": 0,
    "pct_scripted": 0.0
   }
  ],
- "with_install_scripts": 24,
+ "with_install_scripts": 26,
  "risk": {
-  "SAFE": 3072,
+  "SAFE": 3104,
   "LOW": 3,
   "MEDIUM": 0,
-  "HIGH": 16,
+  "HIGH": 17,
   "ERROR": 2
  },
  "signal_classes": {
-  "exec": 36,
+  "exec": 37,
   "env": 11,
   "net": 9,
   "fs": 7,
@@ -198,17 +198,26 @@
    "scripts": [
     "install"
    ]
+  },
+  {
+   "name": "@qooxdoo/framework",
+   "version": "7.9.3",
+   "risk": "HIGH",
+   "downloads": 4090,
+   "scripts": [
+    "preinstall"
+   ]
   }
  ],
- "generated_utc": "2026-09-05T05:02:33Z",
- "corpus_candidates": 4794,
- "requested": 3093,
- "resolved": 3093,
+ "generated_utc": "2026-09-06T05:03:34Z",
+ "corpus_candidates": 4827,
+ "requested": 3126,
+ "resolved": 3126,
  "coverage": 1.0,
  "resolution": {
-  "refreshed": 700,
-  "from_cache": 2393,
+  "refreshed": 184,
+  "from_cache": 2942,
   "expired": 0
  },
- "audit_seconds": 36.2
+ "audit_seconds": 49.5
 }

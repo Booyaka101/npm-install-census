@@ -1,6 +1,6 @@
 {
- "generated": "2026-08-30T05:02:28Z",
- "candidates": 4794,
+ "generated": "2026-09-06T05:02:38Z",
+ "candidates": 4827,
  "method": "npm search keyword sweep nominates; npm downloads API ranks by real weekly downloads",
  "packages": [
   {
@@ -1392,6 +1392,10 @@
    "downloads": 23013572
   },
   {
+   "name": "@oozcitak/util",
+   "downloads": 22457143
+  },
+  {
    "name": "http-signature",
    "downloads": 22450028
   },
@@ -2038,6 +2042,10 @@
   {
    "name": "known-css-properties",
    "downloads": 10799931
+  },
+  {
+   "name": "@jsonjoy.com/fs-core",
+   "downloads": 10794385
   },
   {
    "name": "@babel/runtime-corejs3",
@@ -2756,6 +2764,10 @@
    "downloads": 5355884
   },
   {
+   "name": "react-datepicker",
+   "downloads": 5342425
+  },
+  {
    "name": "check-types",
    "downloads": 5337417
   },
@@ -2778,6 +2790,10 @@
   {
    "name": "@nestjs/axios",
    "downloads": 5285927
+  },
+  {
+   "name": "@microsoft/api-extractor-model",
+   "downloads": 5281512
   },
   {
    "name": "react-native-web",
@@ -3378,6 +3394,10 @@
   {
    "name": "abortcontroller-polyfill",
    "downloads": 3069287
+  },
+  {
+   "name": "css-color-names",
+   "downloads": 3032664
   },
   {
    "name": "rastermill",
@@ -4074,6 +4094,10 @@
   {
    "name": "glob-promise",
    "downloads": 1693828
+  },
+  {
+   "name": "@pnpm/lockfile.types",
+   "downloads": 1692509
   },
   {
    "name": "@clerk/react",
@@ -6288,6 +6312,10 @@
    "downloads": 391398
   },
   {
+   "name": "angular-oauth2-oidc",
+   "downloads": 390026
+  },
+  {
    "name": "botbuilder-dialogs-adaptive-runtime-core",
    "downloads": 389703
   },
@@ -7024,6 +7052,10 @@
    "downloads": 238787
   },
   {
+   "name": "@filestack/loader",
+   "downloads": 237226
+  },
+  {
    "name": "typed-css-modules",
    "downloads": 236643
   },
@@ -7356,6 +7388,10 @@
    "downloads": 190883
   },
   {
+   "name": "@pnpm/store-controller-types",
+   "downloads": 190840
+  },
+  {
    "name": "css-stringify",
    "downloads": 189584
   },
@@ -7678,6 +7714,10 @@
   {
    "name": "db-migrate",
    "downloads": 150727
+  },
+  {
+   "name": "remark-lint-no-emphasis-as-heading",
+   "downloads": 150481
   },
   {
    "name": "nuxt-og-image",
@@ -8018,6 +8058,10 @@
   {
    "name": "snyk-config",
    "downloads": 125201
+  },
+  {
+   "name": "@n8n/typeorm",
+   "downloads": 124600
   },
   {
    "name": "ember-cli-typescript-blueprint-polyfill",
@@ -8532,6 +8576,10 @@
    "downloads": 94796
   },
   {
+   "name": "rete",
+   "downloads": 94727
+  },
+  {
    "name": "promise-ftp-common",
    "downloads": 94649
   },
@@ -8656,6 +8704,10 @@
    "downloads": 87502
   },
   {
+   "name": "@mongosh/types",
+   "downloads": 86944
+  },
+  {
    "name": "@channel.io/channel-web-sdk-loader",
    "downloads": 86856
   },
@@ -8686,6 +8738,10 @@
   {
    "name": "rollup-plugin-jsx-remove-attributes",
    "downloads": 85804
+  },
+  {
+   "name": "@aws-amplify/graphql-http-transformer",
+   "downloads": 84959
   },
   {
    "name": "yaml-diff-patch",
@@ -9018,6 +9074,10 @@
   {
    "name": "@react-three/test-renderer",
    "downloads": 67698
+  },
+  {
+   "name": "cypress-rspack-dev-server",
+   "downloads": 67467
   },
   {
    "name": "rollup-plugin-styles",
@@ -9404,12 +9464,20 @@
    "downloads": 52274
   },
   {
+   "name": "filepond-plugin-image-edit",
+   "downloads": 52190
+  },
+  {
    "name": "fullscreen-api-polyfill",
    "downloads": 52145
   },
   {
    "name": "record-cache",
    "downloads": 52103
+  },
+  {
+   "name": "next-http-proxy-middleware",
+   "downloads": 52092
   },
   {
    "name": "csvjson",
@@ -9694,6 +9762,10 @@
   {
    "name": "eslint-plugin-yaml",
    "downloads": 42634
+  },
+  {
+   "name": "utils-extend",
+   "downloads": 42562
   },
   {
    "name": "build",
@@ -10176,6 +10248,10 @@
    "downloads": 29089
   },
   {
+   "name": "@excalidraw/eslint-config",
+   "downloads": 28972
+  },
+  {
    "name": "quilljs-markdown",
    "downloads": 28826
   },
@@ -10254,6 +10330,10 @@
   {
    "name": "wait-for-async",
    "downloads": 26983
+  },
+  {
+   "name": "@pnpm/modules-cleaner",
+   "downloads": 26965
   },
   {
    "name": "details-element-polyfill",
@@ -10700,6 +10780,10 @@
    "downloads": 17423
   },
   {
+   "name": "enqueue",
+   "downloads": 17315
+  },
+  {
    "name": "@microsoft/gulp-core-build-typescript",
    "downloads": 17281
   },
@@ -10737,6 +10821,10 @@
   },
   {
    "name": "incremental-csv-parser",
+   "downloads": 16931
+  },
+  {
+   "name": "@mongosh/browser-runtime-core",
    "downloads": 16931
   },
   {
@@ -10820,6 +10908,10 @@
    "downloads": 14678
   },
   {
+   "name": "temporal-polyfill-lite",
+   "downloads": 14629
+  },
+  {
    "name": "b3b",
    "downloads": 14570
   },
@@ -10854,6 +10946,10 @@
   {
    "name": "knex-migrator",
    "downloads": 14098
+  },
+  {
+   "name": "next-superjson-plugin",
+   "downloads": 14017
   },
   {
    "name": "x-address-codec",
@@ -11724,6 +11820,10 @@
    "downloads": 4099
   },
   {
+   "name": "@qooxdoo/framework",
+   "downloads": 4090
+  },
+  {
    "name": "@blocksuite/affine-block-database",
    "downloads": 4087
   },
@@ -12000,6 +12100,14 @@
    "downloads": 2103
   },
   {
+   "name": "crypto-symbol",
+   "downloads": 2087
+  },
+  {
+   "name": "@inversifyjs/validation-common",
+   "downloads": 2060
+  },
+  {
    "name": "clickhouse-orm",
    "downloads": 2050
   },
@@ -12152,6 +12260,10 @@
    "downloads": 1379
   },
   {
+   "name": "csv-rex",
+   "downloads": 1349
+  },
+  {
    "name": "react-websocket",
    "downloads": 1295
   },
@@ -12252,6 +12364,10 @@
    "downloads": 854
   },
   {
+   "name": "@voxgig/util",
+   "downloads": 853
+  },
+  {
    "name": "orm-paging",
    "downloads": 745
   },
@@ -12280,6 +12396,14 @@
    "downloads": 615
   },
   {
+   "name": "swc-plugin-nativewind",
+   "downloads": 575
+  },
+  {
+   "name": "ts-datastore-orm",
+   "downloads": 508
+  },
+  {
    "name": "swc-webpack-plugin",
    "downloads": 474
   },
@@ -12302,6 +12426,10 @@
   {
    "name": "database",
    "downloads": 353
+  },
+  {
+   "name": "gi-util",
+   "downloads": 342
   },
   {
    "name": "@axiljs/orm",
@@ -12342,6 +12470,10 @@
   {
    "name": "@swc/plugin-swc-magic",
    "downloads": 177
+  },
+  {
+   "name": "sussy-util",
+   "downloads": 144
   },
   {
    "name": "@aryth/util-distinct",
