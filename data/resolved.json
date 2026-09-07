@@ -1,6 +1,6 @@
 {
 "ttl_days": 7,
-"updated_utc": "2026-09-06T05:02:44Z",
+"updated_utc": "2026-09-07T05:02:13Z",
 "entries": {
 "@0no-co/graphql.web": {
 "version": "1.3.4",
@@ -594,7 +594,7 @@
 "version": "0.4.0",
 "tarball": "https://registry.npmjs.org/@astrojs/compiler-binding-linux-x64-gnu/-/compiler-binding-linux-x64-gnu-0.4.0.tgz",
 "integrity": "sha512-tQKolMxoJ/+0AmLWm1PmJ/i+z3i10ZU1bNuVjEDulCf48azEMtUNjTZgHJ5MPtpYRNc7dlETr8QujUfduzoC7Q==",
-"at": 1788325302.774106
+"at": 1788757332.0340853
 },
 "@astrojs/compiler-binding-linux-x64-musl": {
 "version": "0.4.0",
@@ -1938,7 +1938,7 @@
 "version": "4.0.0",
 "tarball": "https://registry.npmjs.org/@eppo/node-server-sdk/-/node-server-sdk-4.0.0.tgz",
 "integrity": "sha512-y5VplPT8UMUm1kPlLWHNDo+SkGfjSTzXAb/F578b00ez/42osWvdKcOjn02lhZLSmty0Yhb3OxFX4yodRBGk4A==",
-"at": 1788066149.00571
+"at": 1788757332.0340853
 },
 "@esbuild/android-arm64": {
 "version": "0.28.2",
@@ -2868,13 +2868,13 @@
 "version": "2.1.4",
 "tarball": "https://registry.npmjs.org/@jgoz/esbuild-plugin-livereload/-/esbuild-plugin-livereload-2.1.4.tgz",
 "integrity": "sha512-hsQrMlK2vwrK4njmFfBo6gtZhqdK8UTBXoD1i8Pe4xll+Am/5peAa5AMqZTIH9QvbRQ+vmea+f3pNoKAUn7nfg==",
-"at": 1788066149.00571
+"at": 1788757332.0340853
 },
 "@jridgewell/build-mapping": {
 "version": "0.2.1",
 "tarball": "https://registry.npmjs.org/@jridgewell/build-mapping/-/build-mapping-0.2.1.tgz",
 "integrity": "sha512-zsNugBz7wqcV8xQIYlURxE1/kS0vTBlImkANoJ8erFf46sw4EhG+I7SP7RR0U9C7y05a06ZhgJddJSewJYX5fA==",
-"at": 1788066149.00571
+"at": 1788757332.0340853
 },
 "@js-temporal/polyfill": {
 "version": "0.5.1",
@@ -3357,10 +3357,10 @@
 "at": 1788670958.6097825
 },
 "@mikro-orm/oracledb": {
-"version": "7.1.14",
-"tarball": "https://registry.npmjs.org/@mikro-orm/oracledb/-/oracledb-7.1.14.tgz",
-"integrity": "sha512-T6EghX6zq7y8ZTugcWID/NUt/3sppKukp07MAzbavNcBFI7WLLiGSuhKv5VbF7th62j4qz2XW3K+uZxyJ1Covg==",
-"at": 1788066149.00571
+"version": "7.1.15",
+"tarball": "https://registry.npmjs.org/@mikro-orm/oracledb/-/oracledb-7.1.15.tgz",
+"integrity": "sha512-WXWhsRoeZQz2OB0lLz10FNYlQpq4kOE9QkgC6SsN93qgh/+A6XwcTFOMrvuROcZ7Svz1i6TlOHsjPrTiQQ4GWA==",
+"at": 1788757332.0340853
 },
 "@mikro-orm/pglite": {
 "version": "7.1.14",
@@ -3738,7 +3738,7 @@
 "version": "0.1.5",
 "tarball": "https://registry.npmjs.org/@nezam.ai/runtime-js-database/-/runtime-js-database-0.1.5.tgz",
 "integrity": "sha512-67boRLVBAsRBP4ZhCAxHvFBJgLWnBeZYIkdj6VbvdOD3nGRdySNpdhjo890wS91Ob7YU2yvcpdEm200gnRO3wA==",
-"at": 1788066149.00571
+"at": 1788757332.0340853
 },
 "@ng-bootstrap/ng-bootstrap": {
 "version": "21.0.0",
@@ -4410,7 +4410,7 @@
 "version": "25.0.0",
 "tarball": "https://registry.npmjs.org/@progress/kendo-angular-l10n/-/kendo-angular-l10n-25.0.0.tgz",
 "integrity": "sha512-8m9tWWQImUR8IJvE+pAgdGbjfuKumREY8hFCJcLnPo0Iq7snQY1JPtv2c8NO10FCHSpcrN7sEp7m/hSM9bJkhg==",
-"at": 1788066149.00571
+"at": 1788757332.0340853
 },
 "@protobuf-ts/runtime": {
 "version": "2.11.1",
@@ -5160,7 +5160,7 @@
 "version": "1.4.2",
 "tarball": "https://registry.npmjs.org/@smithy/uuid/-/uuid-1.4.2.tgz",
 "integrity": "sha512-Etr8NTglSaUVEBGwavBUccRybaKiCN2794sYu/h7aVz2eErlAgaIfHavDw+Q37Wt4cgkJXDeI86N07Vn6eKBeA==",
-"at": 1788066149.00571
+"at": 1788757332.0340853
 },
 "@soda-gql/runtime": {
 "version": "0.12.6",
@@ -5802,7 +5802,7 @@
 "version": "2.3.15",
 "tarball": "https://registry.npmjs.org/@tracetail/angular/-/angular-2.3.15.tgz",
 "integrity": "sha512-/9JdeH3Qcww4hvAe2GLC37174FRPkt+u3NoBgDT4uNWaZvzEVISENnx6TriyzDxoDdgZb5f4mwLEGwlVvsbceg==",
-"at": 1788066149.00571
+"at": 1788757332.0340853
 },
 "@tramvai/swc-integration": {
 "version": "6.82.34",
@@ -9690,7 +9690,7 @@
 "version": "1.4.1",
 "tarball": "https://registry.npmjs.org/csv-node/-/csv-node-1.4.1.tgz",
 "integrity": "sha512-816Pi/XfgGMyKBN8DkG2kdR4kch1KfQuD/JXviW48sRaly4KXqtRd/f9SI10N+U+NUOxFT6W/cKL9vFPYaBsmw==",
-"at": 1788066149.00571
+"at": 1788757332.0340853
 },
 "csv-parse": {
 "version": "7.0.2",
@@ -9978,7 +9978,7 @@
 "version": "3.1.0",
 "tarball": "https://registry.npmjs.org/daterangepicker/-/daterangepicker-3.1.0.tgz",
 "integrity": "sha512-DxWXvvPq4srWLCqFugqSV+6CBt/CvQ0dnpXhQ3gl0autcIDAruG1PuGG3gC7yPRNytAD1oU1AcUOzaYhOawhTw==",
-"at": 1788066149.00571
+"at": 1788757332.0340853
 },
 "db-migrate": {
 "version": "0.11.14",
@@ -15480,7 +15480,7 @@
 "version": "0.5.10",
 "tarball": "https://registry.npmjs.org/overlayscrollbars-vue/-/overlayscrollbars-vue-0.5.10.tgz",
 "integrity": "sha512-vu35CJj/kzGBgkxsQyXCCCRRBz/3AvXhkDckuiRHphRE6CwXjbWATY0PVbn2KRy30NbaZhHqueH5yqPo8ItqTA==",
-"at": 1788066149.00571
+"at": 1788757332.0340853
 },
 "ow": {
 "version": "3.1.1",
@@ -19758,7 +19758,7 @@
 "version": "2.11.13",
 "tarball": "https://registry.npmjs.org/ts-swc-transform/-/ts-swc-transform-2.11.13.tgz",
 "integrity": "sha512-UV21+DIWE+Z/xVyQkY9IPZ7H7LGMBnvZ9oJYtvMnk4iQjXEDaSWdkE/pdSTc8Y+kVN7l++n74vLu+KkcsdMrCg==",
-"at": 1788066149.00571
+"at": 1788757332.0340853
 },
 "tsc-watch": {
 "version": "7.2.1",
@@ -20652,7 +20652,7 @@
 "version": "3.2.0",
 "tarball": "https://registry.npmjs.org/vite-plugin-react-native-web/-/vite-plugin-react-native-web-3.2.0.tgz",
 "integrity": "sha512-Vc1eAJ9i6K7A5O1W19XTGcw5UadPmexMihd5/j36qTv6VlCdengolwAJiuhNJcLM6HeVR+Q1ORr3fD48UXCnMQ==",
-"at": 1788066149.00571
+"at": 1788757332.0340853
 },
 "vite-plugin-relay": {
 "version": "2.1.0",
