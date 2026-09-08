@@ -39,11 +39,11 @@
  ],
  "with_install_scripts": 26,
  "risk": {
-  "SAFE": 3104,
+  "SAFE": 3105,
   "LOW": 3,
   "MEDIUM": 0,
   "HIGH": 17,
-  "ERROR": 2
+  "ERROR": 1
  },
  "signal_classes": {
   "exec": 37,
@@ -75,7 +75,7 @@
   },
   {
    "name": "workerd",
-   "version": "1.20260831.1",
+   "version": "1.20260908.1",
    "risk": "HIGH",
    "downloads": 18988497,
    "scripts": [
@@ -209,15 +209,15 @@
    ]
   }
  ],
- "generated_utc": "2026-09-07T05:03:01Z",
+ "generated_utc": "2026-09-08T05:02:56Z",
  "corpus_candidates": 4827,
  "requested": 3126,
  "resolved": 3126,
  "coverage": 1.0,
  "resolution": {
-  "refreshed": 14,
-  "from_cache": 3112,
+  "refreshed": 671,
+  "from_cache": 2455,
   "expired": 0
  },
- "audit_seconds": 47.7
+ "audit_seconds": 38.8
 }
