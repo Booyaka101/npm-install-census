@@ -183,7 +183,7 @@
   },
   {
    "name": "swc-plugin-import-meta-env",
-   "version": "1.16.1",
+   "version": "1.16.2",
    "risk": "HIGH",
    "downloads": 21864,
    "scripts": [
@@ -209,15 +209,15 @@
    ]
   }
  ],
- "generated_utc": "2026-09-08T05:02:56Z",
+ "generated_utc": "2026-09-09T05:03:05Z",
  "corpus_candidates": 4827,
  "requested": 3126,
  "resolved": 3126,
  "coverage": 1.0,
  "resolution": {
-  "refreshed": 671,
-  "from_cache": 2455,
+  "refreshed": 479,
+  "from_cache": 2647,
   "expired": 0
  },
- "audit_seconds": 38.8
+ "audit_seconds": 46.3
 }
