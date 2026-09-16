@@ -67,7 +67,7 @@
   },
   {
    "name": "workerd",
-   "version": "1.20260908.1",
+   "version": "1.20260916.1",
    "risk": "HIGH",
    "downloads": 18988497,
    "scripts": [
@@ -201,15 +201,15 @@
    ]
   }
  ],
- "generated_utc": "2026-09-15T05:02:55Z",
+ "generated_utc": "2026-09-16T05:03:14Z",
  "corpus_candidates": 4893,
  "requested": 3192,
  "resolved": 3192,
  "coverage": 1.0,
  "resolution": {
-  "refreshed": 670,
-  "from_cache": 2522,
+  "refreshed": 506,
+  "from_cache": 2686,
   "expired": 0
  },
- "audit_seconds": 34.3
+ "audit_seconds": 57.0
 }
