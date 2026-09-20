@@ -1,38 +1,45 @@
 {
- "total": 3192,
+ "total": 3238,
  "bands": [
   {
-   "band": "1-798",
-   "packages": 798,
+   "band": "1-809",
+   "packages": 809,
    "scripted": 6,
    "risky": 4,
-   "pct_scripted": 0.8
+   "pct_scripted": 0.7
   },
   {
-   "band": "799-1596",
-   "packages": 798,
+   "band": "810-1618",
+   "packages": 809,
    "scripted": 8,
    "risky": 4,
    "pct_scripted": 1.0
   },
   {
-   "band": "1597-2394",
-   "packages": 798,
+   "band": "1619-2427",
+   "packages": 809,
    "scripted": 9,
    "risky": 6,
    "pct_scripted": 1.1
   },
   {
-   "band": "2395-3192",
-   "packages": 798,
+   "band": "2428-3236",
+   "packages": 809,
    "scripted": 5,
    "risky": 3,
    "pct_scripted": 0.6
+  },
+  {
+   "band": "3237-3238",
+   "packages": 2,
+   "scripted": 0,
+   "risky": 0,
+   "pct_scripted": 0.0
   }
  ],
  "with_install_scripts": 28,
  "risk": {
-  "SAFE": 3171,
+  "SAFE": 3217,
   "LOW": 4,
   "MEDIUM": 0,
   "HIGH": 17
@@ -201,15 +208,15 @@
    ]
   }
  ],
- "generated_utc": "2026-09-19T05:02:46Z",
- "corpus_candidates": 4893,
- "requested": 3192,
- "resolved": 3192,
+ "generated_utc": "2026-09-20T05:03:25Z",
+ "corpus_candidates": 4939,
+ "requested": 3238,
+ "resolved": 3238,
  "coverage": 1.0,
  "resolution": {
-  "refreshed": 475,
-  "from_cache": 2717,
+  "refreshed": 700,
+  "from_cache": 2538,
   "expired": 0
  },
- "audit_seconds": 48.4
+ "audit_seconds": 59.3
 }

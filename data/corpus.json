@@ -1,6 +1,6 @@
 {
- "generated": "2026-09-13T05:02:40Z",
- "candidates": 4893,
+ "generated": "2026-09-20T05:01:58Z",
+ "candidates": 4939,
  "method": "npm search keyword sweep nominates; npm downloads API ranks by real weekly downloads",
  "packages": [
   {
@@ -334,6 +334,10 @@
   {
    "name": "axios",
    "downloads": 119805667
+  },
+  {
+   "name": "csstype",
+   "downloads": 119663932
   },
   {
    "name": "queue-microtask",
@@ -3576,16 +3580,36 @@
    "downloads": 2696349
   },
   {
+   "name": "@lydell/node-pty-win32-x64",
+   "downloads": 2694450
+  },
+  {
    "name": "regexp-match-indices",
    "downloads": 2685633
+  },
+  {
+   "name": "@lydell/node-pty-darwin-arm64",
+   "downloads": 2678197
   },
   {
    "name": "probe-image-size",
    "downloads": 2678007
   },
   {
+   "name": "@lydell/node-pty-linux-arm64",
+   "downloads": 2665927
+  },
+  {
    "name": "zod-from-json-schema",
    "downloads": 2639145
+  },
+  {
+   "name": "@lydell/node-pty-darwin-x64",
+   "downloads": 2632667
+  },
+  {
+   "name": "@lydell/node-pty-win32-arm64",
+   "downloads": 2622749
   },
   {
    "name": "webpack-log",
@@ -4000,6 +4024,10 @@
    "downloads": 1869937
   },
   {
+   "name": "@solana/rpc-parsed-types",
+   "downloads": 1857356
+  },
+  {
    "name": "json-cycle",
    "downloads": 1846112
   },
@@ -4260,6 +4288,10 @@
    "downloads": 1515312
   },
   {
+   "name": "@protobuf-ts/protoc",
+   "downloads": 1508589
+  },
+  {
    "name": "babel-plugin-transform-es2015-template-literals",
    "downloads": 1498742
   },
@@ -4406,6 +4438,10 @@
   {
    "name": "graphql-type-json",
    "downloads": 1386760
+  },
+  {
+   "name": "@rolldown/binding-openharmony-arm64",
+   "downloads": 1385843
   },
   {
    "name": "@hubspot/api-client",
@@ -5012,6 +5048,10 @@
    "downloads": 903142
   },
   {
+   "name": "@eloqnt/format-json",
+   "downloads": 902116
+  },
+  {
    "name": "conventional-changelog-config-spec",
    "downloads": 898446
   },
@@ -5162,6 +5202,10 @@
   {
    "name": "tap-parser",
    "downloads": 826688
+  },
+  {
+   "name": "@electron-forge/template-vite-typescript",
+   "downloads": 826019
   },
   {
    "name": "@typescript/typescript-darwin-x64",
@@ -5724,6 +5768,10 @@
    "downloads": 568166
   },
   {
+   "name": "pica",
+   "downloads": 567663
+  },
+  {
    "name": "guess-json-indent",
    "downloads": 567437
   },
@@ -6132,6 +6180,10 @@
    "downloads": 453092
   },
   {
+   "name": "@google-cloud/firestore-api",
+   "downloads": 452455
+  },
+  {
    "name": "priority-slot-queue",
    "downloads": 451467
   },
@@ -6390,6 +6442,10 @@
   {
    "name": "image-to-base64",
    "downloads": 389455
+  },
+  {
+   "name": "taffydb",
+   "downloads": 388734
   },
   {
    "name": "@alchemy.run/cloudflare-runtime",
@@ -7264,6 +7320,10 @@
    "downloads": 220513
   },
   {
+   "name": "vite-plugin-devtools-json",
+   "downloads": 220282
+  },
+  {
    "name": "react-image",
    "downloads": 219516
   },
@@ -7878,6 +7938,10 @@
   {
    "name": "vscode-ws-jsonrpc",
    "downloads": 145219
+  },
+  {
+   "name": "qase-api-client",
+   "downloads": 145186
   },
   {
    "name": "@vue/apollo-composable",
@@ -8808,6 +8872,10 @@
    "downloads": 87502
   },
   {
+   "name": "@connectrpc/validate",
+   "downloads": 87358
+  },
+  {
    "name": "@mongosh/types",
    "downloads": 86944
   },
@@ -9392,6 +9460,10 @@
    "downloads": 59055
   },
   {
+   "name": "slack-markdown",
+   "downloads": 58853
+  },
+  {
    "name": "react-native-fast-crypto",
    "downloads": 58780
   },
@@ -9546,6 +9618,10 @@
   {
    "name": "vite-plugin-require",
    "downloads": 54005
+  },
+  {
+   "name": "@cordisjs/plugin-loader",
+   "downloads": 53986
   },
   {
    "name": "mocha-ctrf-json-reporter",
@@ -10200,6 +10276,10 @@
    "downloads": 34561
   },
   {
+   "name": "@nextcloud/vue",
+   "downloads": 34397
+  },
+  {
    "name": "rollup-plugin-web-worker-loader",
    "downloads": 34367
   },
@@ -10592,6 +10672,10 @@
    "downloads": 24347
   },
   {
+   "name": "haraka-config",
+   "downloads": 24221
+  },
+  {
    "name": "@aws/codecatalyst-adk-utils",
    "downloads": 24220
   },
@@ -10614,6 +10698,10 @@
   {
    "name": "nconf-yaml",
    "downloads": 23828
+  },
+  {
+   "name": "vite-plugin-vue2",
+   "downloads": 23466
   },
   {
    "name": "@primeicons/angular",
@@ -10848,6 +10936,10 @@
    "downloads": 19079
   },
   {
+   "name": "@lightsparkdev/crypto-wasm",
+   "downloads": 19052
+  },
+  {
    "name": "drizzle-cursor",
    "downloads": 18982
   },
@@ -11028,6 +11120,10 @@
    "downloads": 15692
   },
   {
+   "name": "@napi-rs/image-darwin-arm64",
+   "downloads": 15383
+  },
+  {
    "name": "crypto-ts",
    "downloads": 15327
   },
@@ -11038,6 +11134,10 @@
   {
    "name": "@vaadin/vaadin-date-time-picker",
    "downloads": 15185
+  },
+  {
+   "name": "@napi-rs/image-darwin-x64",
+   "downloads": 15156
   },
   {
    "name": "@foxglove/ws-protocol",
@@ -11062,6 +11162,10 @@
   {
    "name": "ngx-csv-parser",
    "downloads": 14925
+  },
+  {
+   "name": "@speclynx/apidom-parser-adapter-yaml-1-2",
+   "downloads": 14913
   },
   {
    "name": "@cloudflare/test-store",
@@ -11260,8 +11364,16 @@
    "downloads": 11796
   },
   {
+   "name": "hapi-sequelizejs",
+   "downloads": 11792
+  },
+  {
    "name": "calendar-date",
    "downloads": 11759
+  },
+  {
+   "name": "@web/test-runner-puppeteer",
+   "downloads": 11695
   },
   {
    "name": "ngx-csv",
@@ -11300,6 +11412,10 @@
    "downloads": 11376
   },
   {
+   "name": "@solidjs/compiler",
+   "downloads": 11336
+  },
+  {
    "name": "feathers-sequelize",
    "downloads": 11285
   },
@@ -11322,6 +11438,10 @@
   {
    "name": "@abaplint/runtime",
    "downloads": 11035
+  },
+  {
+   "name": "@praha/drizzle-factory",
+   "downloads": 10972
   },
   {
    "name": "@dxfeed/dxlink-websocket-client",
@@ -11476,6 +11596,10 @@
    "downloads": 9315
   },
   {
+   "name": "@discord/intl-message-database-linux-x64-musl",
+   "downloads": 9169
+  },
+  {
    "name": "swc-plugin-auto-css-modules",
    "downloads": 9151
   },
@@ -11584,6 +11708,10 @@
    "downloads": 8408
   },
   {
+   "name": "react-native-websocket-self-signed",
+   "downloads": 8399
+  },
+  {
    "name": "react-native-webview-crypto",
    "downloads": 8341
   },
@@ -11652,6 +11780,10 @@
    "downloads": 7564
   },
   {
+   "name": "@codepress/codepress-engine",
+   "downloads": 7543
+  },
+  {
    "name": "@types/sane-email-validation",
    "downloads": 7541
   },
@@ -11700,6 +11832,10 @@
    "downloads": 7070
   },
   {
+   "name": "react-validation",
+   "downloads": 7034
+  },
+  {
    "name": "rollup-plugin-re",
    "downloads": 7007
   },
@@ -11722,6 +11858,10 @@
   {
    "name": "nestjs-supabase-auth",
    "downloads": 6739
+  },
+  {
+   "name": "@openedx/frontend-build",
+   "downloads": 6642
   },
   {
    "name": "@ddd-framework/collections",
@@ -11876,6 +12016,10 @@
    "downloads": 5365
   },
   {
+   "name": "@vaadin/hilla-react-auth",
+   "downloads": 5362
+  },
+  {
    "name": "@zilliqa-js/crypto",
    "downloads": 5360
   },
@@ -11930,6 +12074,10 @@
   {
    "name": "@platformatic/job-queue",
    "downloads": 5017
+  },
+  {
+   "name": "@matrixai/logger",
+   "downloads": 4995
   },
   {
    "name": "csv-simple-parser",
@@ -12140,6 +12288,10 @@
    "downloads": 3555
   },
   {
+   "name": "@shuvi/swc-linux-x64-musl",
+   "downloads": 3541
+  },
+  {
    "name": "swc-plugin-css-modules",
    "downloads": 3538
   },
@@ -12222,6 +12374,10 @@
   {
    "name": "@as-pect/csv-reporter",
    "downloads": 3104
+  },
+  {
+   "name": "global-queue",
+   "downloads": 2993
   },
   {
    "name": "@airtable/blocks-esbuild-bundler",
@@ -12334,6 +12490,10 @@
   {
    "name": "to-csv",
    "downloads": 2123
+  },
+  {
+   "name": "@guren/orm",
+   "downloads": 2115
   },
   {
    "name": "template",
@@ -12600,12 +12760,20 @@
    "downloads": 958
   },
   {
+   "name": "xast-util-select",
+   "downloads": 956
+  },
+  {
    "name": "pull-websocket",
    "downloads": 934
   },
   {
    "name": "alp-websocket",
    "downloads": 927
+  },
+  {
+   "name": "redux-async-queue",
+   "downloads": 917
   },
   {
    "name": "orm-transaction",
@@ -12620,6 +12788,10 @@
    "downloads": 875
   },
   {
+   "name": "@shipfox/swc",
+   "downloads": 868
+  },
+  {
    "name": "@forklaunch/better-auth-mikro-orm-fork",
    "downloads": 854
   },
@@ -12632,12 +12804,20 @@
    "downloads": 745
   },
   {
+   "name": "@promakeai/orm",
+   "downloads": 715
+  },
+  {
    "name": "swc-jest",
    "downloads": 699
   },
   {
    "name": "@adonisjs/websocket-client",
    "downloads": 688
+  },
+  {
+   "name": "@types/browser-util-inspect",
+   "downloads": 679
   },
   {
    "name": "runtime",
@@ -12654,6 +12834,10 @@
   {
    "name": "ck-orm",
    "downloads": 615
+  },
+  {
+   "name": "@decaf-ts/crypto",
+   "downloads": 583
   },
   {
    "name": "swc-plugin-nativewind",
