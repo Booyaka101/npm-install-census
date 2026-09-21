@@ -65,7 +65,7 @@
   },
   {
    "name": "@sentry/cli",
-   "version": "3.7.0",
+   "version": "3.8.0",
    "risk": "HIGH",
    "downloads": 23636768,
    "scripts": [
@@ -146,7 +146,7 @@
   },
   {
    "name": "@microsoft/m365agentstoolkit-cli",
-   "version": "1.1.16",
+   "version": "1.1.17",
    "risk": "HIGH",
    "downloads": 158227,
    "scripts": [
@@ -208,7 +208,7 @@
    ]
   }
  ],
- "generated_utc": "2026-09-20T05:03:25Z",
+ "generated_utc": "2026-09-21T05:03:12Z",
  "corpus_candidates": 4939,
  "requested": 3238,
  "resolved": 3238,
@@ -218,5 +218,5 @@
   "from_cache": 2538,
   "expired": 0
  },
- "audit_seconds": 59.3
+ "audit_seconds": 46.0
 }
