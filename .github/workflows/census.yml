@@ -19,6 +19,8 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: census
@@ -69,6 +71,16 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: python tools/census.py
 
+      - name: Build the dashboard
+        run: python tools/site.py
+
+      - uses: actions/configure-pages@v6
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: site
+          # site.py writes .nojekyll, and v4 stopped packing dotfiles.
+          include-hidden-files: true
+
       - name: Commit
         run: |
           git config user.name "github-actions[bot]"
@@ -87,3 +99,16 @@ jobs:
             echo "push rejected, retrying ($attempt)"
           done
           exit 1
+
+  # Separate job so a push race in the commit step above cannot leave Pages
+  # serving yesterday's numbers.
+  deploy:
+    name: deploy pages
+    needs: census
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5

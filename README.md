@@ -10,6 +10,8 @@ npm v12 flipped install scripts off by default. You now approve them one by one 
 > <sub>Rebuilt 2026-09-22.</sub>
 <!-- /auto:headline -->
 
+**[Live dashboard](https://booyaka101.github.io/npm-install-census/)** - the whole approval queue, searchable and filterable by risk.
+
 Every number here is produced by [npm-script-lens](https://github.com/Booyaka101/npm-script-lens) run unmodified against packages pulled from the public registry. Raw output is in [`data/census.json`](data/census.json).
 
 ## What it found
@@ -114,6 +116,7 @@ The first version of this census excluded scoped packages entirely, and reported
 ```sh
 python tools/rank.py      # rebuild the corpus (slow, rate-limited, resumable)
 python tools/census.py    # audit it and write data/census.json
+python tools/site.py      # render data/census.json into site/index.html
 ```
 
 `rank.py` checkpoints to `data/downloads.json` so a killed run resumes rather than restarting.
