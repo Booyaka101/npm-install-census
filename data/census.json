@@ -1,5 +1,6 @@
 {
  "total": 3238,
+ "scoped": 732,
  "bands": [
   {
    "band": "1-809",
@@ -37,6 +38,48 @@
    "pct_scripted": 0.0
   }
  ],
+ "cuts": [
+  {
+   "cut": "Top 100",
+   "packages": 100,
+   "floor": 101913960,
+   "scripted": 1,
+   "risky": 1,
+   "pct_scripted": 1.0
+  },
+  {
+   "cut": "Top 500",
+   "packages": 500,
+   "floor": 11284859,
+   "scripted": 4,
+   "risky": 3,
+   "pct_scripted": 0.8
+  },
+  {
+   "cut": "Top 1,000",
+   "packages": 1000,
+   "floor": 1888241,
+   "scripted": 7,
+   "risky": 4,
+   "pct_scripted": 0.7
+  },
+  {
+   "cut": "Top 2,000",
+   "packages": 2000,
+   "floor": 138985,
+   "scripted": 18,
+   "risky": 11,
+   "pct_scripted": 0.9
+  },
+  {
+   "cut": "Full sample",
+   "packages": 3238,
+   "floor": 4,
+   "scripted": 28,
+   "risky": 17,
+   "pct_scripted": 0.86
+  }
+ ],
  "with_install_scripts": 28,
  "risk": {
   "SAFE": 3217,
@@ -49,18 +92,42 @@
   "env": 12,
   "net": 9,
   "fs": 8,
-  "gyp": 4,
   "bin": 4,
+  "gyp": 4,
   "obf": 2
  },
- "top_risky": [
+ "scripted": [
   {
    "name": "esbuild",
    "version": "0.28.2",
    "risk": "HIGH",
    "downloads": 255499108,
-   "scripts": [
-    "postinstall"
+   "rows": [
+    {
+     "script": "postinstall",
+     "command": "node install.js",
+     "risk": "HIGH",
+     "signals": [
+      "env",
+      "exec",
+      "fs",
+      "net"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "unrs-resolver",
+   "version": "1.12.2",
+   "risk": "SAFE",
+   "downloads": 51290045,
+   "rows": [
+    {
+     "script": "postinstall",
+     "command": "node postinstall.js",
+     "risk": "SAFE",
+     "signals": []
+    }
    ]
   },
   {
@@ -68,8 +135,18 @@
    "version": "3.8.0",
    "risk": "HIGH",
    "downloads": 23636768,
-   "scripts": [
-    "postinstall"
+   "rows": [
+    {
+     "script": "postinstall",
+     "command": "node ./scripts/install.js",
+     "risk": "HIGH",
+     "signals": [
+      "env",
+      "exec",
+      "fs",
+      "net"
+     ]
+    }
    ]
   },
   {
@@ -77,8 +154,34 @@
    "version": "1.20260916.1",
    "risk": "HIGH",
    "downloads": 18988497,
-   "scripts": [
-    "postinstall"
+   "rows": [
+    {
+     "script": "postinstall",
+     "command": "node install.js",
+     "risk": "HIGH",
+     "signals": [
+      "env",
+      "exec",
+      "fs",
+      "net"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "vue-demi",
+   "version": "0.14.10",
+   "risk": "LOW",
+   "downloads": 7984419,
+   "rows": [
+    {
+     "script": "postinstall",
+     "command": "node -e \"try{require('./scripts/postinstall.js')}catch(e){}\"",
+     "risk": "LOW",
+     "signals": [
+      "fs"
+     ]
+    }
    ]
   },
   {
@@ -86,8 +189,45 @@
    "version": "4.1.0",
    "risk": "HIGH",
    "downloads": 6816139,
-   "scripts": [
-    "install"
+   "rows": [
+    {
+     "script": "install",
+     "command": "node-gyp-build",
+     "risk": "HIGH",
+     "signals": [
+      "bin",
+      "env",
+      "exec"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "mongodb-memory-server",
+   "version": "11.2.0",
+   "risk": "SAFE",
+   "downloads": 2084289,
+   "rows": [
+    {
+     "script": "postinstall",
+     "command": "node ./postinstall.js",
+     "risk": "SAFE",
+     "signals": []
+    }
+   ]
+  },
+  {
+   "name": "node",
+   "version": "26.9.0",
+   "risk": "SAFE",
+   "downloads": 1396315,
+   "rows": [
+    {
+     "script": "preinstall",
+     "command": "node installArchSpecificPackage",
+     "risk": "SAFE",
+     "signals": []
+    }
    ]
   },
   {
@@ -95,8 +235,17 @@
    "version": "0.24.8",
    "risk": "HIGH",
    "downloads": 1056278,
-   "scripts": [
-    "install"
+   "rows": [
+    {
+     "script": "install",
+     "command": "node-gyp-build",
+     "risk": "HIGH",
+     "signals": [
+      "bin",
+      "env",
+      "exec"
+     ]
+    }
    ]
   },
   {
@@ -104,8 +253,15 @@
    "version": "7.0.1",
    "risk": "HIGH",
    "downloads": 806345,
-   "scripts": [
-    "install"
+   "rows": [
+    {
+     "script": "install",
+     "command": "node package/install.js",
+     "risk": "HIGH",
+     "signals": [
+      "obf"
+     ]
+    }
    ]
   },
   {
@@ -113,8 +269,15 @@
    "version": "0.0.22",
    "risk": "HIGH",
    "downloads": 806176,
-   "scripts": [
-    "install"
+   "rows": [
+    {
+     "script": "install",
+     "command": "node scripts/install-pulumi-plugin.js resource docker-build 0.0.22",
+     "risk": "HIGH",
+     "signals": [
+      "exec"
+     ]
+    }
    ]
   },
   {
@@ -122,8 +285,61 @@
    "version": "0.23.2",
    "risk": "HIGH",
    "downloads": 750247,
-   "scripts": [
-    "install"
+   "rows": [
+    {
+     "script": "install",
+     "command": "node-gyp-build",
+     "risk": "HIGH",
+     "signals": [
+      "bin",
+      "env",
+      "exec"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "stream-chat",
+   "version": "9.53.0",
+   "risk": "SAFE",
+   "downloads": 496189,
+   "rows": [
+    {
+     "script": "postinstall",
+     "command": "node -e \"require('fs').existsSync('scripts/install-husky.mjs') && import('./scripts/install-husky.mjs')\"",
+     "risk": "SAFE",
+     "signals": []
+    }
+   ]
+  },
+  {
+   "name": "@azure/msal-node-extensions",
+   "version": "5.5.1",
+   "risk": "SAFE",
+   "downloads": 391268,
+   "rows": [
+    {
+     "script": "install",
+     "command": "exit 0",
+     "risk": "SAFE",
+     "signals": []
+    }
+   ]
+  },
+  {
+   "name": "redis-memory-server",
+   "version": "0.17.1",
+   "risk": "LOW",
+   "downloads": 297209,
+   "rows": [
+    {
+     "script": "postinstall",
+     "command": "node ./scripts/postinstall",
+     "risk": "LOW",
+     "signals": [
+      "env"
+     ]
+    }
    ]
   },
   {
@@ -131,8 +347,16 @@
    "version": "1.0.2",
    "risk": "HIGH",
    "downloads": 214015,
-   "scripts": [
-    "postinstall"
+   "rows": [
+    {
+     "script": "postinstall",
+     "command": "node postinstall.mjs",
+     "risk": "HIGH",
+     "signals": [
+      "env",
+      "exec"
+     ]
+    }
    ]
   },
   {
@@ -140,8 +364,17 @@
    "version": "3.0.0",
    "risk": "HIGH",
    "downloads": 171686,
-   "scripts": [
-    "install"
+   "rows": [
+    {
+     "script": "install",
+     "command": "node-gyp-build",
+     "risk": "HIGH",
+     "signals": [
+      "bin",
+      "env",
+      "exec"
+     ]
+    }
    ]
   },
   {
@@ -149,8 +382,15 @@
    "version": "1.1.17",
    "risk": "HIGH",
    "downloads": 158227,
-   "scripts": [
-    "postinstall"
+   "rows": [
+    {
+     "script": "postinstall",
+     "command": "node deletePS1.js",
+     "risk": "HIGH",
+     "signals": [
+      "exec"
+     ]
+    }
    ]
   },
   {
@@ -158,8 +398,16 @@
    "version": "3.2.1",
    "risk": "HIGH",
    "downloads": 113373,
-   "scripts": [
-    "install"
+   "rows": [
+    {
+     "script": "install",
+     "command": "node build.js",
+     "risk": "HIGH",
+     "signals": [
+      "fs",
+      "obf"
+     ]
+    }
    ]
   },
   {
@@ -167,8 +415,47 @@
    "version": "6.3.1",
    "risk": "HIGH",
    "downloads": 102942,
-   "scripts": [
-    "preinstall"
+   "rows": [
+    {
+     "script": "preinstall",
+     "command": "npm run install-binary",
+     "risk": "HIGH",
+     "signals": [
+      "env",
+      "exec",
+      "net"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "rete",
+   "version": "2.0.6",
+   "risk": "SAFE",
+   "downloads": 94727,
+   "rows": [
+    {
+     "script": "postinstall",
+     "command": "node postinstall.js",
+     "risk": "SAFE",
+     "signals": []
+    }
+   ]
+  },
+  {
+   "name": "zenstack",
+   "version": "2.22.3",
+   "risk": "LOW",
+   "downloads": 65814,
+   "rows": [
+    {
+     "script": "postinstall",
+     "command": "node bin/post-install.js",
+     "risk": "LOW",
+     "signals": [
+      "env"
+     ]
+    }
    ]
   },
   {
@@ -176,8 +463,33 @@
    "version": "0.5.0",
    "risk": "HIGH",
    "downloads": 58205,
-   "scripts": [
-    "install"
+   "rows": [
+    {
+     "script": "install",
+     "command": "node-gyp rebuild",
+     "risk": "HIGH",
+     "signals": [
+      "exec",
+      "gyp"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "playwright-ws-trace",
+   "version": "1.1.2",
+   "risk": "LOW",
+   "downloads": 22770,
+   "rows": [
+    {
+     "script": "postinstall",
+     "command": "node scripts/postinstall.js",
+     "risk": "LOW",
+     "signals": [
+      "env",
+      "fs"
+     ]
+    }
    ]
   },
   {
@@ -185,8 +497,16 @@
    "version": "1.16.2",
    "risk": "HIGH",
    "downloads": 21864,
-   "scripts": [
-    "preinstall"
+   "rows": [
+    {
+     "script": "preinstall",
+     "command": "npx only-allow pnpm",
+     "risk": "HIGH",
+     "signals": [
+      "exec",
+      "net"
+     ]
+    }
    ]
   },
   {
@@ -194,8 +514,30 @@
    "version": "5.5.2",
    "risk": "HIGH",
    "downloads": 17275,
-   "scripts": [
-    "install"
+   "rows": [
+    {
+     "script": "install",
+     "command": "node-gyp rebuild",
+     "risk": "HIGH",
+     "signals": [
+      "exec",
+      "gyp"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "better-auth-studio",
+   "version": "1.1.5",
+   "risk": "SAFE",
+   "downloads": 6258,
+   "rows": [
+    {
+     "script": "postinstall",
+     "command": "node scripts/postinstall.js",
+     "risk": "SAFE",
+     "signals": []
+    }
    ]
   },
   {
@@ -203,20 +545,27 @@
    "version": "7.9.3",
    "risk": "HIGH",
    "downloads": 4090,
-   "scripts": [
-    "preinstall"
+   "rows": [
+    {
+     "script": "preinstall",
+     "command": "node ./addGitHook",
+     "risk": "HIGH",
+     "signals": [
+      "exec"
+     ]
+    }
    ]
   }
  ],
- "generated_utc": "2026-09-21T05:03:12Z",
+ "generated_utc": "2026-09-22T00:15:04Z",
  "corpus_candidates": 4939,
  "requested": 3238,
  "resolved": 3238,
  "coverage": 1.0,
  "resolution": {
-  "refreshed": 700,
-  "from_cache": 2538,
+  "refreshed": 173,
+  "from_cache": 3065,
   "expired": 0
  },
- "audit_seconds": 46.0
+ "audit_seconds": 73.7
 }

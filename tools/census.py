@@ -202,94 +202,222 @@ def build_lockfile(packages: list[dict], workdir: Path) -> tuple[int, dict[str, 
     return resolved, stats
 
 
-def band_stats(results: list[dict], order: list[str]) -> list[dict]:
-    """Split the corpus into download-rank bands and count scripted packages."""
+def _counts(chunk: list[dict]) -> tuple[int, int]:
+    scripted = sum(1 for r in chunk if r.get("rows"))
+    risky = sum(1 for r in chunk if r.get("risk") in ("MEDIUM", "HIGH"))
+    return scripted, risky
+
+
+def by_downloads(results: list[dict], order: list[str]) -> list[dict]:
     pos = {n: i for i, n in enumerate(order)}
-    results = sorted(results, key=lambda r: pos.get(r["name"], 10**9))
+    return sorted(results, key=lambda r: pos.get(r["name"], 10**9))
+
+
+def band_stats(ranked: list[dict]) -> list[dict]:
+    """Split the corpus into equal download-rank bands and count scripted packages."""
     out = []
-    size = max(1, len(results) // 4)
-    for start in range(0, len(results), size):
-        chunk = results[start : start + size]
+    size = max(1, len(ranked) // 4)
+    for start in range(0, len(ranked), size):
+        chunk = ranked[start : start + size]
         if not chunk:
             continue
-        scripted = [r for r in chunk if r.get("rows")]
-        risky = [r for r in chunk if r.get("risk") in ("MEDIUM", "HIGH")]
+        scripted, risky = _counts(chunk)
         out.append({
             "band": f"{start + 1}-{start + len(chunk)}",
             "packages": len(chunk),
-            "scripted": len(scripted),
-            "risky": len(risky),
-            "pct_scripted": round(100 * len(scripted) / len(chunk), 1),
+            "scripted": scripted,
+            "risky": risky,
+            "pct_scripted": round(100 * scripted / len(chunk), 1),
+        })
+    return out
+
+
+def cut_stats(ranked: list[dict], downloads: dict[str, int]) -> list[dict]:
+    """The same counts over cumulative top-N cuts.
+
+    Bands answer "is the middle of the registry worse than the top". Cuts answer
+    "does sticking to popular packages help me", which is the question people
+    actually ask, and answering it is the point of the census.
+    """
+    out = []
+    for n in (100, 500, 1000, 2000, len(ranked)):
+        chunk = ranked[: min(n, len(ranked))]
+        if not chunk or (out and out[-1]["packages"] == len(chunk)):
+            continue
+        scripted, risky = _counts(chunk)
+        out.append({
+            "cut": f"Top {n:,}" if n < len(ranked) else "Full sample",
+            "packages": len(chunk),
+            "floor": min(downloads.get(r["name"], 0) for r in chunk),
+            "scripted": scripted,
+            "risky": risky,
+            "pct_scripted": round(100 * scripted / len(chunk), 2),
         })
     return out
 
 
 def summarise(results: list[dict], downloads: dict[str, int]) -> dict:
     order = ["SAFE", "LOW", "MEDIUM", "HIGH"]
-    bands = band_stats(results, [n for n, _ in sorted(downloads.items(), key=lambda kv: -kv[1])])
+    ranked = by_downloads(results, [n for n, _ in sorted(downloads.items(), key=lambda kv: -kv[1])])
     risk_counts = {k: 0 for k in order}
     signals: dict[str, int] = {}
     scripted = []
-    for r in results:
+    for r in ranked:
         risk = r.get("risk", "SAFE")
         risk_counts[risk] = risk_counts.get(risk, 0) + 1
         rows = r.get("rows") or []
-        if rows:
-            scripted.append(r)
+        if not rows:
+            continue
+        scripted.append({
+            "name": r["name"],
+            "version": r.get("version"),
+            "risk": risk,
+            "downloads": downloads.get(r["name"], 0),
+            "rows": [
+                {
+                    "script": row.get("script"),
+                    "command": row.get("command"),
+                    "risk": row.get("risk"),
+                    "signals": sorted({s.split(":", 1)[0].strip() for s in row.get("signals", [])}),
+                }
+                for row in rows
+            ],
+        })
         for row in rows:
             for s in row.get("signals", []):
                 # Signals carry the concrete binary/path; keep the class only.
                 key = s.split(":", 1)[0].strip()
                 signals[key] = signals.get(key, 0) + 1
 
-    total = len(results)
-    risky = [r for r in results if r.get("risk") in ("MEDIUM", "HIGH")]
-    risky.sort(key=lambda r: -downloads.get(r["name"], 0))
     return {
-        "total": total,
-        "bands": bands,
+        "total": len(results),
+        "scoped": sum(1 for r in results if r["name"].startswith("@")),
+        "bands": band_stats(ranked),
+        "cuts": cut_stats(ranked, downloads),
         "with_install_scripts": len(scripted),
         "risk": risk_counts,
         "signal_classes": dict(sorted(signals.items(), key=lambda kv: -kv[1])[:12]),
-        "top_risky": [
-            {
-                "name": r["name"],
-                "version": r.get("version"),
-                "risk": r.get("risk"),
-                "downloads": downloads.get(r["name"], 0),
-                "scripts": [row.get("script") for row in (r.get("rows") or [])],
-            }
-            for r in risky[:20]
-        ],
+        # Every package that runs something, not a top-N slice. It is 28 rows out
+        # of thousands, and a truncated approval queue is a misleading one.
+        "scripted": scripted,
     }
 
 
-def write_headline(summary: dict, downloads: dict[str, int]) -> None:
-    """Refresh the marker block in the README so the top line never goes stale."""
+def human(n: float) -> str:
+    """Download counts the way the README and the site both say them."""
+    if n >= 1e6:
+        return f"{n / 1e6:.1f}M"
+    if n >= 1e3:
+        return f"{n / 1e3:.1f}K"
+    return str(int(n))
+
+
+def _block(text: str, name: str, body: str) -> str:
+    pattern = re.compile(rf"<!-- auto:{name} -->.*?<!-- /auto:{name} -->", re.DOTALL)
+    if not pattern.search(text):
+        return text
+    return pattern.sub(f"<!-- auto:{name} -->\n{body}\n<!-- /auto:{name} -->", text)
+
+
+def _cuts_table(summary: dict) -> str:
+    lines = [
+        "| Sample | Download floor | Run an install script | HIGH risk |",
+        "|---|---|---|---|",
+    ]
+    for c in summary.get("cuts", []):
+        label = c["cut"] if c["cut"].startswith("Top") else f"{c['cut']} ({c['packages']:,})"
+        lines.append(
+            f"| {label} | {human(c['floor'])}/week "
+            f"| {c['scripted']} ({c['pct_scripted']:.2f}%) | {c['risky']} |"
+        )
+    return "\n".join(lines)
+
+
+def _queue_table(summary: dict) -> str:
+    lines = [
+        "| Package | Downloads/week | Script | Command | Risk | Signals |",
+        "|---|---|---|---|---|---|",
+    ]
+    for pkg in summary.get("scripted", []):
+        for row in pkg["rows"]:
+            command = (row.get("command") or "").replace("|", "\\|")
+            if len(command) > 60:
+                command = command[:59] + "\u2026"
+            signals = ", ".join(row["signals"]) or "none"
+            lines.append(
+                f"| `{pkg['name']}` | {human(pkg['downloads'])} | {row['script']} "
+                f"| `{command}` | {row['risk']} | {signals} |"
+            )
+    return "\n".join(lines)
+
+
+def _mix_line(summary: dict) -> str:
+    mix: dict[str, int] = {}
+    for pkg in summary.get("scripted", []):
+        mix[pkg["risk"]] = mix.get(pkg["risk"], 0) + 1
+    parts = [f"{mix[k]} {k}" for k in ("HIGH", "MEDIUM", "LOW", "SAFE") if mix.get(k)]
+    classes = ", ".join(f"`{k}` {v}" for k, v in summary.get("signal_classes", {}).items())
+    return (
+        f"Scripted does not mean risky. Of the {summary['with_install_scripts']} "
+        f"scripted packages, {', '.join(parts)}. Across the whole sample the "
+        f"signal classes break down as: {classes}."
+    )
+
+
+def _sample_line(summary: dict) -> str:
+    floor = summary["cuts"][-1]["floor"] if summary.get("cuts") else 0
+    return (
+        f'- **Not "the top {summary["total"]:,} packages on npm."** npm has no '
+        "top-N endpoint. This is a keyword-nominated sample ranked by real "
+        f"downloads, and the tail runs down to {human(floor)} downloads a week. "
+        "Slices are reported with their download floor so you can see what each "
+        "one covers."
+    )
+
+
+def _scoped_line(summary: dict) -> str:
+    return (
+        f"- **Not exhaustive on scoped packages.** {summary['scoped']:,} of "
+        f"{summary['total']:,} are scoped. The nomination sweep under-samples "
+        "them relative to their real share of the registry."
+    )
+
+
+def write_readme(summary: dict) -> None:
+    """Refresh every marker block, so no figure in the README is hand-maintained.
+
+    These tables were typed once and were several runs out of date before anyone
+    noticed, which is the failure the markers exist to prevent.
+    """
     readme = ROOT / "README.md"
     if not readme.exists():
         return
-    text = readme.read_text(encoding="utf-8")
     high = summary["risk"].get("HIGH", 0)
-    biggest = summary["top_risky"][0] if summary["top_risky"] else None
-    line = (
+    biggest = next(
+        (p for p in summary.get("scripted", []) if p["risk"] in ("MEDIUM", "HIGH")), None
+    )
+    headline = (
         f"> **{summary['with_install_scripts']} of {summary['total']:,}** packages "
         f"in the current sample run an install script. **{high}** score HIGH."
     )
     if biggest:
-        line += (
+        headline += (
             f" The most-installed one is `{biggest['name']}` at "
-            f"{biggest['downloads'] / 1e6:.1f}M downloads a week."
+            f"{human(biggest['downloads'])} downloads a week."
         )
-    line += f"\n>\n> <sub>Rebuilt {summary['generated_utc'][:10]}.</sub>"
-    block = re.compile(
-        r"<!-- auto:headline -->.*?<!-- /auto:headline -->", re.DOTALL
-    )
-    if block.search(text):
-        readme.write_text(
-            block.sub(f"<!-- auto:headline -->\n{line}\n<!-- /auto:headline -->", text),
-            encoding="utf-8",
-        )
+    headline += f"\n>\n> <sub>Rebuilt {summary['generated_utc'][:10]}.</sub>"
+
+    text = readme.read_text(encoding="utf-8")
+    for name, body in (
+        ("headline", headline),
+        ("cuts", _cuts_table(summary)),
+        ("queue", _queue_table(summary)),
+        ("mix", _mix_line(summary)),
+        ("sample", _sample_line(summary)),
+        ("scoped", _scoped_line(summary)),
+    ):
+        text = _block(text, name, body)
+    readme.write_text(text, encoding="utf-8")
 
 
 def main() -> int:
@@ -345,8 +473,8 @@ def main() -> int:
     summary["audit_seconds"] = round(elapsed, 1)
 
     (DATA / "census.json").write_text(json.dumps(summary, indent=1), encoding="utf-8")
-    write_headline(summary, downloads)
-    print(json.dumps({k: v for k, v in summary.items() if k != "top_risky"}, indent=1))
+    write_readme(summary)
+    print(json.dumps({k: v for k, v in summary.items() if k != "scripted"}, indent=1))
     print(f"audit took {elapsed:.0f}s for {summary['total']} packages")
     return 0
 
