@@ -88,13 +88,14 @@
   "HIGH": 17
  },
  "signal_classes": {
-  "exec": 37,
-  "env": 12,
-  "net": 9,
-  "fs": 8,
+  "exec": 39,
+  "env": 13,
+  "fs": 12,
+  "net": 10,
   "bin": 4,
   "gyp": 4,
-  "obf": 2
+  "obf": 2,
+  "exec-local": 2
  },
  "scripted": [
   {
@@ -354,7 +355,10 @@
      "risk": "HIGH",
      "signals": [
       "env",
-      "exec"
+      "exec",
+      "exec-local",
+      "fs",
+      "net"
      ]
     }
    ]
@@ -551,21 +555,23 @@
      "command": "node ./addGitHook",
      "risk": "HIGH",
      "signals": [
-      "exec"
+      "env",
+      "exec",
+      "fs"
      ]
     }
    ]
   }
  ],
- "generated_utc": "2026-09-22T05:02:37Z",
+ "generated_utc": "2026-09-23T05:02:41Z",
  "corpus_candidates": 4939,
  "requested": 3238,
  "resolved": 3238,
  "coverage": 1.0,
  "resolution": {
-  "refreshed": 43,
-  "from_cache": 3195,
+  "refreshed": 74,
+  "from_cache": 3164,
   "expired": 0
  },
- "audit_seconds": 39.0
+ "audit_seconds": 50.8
 }

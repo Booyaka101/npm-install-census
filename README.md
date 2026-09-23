@@ -7,7 +7,7 @@ npm v12 flipped install scripts off by default. You now approve them one by one 
 <!-- auto:headline -->
 > **28 of 3,238** packages in the current sample run an install script. **17** score HIGH. The most-installed one is `esbuild` at 255.5M downloads a week.
 >
-> <sub>Rebuilt 2026-09-22.</sub>
+> <sub>Rebuilt 2026-09-23.</sub>
 <!-- /auto:headline -->
 
 **[Live dashboard](https://booyaka101.github.io/npm-install-census/)** - the whole approval queue, searchable and filterable by risk.
@@ -54,7 +54,7 @@ These are the packages npm v12 will actually ask you about, ordered by weekly do
 | `stream-chat` | 496.2K | postinstall | `node -e "require('fs').existsSync('scripts/install-husky.mj…` | SAFE | none |
 | `@azure/msal-node-extensions` | 391.3K | install | `exit 0` | SAFE | none |
 | `redis-memory-server` | 297.2K | postinstall | `node ./scripts/postinstall` | LOW | env |
-| `react-native-enriched-markdown` | 214.0K | postinstall | `node postinstall.mjs` | HIGH | env, exec |
+| `react-native-enriched-markdown` | 214.0K | postinstall | `node postinstall.mjs` | HIGH | env, exec, exec-local, fs, net |
 | `classic-level` | 171.7K | install | `node-gyp-build` | HIGH | bin, env, exec |
 | `@microsoft/m365agentstoolkit-cli` | 158.2K | postinstall | `node deletePS1.js` | HIGH | exec |
 | `nodent-runtime` | 113.4K | install | `node build.js` | HIGH | fs, obf |
@@ -66,13 +66,13 @@ These are the packages npm v12 will actually ask you about, ordered by weekly do
 | `swc-plugin-import-meta-env` | 21.9K | preinstall | `npx only-allow pnpm` | HIGH | exec, net |
 | `bcrypto` | 17.3K | install | `node-gyp rebuild` | HIGH | exec, gyp |
 | `better-auth-studio` | 6.3K | postinstall | `node scripts/postinstall.js` | SAFE | none |
-| `@qooxdoo/framework` | 4.1K | preinstall | `node ./addGitHook` | HIGH | exec |
+| `@qooxdoo/framework` | 4.1K | preinstall | `node ./addGitHook` | HIGH | env, exec, fs |
 <!-- /auto:queue -->
 
 **None of this is an accusation.** Every one of these is a well-known package doing something legitimate: fetching a prebuilt binary, or building a native addon. The point is that these are the ones you are now being asked to approve, and "what does it actually do" is a question you have to answer per package. That is what the capability signals are for.
 
 <!-- auto:mix -->
-Scripted does not mean risky. Of the 28 scripted packages, 17 HIGH, 4 LOW, 7 SAFE. Across the whole sample the signal classes break down as: `exec` 37, `env` 12, `net` 9, `fs` 8, `bin` 4, `gyp` 4, `obf` 2.
+Scripted does not mean risky. Of the 28 scripted packages, 17 HIGH, 4 LOW, 7 SAFE. Across the whole sample the signal classes break down as: `exec` 39, `env` 13, `fs` 12, `net` 10, `bin` 4, `gyp` 4, `obf` 2, `exec-local` 2.
 <!-- /auto:mix -->
 
 Three worth singling out, further down the list:
