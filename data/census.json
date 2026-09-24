@@ -20,7 +20,7 @@
    "band": "1619-2427",
    "packages": 809,
    "scripted": 9,
-   "risky": 6,
+   "risky": 7,
    "pct_scripted": 1.1
   },
   {
@@ -68,7 +68,7 @@
    "packages": 2000,
    "floor": 138985,
    "scripted": 18,
-   "risky": 11,
+   "risky": 12,
    "pct_scripted": 0.9
   },
   {
@@ -76,22 +76,22 @@
    "packages": 3238,
    "floor": 4,
    "scripted": 28,
-   "risky": 17,
+   "risky": 18,
    "pct_scripted": 0.86
   }
  ],
  "with_install_scripts": 28,
  "risk": {
   "SAFE": 3217,
-  "LOW": 4,
+  "LOW": 3,
   "MEDIUM": 0,
-  "HIGH": 17
+  "HIGH": 18
  },
  "signal_classes": {
-  "exec": 39,
+  "exec": 41,
   "env": 13,
-  "fs": 12,
-  "net": 10,
+  "fs": 13,
+  "net": 12,
   "bin": 4,
   "gyp": 4,
   "obf": 2,
@@ -152,7 +152,7 @@
   },
   {
    "name": "workerd",
-   "version": "1.20260916.1",
+   "version": "1.20260924.1",
    "risk": "HIGH",
    "downloads": 18988497,
    "rows": [
@@ -205,7 +205,7 @@
   },
   {
    "name": "mongodb-memory-server",
-   "version": "11.2.0",
+   "version": "11.3.0",
    "risk": "SAFE",
    "downloads": 2084289,
    "rows": [
@@ -330,15 +330,18 @@
   {
    "name": "redis-memory-server",
    "version": "0.17.1",
-   "risk": "LOW",
+   "risk": "HIGH",
    "downloads": 297209,
    "rows": [
     {
      "script": "postinstall",
      "command": "node ./scripts/postinstall",
-     "risk": "LOW",
+     "risk": "HIGH",
      "signals": [
-      "env"
+      "env",
+      "exec",
+      "fs",
+      "net"
      ]
     }
    ]
@@ -563,15 +566,15 @@
    ]
   }
  ],
- "generated_utc": "2026-09-23T05:02:41Z",
+ "generated_utc": "2026-09-24T05:03:06Z",
  "corpus_candidates": 4939,
  "requested": 3238,
  "resolved": 3238,
  "coverage": 1.0,
  "resolution": {
-  "refreshed": 74,
-  "from_cache": 3164,
+  "refreshed": 700,
+  "from_cache": 2538,
   "expired": 0
  },
- "audit_seconds": 50.8
+ "audit_seconds": 51.3
 }

@@ -5,9 +5,9 @@
 npm v12 flipped install scripts off by default. You now approve them one by one via `allowScripts`. Nobody had published what that approval queue actually looks like across the ecosystem, so this measures it, daily.
 
 <!-- auto:headline -->
-> **28 of 3,238** packages in the current sample run an install script. **17** score HIGH. The most-installed one is `esbuild` at 255.5M downloads a week.
+> **28 of 3,238** packages in the current sample run an install script. **18** score HIGH. The most-installed one is `esbuild` at 255.5M downloads a week.
 >
-> <sub>Rebuilt 2026-09-23.</sub>
+> <sub>Rebuilt 2026-09-24.</sub>
 <!-- /auto:headline -->
 
 **[Live dashboard](https://booyaka101.github.io/npm-install-census/)** - the whole approval queue, searchable and filterable by risk.
@@ -24,8 +24,8 @@ Install scripts are rare, and they are roughly as rare at the top of the ecosyst
 | Top 100 | 101.9M/week | 1 (1.00%) | 1 |
 | Top 500 | 11.3M/week | 4 (0.80%) | 3 |
 | Top 1,000 | 1.9M/week | 7 (0.70%) | 4 |
-| Top 2,000 | 139.0K/week | 18 (0.90%) | 11 |
-| Full sample (3,238) | 4/week | 28 (0.86%) | 17 |
+| Top 2,000 | 139.0K/week | 18 (0.90%) | 12 |
+| Full sample (3,238) | 4/week | 28 (0.86%) | 18 |
 <!-- /auto:cuts -->
 
 That flatness is the result. There is no long tail where install scripts suddenly proliferate, and no clean gradient by popularity. It sits near 1% wherever you cut it.
@@ -53,7 +53,7 @@ These are the packages npm v12 will actually ask you about, ordered by weekly do
 | `tree-sitter-typescript` | 750.2K | install | `node-gyp-build` | HIGH | bin, env, exec |
 | `stream-chat` | 496.2K | postinstall | `node -e "require('fs').existsSync('scripts/install-husky.mj…` | SAFE | none |
 | `@azure/msal-node-extensions` | 391.3K | install | `exit 0` | SAFE | none |
-| `redis-memory-server` | 297.2K | postinstall | `node ./scripts/postinstall` | LOW | env |
+| `redis-memory-server` | 297.2K | postinstall | `node ./scripts/postinstall` | HIGH | env, exec, fs, net |
 | `react-native-enriched-markdown` | 214.0K | postinstall | `node postinstall.mjs` | HIGH | env, exec, exec-local, fs, net |
 | `classic-level` | 171.7K | install | `node-gyp-build` | HIGH | bin, env, exec |
 | `@microsoft/m365agentstoolkit-cli` | 158.2K | postinstall | `node deletePS1.js` | HIGH | exec |
@@ -72,7 +72,7 @@ These are the packages npm v12 will actually ask you about, ordered by weekly do
 **None of this is an accusation.** Every one of these is a well-known package doing something legitimate: fetching a prebuilt binary, or building a native addon. The point is that these are the ones you are now being asked to approve, and "what does it actually do" is a question you have to answer per package. That is what the capability signals are for.
 
 <!-- auto:mix -->
-Scripted does not mean risky. Of the 28 scripted packages, 17 HIGH, 4 LOW, 7 SAFE. Across the whole sample the signal classes break down as: `exec` 39, `env` 13, `fs` 12, `net` 10, `bin` 4, `gyp` 4, `obf` 2, `exec-local` 2.
+Scripted does not mean risky. Of the 28 scripted packages, 18 HIGH, 3 LOW, 7 SAFE. Across the whole sample the signal classes break down as: `exec` 41, `env` 13, `fs` 13, `net` 12, `bin` 4, `gyp` 4, `obf` 2, `exec-local` 2.
 <!-- /auto:mix -->
 
 Three worth singling out, further down the list:
