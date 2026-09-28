@@ -566,15 +566,15 @@
    ]
   }
  ],
- "generated_utc": "2026-09-27T05:04:06Z",
+ "generated_utc": "2026-09-28T05:03:06Z",
  "corpus_candidates": 4994,
  "requested": 3293,
  "resolved": 3293,
  "coverage": 1.0,
  "resolution": {
-  "refreshed": 700,
-  "from_cache": 2593,
+  "refreshed": 131,
+  "from_cache": 3162,
   "expired": 0
  },
- "audit_seconds": 55.8
+ "audit_seconds": 47.7
 }
