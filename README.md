@@ -7,7 +7,7 @@ npm v12 flipped install scripts off by default. You now approve them one by one 
 <!-- auto:headline -->
 > **28 of 3,293** packages in the current sample run an install script. **18** score HIGH. The most-installed one is `esbuild` at 255.5M downloads a week.
 >
-> <sub>Rebuilt 2026-10-01.</sub>
+> <sub>Rebuilt 2026-10-02.</sub>
 <!-- /auto:headline -->
 
 **[Live dashboard](https://booyaka101.github.io/npm-install-census/)** - the whole approval queue, searchable and filterable by risk.
@@ -72,7 +72,7 @@ These are the packages npm v12 will actually ask you about, ordered by weekly do
 **None of this is an accusation.** Every one of these is a well-known package doing something legitimate: fetching a prebuilt binary, or building a native addon. The point is that these are the ones you are now being asked to approve, and "what does it actually do" is a question you have to answer per package. That is what the capability signals are for.
 
 <!-- auto:mix -->
-Scripted does not mean risky. Of the 28 scripted packages, 18 HIGH, 3 LOW, 7 SAFE. Across the whole sample the signal classes break down as: `exec` 41, `env` 13, `fs` 13, `net` 12, `bin` 4, `gyp` 4, `obf` 2, `exec-local` 2.
+Scripted does not mean risky. Of the 28 scripted packages, 18 HIGH, 3 LOW, 7 SAFE. Across the whole sample the signal classes break down as: `exec` 42, `env` 13, `fs` 13, `net` 12, `bin` 4, `gyp` 4, `obf` 2, `exec-local` 2.
 <!-- /auto:mix -->
 
 Three worth singling out, further down the list:

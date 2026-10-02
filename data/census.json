@@ -88,7 +88,7 @@
   "HIGH": 18
  },
  "signal_classes": {
-  "exec": 41,
+  "exec": 42,
   "env": 13,
   "fs": 13,
   "net": 12,
@@ -152,7 +152,7 @@
   },
   {
    "name": "workerd",
-   "version": "1.20260924.1",
+   "version": "1.20261002.1",
    "risk": "HIGH",
    "downloads": 18988497,
    "rows": [
@@ -348,7 +348,7 @@
   },
   {
    "name": "react-native-enriched-markdown",
-   "version": "1.0.2",
+   "version": "1.1.0",
    "risk": "HIGH",
    "downloads": 214015,
    "rows": [
@@ -566,15 +566,15 @@
    ]
   }
  ],
- "generated_utc": "2026-10-01T05:02:48Z",
+ "generated_utc": "2026-10-02T05:03:12Z",
  "corpus_candidates": 4994,
  "requested": 3293,
  "resolved": 3293,
  "coverage": 1.0,
  "resolution": {
-  "refreshed": 262,
-  "from_cache": 3031,
+  "refreshed": 642,
+  "from_cache": 2651,
   "expired": 0
  },
- "audit_seconds": 47.9
+ "audit_seconds": 63.4
 }
