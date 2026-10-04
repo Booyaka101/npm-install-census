@@ -1,6 +1,6 @@
 {
- "generated": "2026-09-27T05:02:36Z",
- "candidates": 4994,
+ "generated": "2026-10-04T06:46:32Z",
+ "candidates": 5058,
  "method": "npm search keyword sweep nominates; npm downloads API ranks by real weekly downloads",
  "packages": [
   {
@@ -1292,6 +1292,10 @@
    "downloads": 26381193
   },
   {
+   "name": "@tanstack/react-table",
+   "downloads": 26046809
+  },
+  {
    "name": "@opentelemetry/instrumentation-http",
    "downloads": 25982793
   },
@@ -1410,6 +1414,10 @@
   {
    "name": "http-signature",
    "downloads": 22450028
+  },
+  {
+   "name": "chainsaw",
+   "downloads": 22391570
   },
   {
    "name": "style-loader",
@@ -1810,6 +1818,10 @@
   {
    "name": "metro-cache",
    "downloads": 13490541
+  },
+  {
+   "name": "@graphql-tools/delegate",
+   "downloads": 13476138
   },
   {
    "name": "metro-babel-transformer",
@@ -2504,6 +2516,10 @@
    "downloads": 7413646
   },
   {
+   "name": "@react-pdf/types",
+   "downloads": 7412645
+  },
+  {
    "name": "onnxruntime-common",
    "downloads": 7350641
   },
@@ -2696,6 +2712,10 @@
    "downloads": 6153157
   },
   {
+   "name": "@yuku-toolchain/types",
+   "downloads": 6144289
+  },
+  {
    "name": "hermes-compiler",
    "downloads": 6133697
   },
@@ -2714,6 +2734,10 @@
   {
    "name": "electron",
    "downloads": 5963206
+  },
+  {
+   "name": "@react-native-masked-view/masked-view",
+   "downloads": 5934012
   },
   {
    "name": "react-native-svg",
@@ -2854,6 +2878,10 @@
   {
    "name": "relay-runtime",
    "downloads": 5108820
+  },
+  {
+   "name": "lodash._reinterpolate",
+   "downloads": 5086767
   },
   {
    "name": "is-stream-ended",
@@ -3832,6 +3860,10 @@
    "downloads": 2301631
   },
   {
+   "name": "@astrojs/react",
+   "downloads": 2292986
+  },
+  {
    "name": "jss-plugin-nested",
    "downloads": 2291735
   },
@@ -4088,6 +4120,10 @@
    "downloads": 1813979
   },
   {
+   "name": "liquid-json",
+   "downloads": 1810357
+  },
+  {
    "name": "event-source-polyfill",
    "downloads": 1803066
   },
@@ -4126,6 +4162,10 @@
   {
    "name": "node-readable-to-web-readable-stream",
    "downloads": 1770186
+  },
+  {
+   "name": "ftp-response-parser",
+   "downloads": 1770124
   },
   {
    "name": "groq",
@@ -5740,6 +5780,10 @@
    "downloads": 590201
   },
   {
+   "name": "@pandacss/types",
+   "downloads": 589587
+  },
+  {
    "name": "@daytona/toolbox-api-client",
    "downloads": 588519
   },
@@ -5960,6 +6004,10 @@
    "downloads": 521253
   },
   {
+   "name": "@serialport/stream",
+   "downloads": 515163
+  },
+  {
    "name": "markdown-it-sup",
    "downloads": 514011
   },
@@ -6018,6 +6066,10 @@
   {
    "name": "caf",
    "downloads": 497620
+  },
+  {
+   "name": "react-google-charts",
+   "downloads": 496558
   },
   {
    "name": "monaco-graphql",
@@ -6524,6 +6576,10 @@
    "downloads": 379166
   },
   {
+   "name": "fast-formula-parser",
+   "downloads": 378858
+  },
+  {
    "name": "btree-lru-cache",
    "downloads": 378376
   },
@@ -6618,6 +6674,10 @@
   {
    "name": "@textlint/textlint-plugin-markdown",
    "downloads": 352527
+  },
+  {
+   "name": "@scalar/openapi-to-markdown",
+   "downloads": 352390
   },
   {
    "name": "react-native-config",
@@ -7156,6 +7216,10 @@
    "downloads": 255203
   },
   {
+   "name": "tree-sitter-css",
+   "downloads": 254675
+  },
+  {
    "name": "markdown-it-terminal",
    "downloads": 254085
   },
@@ -7402,6 +7466,10 @@
   {
    "name": "world-countries",
    "downloads": 217298
+  },
+  {
+   "name": "typescript-template-language-service-decorator",
+   "downloads": 216662
   },
   {
    "name": "remark-preset-lint-recommended",
@@ -7816,6 +7884,10 @@
    "downloads": 167845
   },
   {
+   "name": "react-image-magnify",
+   "downloads": 167471
+  },
+  {
    "name": "highcharts-angular",
    "downloads": 166427
   },
@@ -7944,6 +8016,10 @@
    "downloads": 150727
   },
   {
+   "name": "@types/react-image-magnify",
+   "downloads": 150556
+  },
+  {
    "name": "remark-lint-no-emphasis-as-heading",
    "downloads": 150481
   },
@@ -7998,6 +8074,10 @@
   {
    "name": "@web/test-runner-mocha",
    "downloads": 147405
+  },
+  {
+   "name": "@mollie/api-client",
+   "downloads": 147014
   },
   {
    "name": "aws-appsync-auth-link",
@@ -8692,6 +8772,10 @@
    "downloads": 102876
   },
   {
+   "name": "graphql-zeus",
+   "downloads": 102786
+  },
+  {
    "name": "element-closest-polyfill",
    "downloads": 102668
   },
@@ -8734,6 +8818,10 @@
   {
    "name": "is-actual-promise",
    "downloads": 100509
+  },
+  {
+   "name": "@vitejs/devtools-vite",
+   "downloads": 100435
   },
   {
    "name": "vow-queue",
@@ -8794,6 +8882,10 @@
   {
    "name": "@netlify/framework-info",
    "downloads": 97010
+  },
+  {
+   "name": "@lightdash/cli",
+   "downloads": 96801
   },
   {
    "name": "element-internals-polyfill",
@@ -8926,6 +9018,10 @@
   {
    "name": "vitest-websocket-mock",
    "downloads": 89014
+  },
+  {
+   "name": "vite-plugin-enter-dev",
+   "downloads": 88471
   },
   {
    "name": "@angular/aria",
@@ -9088,6 +9184,10 @@
    "downloads": 80647
   },
   {
+   "name": "@redocly/api-docs",
+   "downloads": 80532
+  },
+  {
    "name": "@aws-amplify/graphql-predictions-transformer",
    "downloads": 80387
   },
@@ -9140,6 +9240,10 @@
    "downloads": 78480
   },
   {
+   "name": "urdf-loader",
+   "downloads": 78394
+  },
+  {
    "name": "esbuild-plugin-solid",
    "downloads": 78022
   },
@@ -9172,6 +9276,10 @@
    "downloads": 75856
   },
   {
+   "name": "fathom-typescript",
+   "downloads": 75815
+  },
+  {
    "name": "react-csv-reader",
    "downloads": 75421
   },
@@ -9182,6 +9290,10 @@
   {
    "name": "apollo-link-ws",
    "downloads": 74370
+  },
+  {
+   "name": "async.util.isarraylike",
+   "downloads": 74299
   },
   {
    "name": "circom_runtime",
@@ -9632,6 +9744,10 @@
    "downloads": 57843
   },
   {
+   "name": "@stylexswc/rs-compiler-linux-arm64-gnu",
+   "downloads": 57265
+  },
+  {
    "name": "esbuild-plugin-stimulus",
    "downloads": 56984
   },
@@ -9692,6 +9808,10 @@
    "downloads": 55282
   },
   {
+   "name": "@flatfile/angular-sdk",
+   "downloads": 55175
+  },
+  {
    "name": "@types/d3-queue",
    "downloads": 55091
   },
@@ -9744,6 +9864,10 @@
    "downloads": 53348
   },
   {
+   "name": "@earendil-works/pi-server",
+   "downloads": 53243
+  },
+  {
    "name": "stream-mock",
    "downloads": 53075
   },
@@ -9758,6 +9882,10 @@
   {
    "name": "cancelable-promise",
    "downloads": 52916
+  },
+  {
+   "name": "@fluentui-react-native/memo-cache",
+   "downloads": 52748
   },
   {
    "name": "async-retry-ng",
@@ -9920,6 +10048,14 @@
    "downloads": 48015
   },
   {
+   "name": "@speclynx/apidom-parser-adapter-asyncapi-yaml-2",
+   "downloads": 47944
+  },
+  {
+   "name": "@speclynx/apidom-parser-adapter-overlay-yaml-1",
+   "downloads": 47939
+  },
+  {
    "name": "swc-walk",
    "downloads": 47791
   },
@@ -9962,6 +10098,10 @@
   {
    "name": "@khanacademy/simple-markdown",
    "downloads": 46401
+  },
+  {
+   "name": "@storybook/experimental-nextjs-vite",
+   "downloads": 46369
   },
   {
    "name": "simple-mime",
@@ -10096,6 +10236,10 @@
    "downloads": 42439
   },
   {
+   "name": "opentelemetry-node-bundler-plugin-utils",
+   "downloads": 42343
+  },
+  {
    "name": "@markuplint/config-presets",
    "downloads": 42319
   },
@@ -10190,6 +10334,10 @@
   {
    "name": "csv-streamify",
    "downloads": 39539
+  },
+  {
+   "name": "csv-sniffer",
+   "downloads": 39521
   },
   {
    "name": "async.ensureasync",
@@ -10668,6 +10816,10 @@
    "downloads": 27760
   },
   {
+   "name": "@iobroker/db-states-jsonl",
+   "downloads": 27758
+  },
+  {
    "name": "@soda-gql/runtime",
    "downloads": 27709
   },
@@ -10786,6 +10938,14 @@
   {
    "name": "test-data-bot",
    "downloads": 24828
+  },
+  {
+   "name": "@mobilewright/test",
+   "downloads": 24669
+  },
+  {
+   "name": "@fedify/uri-template",
+   "downloads": 24527
   },
   {
    "name": "template-error",
@@ -11244,12 +11404,20 @@
    "downloads": 16911
   },
   {
+   "name": "@discord/intl-message-database-linux-x64-gnu",
+   "downloads": 16824
+  },
+  {
    "name": "bare-logger",
    "downloads": 16642
   },
   {
    "name": "timeout-as-promise",
    "downloads": 16377
+  },
+  {
+   "name": "@types/node-red__util",
+   "downloads": 16190
   },
   {
    "name": "beaver-logger",
@@ -11274,6 +11442,10 @@
   {
    "name": "events-to-async",
    "downloads": 15692
+  },
+  {
+   "name": "vuejs3-logger",
+   "downloads": 15650
   },
   {
    "name": "@napi-rs/image-darwin-arm64",
@@ -11372,6 +11544,10 @@
    "downloads": 14160
   },
   {
+   "name": "@sapphire/framework",
+   "downloads": 14148
+  },
+  {
    "name": "eslint-plugin-no-async-foreach",
    "downloads": 14103
   },
@@ -11382,6 +11558,10 @@
   {
    "name": "next-superjson-plugin",
    "downloads": 14017
+  },
+  {
+   "name": "@vouchington/phone-validation",
+   "downloads": 13860
   },
   {
    "name": "x-address-codec",
@@ -11408,12 +11588,20 @@
    "downloads": 13496
   },
   {
+   "name": "vp-runtime-helper",
+   "downloads": 13480
+  },
+  {
    "name": "server",
    "downloads": 13446
   },
   {
    "name": "@astryxdesign/build",
    "downloads": 13386
+  },
+  {
+   "name": "@inversifyjs/logger",
+   "downloads": 13147
   },
   {
    "name": "tdesign-vue",
@@ -11660,6 +11848,10 @@
    "downloads": 10468
   },
   {
+   "name": "@cdklabs/deploy-time-build",
+   "downloads": 10437
+  },
+  {
    "name": "@harnessio/react-template-service-client",
    "downloads": 10429
   },
@@ -11704,12 +11896,20 @@
    "downloads": 10143
   },
   {
+   "name": "@tursodatabase/database-linux-arm64-gnu",
+   "downloads": 10076
+  },
+  {
    "name": "merge-yaml",
    "downloads": 10066
   },
   {
    "name": "promise-writable",
    "downloads": 10017
+  },
+  {
+   "name": "teamplay",
+   "downloads": 9978
   },
   {
    "name": "promise-duplex",
@@ -11746,6 +11946,10 @@
   {
    "name": "@agentuity/queue",
    "downloads": 9556
+  },
+  {
+   "name": "@mitodl/ckeditor-custom-build",
+   "downloads": 9533
   },
   {
    "name": "date-manip",
@@ -11806,6 +12010,10 @@
   {
    "name": "@cubejs-backend/bigquery-driver",
    "downloads": 8974
+  },
+  {
+   "name": "@fresha/fresha-redux-orm",
+   "downloads": 8971
   },
   {
    "name": "priority-queue-typescript",
@@ -11920,6 +12128,10 @@
    "downloads": 8199
   },
   {
+   "name": "@swc-next/parser-binding-linux-x64-gnu",
+   "downloads": 8161
+  },
+  {
    "name": "@0xsequence/auth",
    "downloads": 8160
   },
@@ -11994,6 +12206,10 @@
   {
    "name": "@fastify/response-validation",
    "downloads": 7288
+  },
+  {
+   "name": "@tutorialkit/runtime",
+   "downloads": 7198
   },
   {
    "name": "drizzle-arktype",
@@ -12352,6 +12568,10 @@
    "downloads": 4340
   },
   {
+   "name": "next-swc-wasm",
+   "downloads": 4306
+  },
+  {
    "name": "@roots/bud-swc",
    "downloads": 4293
   },
@@ -12548,6 +12768,10 @@
    "downloads": 3259
   },
   {
+   "name": "@antelopejs/interface-database",
+   "downloads": 3258
+  },
+  {
    "name": "@common.js/yocto-queue",
    "downloads": 3248
   },
@@ -12562,6 +12786,10 @@
   {
    "name": "@dojo/framework",
    "downloads": 3208
+  },
+  {
+   "name": "@types/host-validation",
+   "downloads": 3150
   },
   {
    "name": "@vouchington/csv",
@@ -12672,6 +12900,10 @@
    "downloads": 2333
   },
   {
+   "name": "linkgress-orm",
+   "downloads": 2294
+  },
+  {
    "name": "@vuepress/bundler-webpack",
    "downloads": 2233
   },
@@ -12780,8 +13012,16 @@
    "downloads": 1875
   },
   {
+   "name": "@xemahq/database-driver-postgres",
+   "downloads": 1842
+  },
+  {
    "name": "@types/rsocket-websocket-server",
    "downloads": 1830
+  },
+  {
+   "name": "@t4h.framework/orm",
+   "downloads": 1819
   },
   {
    "name": "lime-transport-websocket",
@@ -12860,6 +13100,10 @@
    "downloads": 1414
   },
   {
+   "name": "rpc-websocket-client",
+   "downloads": 1398
+  },
+  {
    "name": "csv-batch",
    "downloads": 1393
   },
@@ -12890,6 +13134,10 @@
   {
    "name": "fable-compiler",
    "downloads": 1295
+  },
+  {
+   "name": "jb-validation",
+   "downloads": 1267
   },
   {
    "name": "angular-validation",
@@ -12996,6 +13244,10 @@
    "downloads": 894
   },
   {
+   "name": "@owlmeans/redis-queue",
+   "downloads": 891
+  },
+  {
    "name": "@mdi/util",
    "downloads": 875
   },
@@ -13066,6 +13318,10 @@
   {
    "name": "ts-datastore-orm",
    "downloads": 508
+  },
+  {
+   "name": "nextjs-websocket",
+   "downloads": 497
   },
   {
    "name": "swc-webpack-plugin",

@@ -1,37 +1,37 @@
 {
- "total": 3293,
- "scoped": 769,
+ "total": 3357,
+ "scoped": 809,
  "bands": [
   {
-   "band": "1-823",
-   "packages": 823,
+   "band": "1-839",
+   "packages": 839,
    "scripted": 6,
    "risky": 4,
    "pct_scripted": 0.7
   },
   {
-   "band": "824-1646",
-   "packages": 823,
+   "band": "840-1678",
+   "packages": 839,
    "scripted": 8,
    "risky": 4,
    "pct_scripted": 1.0
   },
   {
-   "band": "1647-2469",
-   "packages": 823,
-   "scripted": 9,
-   "risky": 7,
-   "pct_scripted": 1.1
+   "band": "1679-2517",
+   "packages": 839,
+   "scripted": 11,
+   "risky": 9,
+   "pct_scripted": 1.3
   },
   {
-   "band": "2470-3292",
-   "packages": 823,
+   "band": "2518-3356",
+   "packages": 839,
    "scripted": 5,
    "risky": 3,
    "pct_scripted": 0.6
   },
   {
-   "band": "3293-3293",
+   "band": "3357-3357",
    "packages": 1,
    "scripted": 0,
    "risky": 0,
@@ -50,7 +50,7 @@
   {
    "cut": "Top 500",
    "packages": 500,
-   "floor": 11371165,
+   "floor": 11426507,
    "scripted": 4,
    "risky": 3,
    "pct_scripted": 0.8
@@ -58,7 +58,7 @@
   {
    "cut": "Top 1,000",
    "packages": 1000,
-   "floor": 1981312,
+   "floor": 2036150,
    "scripted": 7,
    "risky": 4,
    "pct_scripted": 0.7
@@ -66,33 +66,33 @@
   {
    "cut": "Top 2,000",
    "packages": 2000,
-   "floor": 146782,
-   "scripted": 18,
-   "risky": 12,
-   "pct_scripted": 0.9
+   "floor": 153339,
+   "scripted": 19,
+   "risky": 13,
+   "pct_scripted": 0.95
   },
   {
    "cut": "Full sample",
-   "packages": 3293,
+   "packages": 3357,
    "floor": 4,
-   "scripted": 28,
-   "risky": 18,
-   "pct_scripted": 0.85
+   "scripted": 30,
+   "risky": 20,
+   "pct_scripted": 0.89
   }
  ],
- "with_install_scripts": 28,
+ "with_install_scripts": 30,
  "risk": {
-  "SAFE": 3272,
+  "SAFE": 3334,
   "LOW": 3,
   "MEDIUM": 0,
-  "HIGH": 18
+  "HIGH": 20
  },
  "signal_classes": {
-  "exec": 42,
-  "env": 13,
+  "exec": 48,
+  "env": 14,
   "fs": 13,
   "net": 12,
-  "bin": 4,
+  "bin": 5,
   "gyp": 4,
   "obf": 2,
   "exec-local": 2
@@ -347,6 +347,24 @@
    ]
   },
   {
+   "name": "tree-sitter-css",
+   "version": "0.25.0",
+   "risk": "HIGH",
+   "downloads": 254675,
+   "rows": [
+    {
+     "script": "install",
+     "command": "node-gyp-build",
+     "risk": "HIGH",
+     "signals": [
+      "bin",
+      "env",
+      "exec"
+     ]
+    }
+   ]
+  },
+  {
    "name": "react-native-enriched-markdown",
    "version": "1.1.0",
    "risk": "HIGH",
@@ -431,6 +449,30 @@
       "env",
       "exec",
       "net"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "@lightdash/cli",
+   "version": "2.423.2",
+   "risk": "HIGH",
+   "downloads": 96801,
+   "rows": [
+    {
+     "script": "preinstall",
+     "command": "bash track.sh started || echo 'skipping preinstall'",
+     "risk": "HIGH",
+     "signals": [
+      "exec"
+     ]
+    },
+    {
+     "script": "postinstall",
+     "command": "bash track.sh completed || echo 'skipping postinstall'",
+     "risk": "HIGH",
+     "signals": [
+      "exec"
      ]
     }
    ]
@@ -566,15 +608,15 @@
    ]
   }
  ],
- "generated_utc": "2026-10-03T05:03:06Z",
- "corpus_candidates": 4994,
- "requested": 3293,
- "resolved": 3293,
+ "generated_utc": "2026-10-04T06:47:23Z",
+ "corpus_candidates": 5058,
+ "requested": 3357,
+ "resolved": 3357,
  "coverage": 1.0,
  "resolution": {
   "refreshed": 700,
-  "from_cache": 2593,
+  "from_cache": 2657,
   "expired": 0
  },
- "audit_seconds": 55.3
+ "audit_seconds": 34.9
 }
