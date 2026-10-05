@@ -315,7 +315,7 @@
   },
   {
    "name": "@azure/msal-node-extensions",
-   "version": "5.5.1",
+   "version": "5.5.2",
    "risk": "SAFE",
    "downloads": 391268,
    "rows": [
@@ -543,7 +543,7 @@
   },
   {
    "name": "swc-plugin-import-meta-env",
-   "version": "1.16.2",
+   "version": "1.16.13",
    "risk": "HIGH",
    "downloads": 21864,
    "rows": [
@@ -608,15 +608,15 @@
    ]
   }
  ],
- "generated_utc": "2026-10-04T06:47:23Z",
+ "generated_utc": "2026-10-05T05:20:22Z",
  "corpus_candidates": 5058,
  "requested": 3357,
  "resolved": 3357,
  "coverage": 1.0,
  "resolution": {
-  "refreshed": 700,
-  "from_cache": 2657,
+  "refreshed": 442,
+  "from_cache": 2915,
   "expired": 0
  },
- "audit_seconds": 34.9
+ "audit_seconds": 57.2
 }
