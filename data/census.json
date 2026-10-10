@@ -152,7 +152,7 @@
   },
   {
    "name": "workerd",
-   "version": "1.20261002.1",
+   "version": "1.20261010.1",
    "risk": "HIGH",
    "downloads": 18988497,
    "rows": [
@@ -219,7 +219,7 @@
   },
   {
    "name": "node",
-   "version": "22.23.3",
+   "version": "26.11.1",
    "risk": "SAFE",
    "downloads": 1396315,
    "rows": [
@@ -251,7 +251,7 @@
   },
   {
    "name": "oracledb",
-   "version": "7.0.1",
+   "version": "26.0.0",
    "risk": "HIGH",
    "downloads": 806345,
    "rows": [
@@ -366,7 +366,7 @@
   },
   {
    "name": "react-native-enriched-markdown",
-   "version": "1.1.0",
+   "version": "1.1.1",
    "risk": "HIGH",
    "downloads": 214015,
    "rows": [
@@ -608,15 +608,15 @@
    ]
   }
  ],
- "generated_utc": "2026-10-09T05:04:10Z",
+ "generated_utc": "2026-10-10T05:03:23Z",
  "corpus_candidates": 5058,
  "requested": 3357,
  "resolved": 3357,
  "coverage": 1.0,
  "resolution": {
-  "refreshed": 240,
-  "from_cache": 3117,
+  "refreshed": 700,
+  "from_cache": 2657,
   "expired": 0
  },
- "audit_seconds": 55.1
+ "audit_seconds": 54.3
 }
