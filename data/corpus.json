@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-04T06:46:32Z",
- "candidates": 5058,
+ "generated": "2026-10-11T05:02:50Z",
+ "candidates": 5090,
  "method": "npm search keyword sweep nominates; npm downloads API ranks by real weekly downloads",
  "packages": [
   {
@@ -2104,6 +2104,10 @@
    "downloads": 10612760
   },
   {
+   "name": "pixelmatch",
+   "downloads": 10590361
+  },
+  {
    "name": "conf",
    "downloads": 10578251
   },
@@ -3346,6 +3350,14 @@
   {
    "name": "vscode-css-languageservice",
    "downloads": 3462244
+  },
+  {
+   "name": "typed-inject",
+   "downloads": 3457439
+  },
+  {
+   "name": "vite-hot-client",
+   "downloads": 3456697
   },
   {
    "name": "loglevel-plugin-prefix",
@@ -7160,6 +7172,10 @@
    "downloads": 263354
   },
   {
+   "name": "@deepseek-ai/dsh-compaction-image-offload",
+   "downloads": 263209
+  },
+  {
    "name": "rollup-plugin-node-externals",
    "downloads": 262822
   },
@@ -7688,6 +7704,10 @@
    "downloads": 188703
   },
   {
+   "name": "@slidev/types",
+   "downloads": 188600
+  },
+  {
    "name": "eslint-config-airbnb-extended",
    "downloads": 188592
   },
@@ -7896,6 +7916,10 @@
    "downloads": 165484
   },
   {
+   "name": "@wordpress/dependency-extraction-webpack-plugin",
+   "downloads": 164707
+  },
+  {
    "name": "markdown-exit",
    "downloads": 164003
   },
@@ -8076,6 +8100,10 @@
    "downloads": 147405
   },
   {
+   "name": "eslint-plugin-typescript-enum",
+   "downloads": 147231
+  },
+  {
    "name": "@mollie/api-client",
    "downloads": 147014
   },
@@ -8212,6 +8240,10 @@
    "downloads": 135737
   },
   {
+   "name": "@unocss/rollup",
+   "downloads": 135669
+  },
+  {
    "name": "@swc/plugin-react-remove-properties",
    "downloads": 135615
   },
@@ -8294,6 +8326,10 @@
   {
    "name": "@langchain/qdrant",
    "downloads": 129363
+  },
+  {
+   "name": "@craftamap/esbuild-plugin-html",
+   "downloads": 129147
   },
   {
    "name": "@ckeditor/ckeditor5-template",
@@ -8700,6 +8736,10 @@
    "downloads": 105820
   },
   {
+   "name": "@lingui/native-tools",
+   "downloads": 105658
+  },
+  {
    "name": "@progress/kendo-angular-buttons",
    "downloads": 105020
   },
@@ -8942,6 +8982,10 @@
   {
    "name": "@types/sass-loader",
    "downloads": 93933
+  },
+  {
+   "name": "@solidjs/vite-plugin",
+   "downloads": 93849
   },
   {
    "name": "vite-css-modules",
@@ -9200,6 +9244,10 @@
    "downloads": 79941
   },
   {
+   "name": "@unlighthouse/cli",
+   "downloads": 79880
+  },
+  {
    "name": "celebrate",
    "downloads": 79863
   },
@@ -9340,6 +9388,10 @@
    "downloads": 72113
   },
   {
+   "name": "@pandacss/compiler",
+   "downloads": 72102
+  },
+  {
    "name": "@swc/plugin-transform-imports",
    "downloads": 71695
   },
@@ -9450,6 +9502,10 @@
   {
    "name": "json-to-csv-export",
    "downloads": 68049
+  },
+  {
+   "name": "http-message-signatures",
+   "downloads": 67859
   },
   {
    "name": "@stylexswc/rs-compiler-linux-x64-gnu",
@@ -9660,6 +9716,10 @@
    "downloads": 60189
   },
   {
+   "name": "@vltpkg/cache-unzip",
+   "downloads": 59935
+  },
+  {
    "name": "egg-logger",
    "downloads": 59770
   },
@@ -9750,6 +9810,10 @@
   {
    "name": "esbuild-plugin-stimulus",
    "downloads": 56984
+  },
+  {
+   "name": "@apple/mapkit-loader",
+   "downloads": 56824
   },
   {
    "name": "@rollup/plugin-html",
@@ -10004,6 +10068,10 @@
    "downloads": 49652
   },
   {
+   "name": "@stripe/formspec-build",
+   "downloads": 49648
+  },
+  {
    "name": "angular-moment",
    "downloads": 49624
   },
@@ -10170,6 +10238,10 @@
   {
    "name": "markdown-it-for-inline",
    "downloads": 44781
+  },
+  {
+   "name": "@types/async-exit-hook",
+   "downloads": 44703
   },
   {
    "name": "permessage-deflate",
@@ -10624,6 +10696,10 @@
    "downloads": 32314
   },
   {
+   "name": "@biglup/is-cid",
+   "downloads": 32302
+  },
+  {
    "name": "jscrypto",
    "downloads": 32300
   },
@@ -10712,6 +10788,10 @@
    "downloads": 30719
   },
   {
+   "name": "@remix-run/html-template",
+   "downloads": 30465
+  },
+  {
    "name": "overlayscrollbars-vue",
    "downloads": 29805
   },
@@ -10726,6 +10806,10 @@
   {
    "name": "@types/json-to-pretty-yaml",
    "downloads": 29590
+  },
+  {
+   "name": "@bunup/dts",
+   "downloads": 29511
   },
   {
    "name": "react-slideshow-image",
@@ -10786,6 +10870,10 @@
   {
    "name": "@loggerjs/database",
    "downloads": 28285
+  },
+  {
+   "name": "@socketregistry/is-date-object",
+   "downloads": 28219
   },
   {
    "name": "circuit-json-to-pnp-csv",
@@ -11212,6 +11300,10 @@
    "downloads": 19772
   },
   {
+   "name": "@pothos/selection-mapper",
+   "downloads": 19770
+  },
+  {
    "name": "join-async-iterator",
    "downloads": 19736
   },
@@ -11238,6 +11330,10 @@
   {
    "name": "nunjucks-date-filter",
    "downloads": 19188
+  },
+  {
+   "name": "@flatfile/plugin-validate-date",
+   "downloads": 19156
   },
   {
    "name": "home-assistant-js-websocket",
@@ -11424,6 +11520,10 @@
    "downloads": 16137
   },
   {
+   "name": "@discord/intl-message-database-linux-arm64-gnu",
+   "downloads": 16132
+  },
+  {
    "name": "gulp-sass-lint",
    "downloads": 16004
   },
@@ -11446,6 +11546,10 @@
   {
    "name": "vuejs3-logger",
    "downloads": 15650
+  },
+  {
+   "name": "node-test-parser",
+   "downloads": 15627
   },
   {
    "name": "@napi-rs/image-darwin-arm64",
@@ -11828,6 +11932,10 @@
    "downloads": 10786
   },
   {
+   "name": "@checksum-ai/runtime",
+   "downloads": 10767
+  },
+  {
    "name": "promise-readable",
    "downloads": 10697
   },
@@ -12040,6 +12148,10 @@
    "downloads": 8745
   },
   {
+   "name": "@swc-next/parser",
+   "downloads": 8672
+  },
+  {
    "name": "protractor-cucumber-framework",
    "downloads": 8658
   },
@@ -12242,6 +12354,10 @@
   {
    "name": "es6-promise-promise",
    "downloads": 6848
+  },
+  {
+   "name": "semaphore-promise",
+   "downloads": 6832
   },
   {
    "name": "liferay-npm-bundler-preset-standard",
@@ -12486,6 +12602,10 @@
   {
    "name": "@matrixai/logger",
    "downloads": 4995
+  },
+  {
+   "name": "build-worker",
+   "downloads": 4824
   },
   {
    "name": "csv-simple-parser",
@@ -13088,6 +13208,10 @@
    "downloads": 1463
   },
   {
+   "name": "forge-sql-orm",
+   "downloads": 1463
+  },
+  {
    "name": "@cherrystudio/embedjs-loader-csv",
    "downloads": 1428
   },
@@ -13313,6 +13437,10 @@
   },
   {
    "name": "swc-plugin-nativewind",
+   "downloads": 575
+  },
+  {
+   "name": "arrow-orm",
    "downloads": 575
   },
   {

@@ -1,37 +1,37 @@
 {
- "total": 3357,
- "scoped": 809,
+ "total": 3389,
+ "scoped": 831,
  "bands": [
   {
-   "band": "1-839",
-   "packages": 839,
+   "band": "1-847",
+   "packages": 847,
    "scripted": 6,
    "risky": 4,
    "pct_scripted": 0.7
   },
   {
-   "band": "840-1678",
-   "packages": 839,
+   "band": "848-1694",
+   "packages": 847,
    "scripted": 8,
    "risky": 4,
-   "pct_scripted": 1.0
+   "pct_scripted": 0.9
   },
   {
-   "band": "1679-2517",
-   "packages": 839,
+   "band": "1695-2541",
+   "packages": 847,
    "scripted": 11,
    "risky": 9,
    "pct_scripted": 1.3
   },
   {
-   "band": "2518-3356",
-   "packages": 839,
+   "band": "2542-3388",
+   "packages": 847,
    "scripted": 5,
    "risky": 3,
    "pct_scripted": 0.6
   },
   {
-   "band": "3357-3357",
+   "band": "3389-3389",
    "packages": 1,
    "scripted": 0,
    "risky": 0,
@@ -58,7 +58,7 @@
   {
    "cut": "Top 1,000",
    "packages": 1000,
-   "floor": 2036150,
+   "floor": 2056281,
    "scripted": 7,
    "risky": 4,
    "pct_scripted": 0.7
@@ -66,14 +66,14 @@
   {
    "cut": "Top 2,000",
    "packages": 2000,
-   "floor": 153339,
+   "floor": 155347,
    "scripted": 19,
    "risky": 13,
    "pct_scripted": 0.95
   },
   {
    "cut": "Full sample",
-   "packages": 3357,
+   "packages": 3389,
    "floor": 4,
    "scripted": 30,
    "risky": 20,
@@ -82,7 +82,7 @@
  ],
  "with_install_scripts": 30,
  "risk": {
-  "SAFE": 3334,
+  "SAFE": 3366,
   "LOW": 3,
   "MEDIUM": 0,
   "HIGH": 20
@@ -455,7 +455,7 @@
   },
   {
    "name": "@lightdash/cli",
-   "version": "2.423.2",
+   "version": "2.558.0",
    "risk": "HIGH",
    "downloads": 96801,
    "rows": [
@@ -608,15 +608,15 @@
    ]
   }
  ],
- "generated_utc": "2026-10-10T05:03:23Z",
- "corpus_candidates": 5058,
- "requested": 3357,
- "resolved": 3357,
+ "generated_utc": "2026-10-11T05:04:13Z",
+ "corpus_candidates": 5090,
+ "requested": 3389,
+ "resolved": 3389,
  "coverage": 1.0,
  "resolution": {
   "refreshed": 700,
-  "from_cache": 2657,
+  "from_cache": 2689,
   "expired": 0
  },
- "audit_seconds": 54.3
+ "audit_seconds": 55.2
 }
