@@ -404,7 +404,7 @@
   },
   {
    "name": "@microsoft/m365agentstoolkit-cli",
-   "version": "1.1.17",
+   "version": "1.1.18",
    "risk": "HIGH",
    "downloads": 158227,
    "rows": [
@@ -608,15 +608,15 @@
    ]
   }
  ],
- "generated_utc": "2026-10-11T05:04:13Z",
+ "generated_utc": "2026-10-12T05:10:28Z",
  "corpus_candidates": 5090,
  "requested": 3389,
  "resolved": 3389,
  "coverage": 1.0,
  "resolution": {
-  "refreshed": 700,
-  "from_cache": 2689,
+  "refreshed": 569,
+  "from_cache": 2820,
   "expired": 0
  },
- "audit_seconds": 55.2
+ "audit_seconds": 47.5
 }
