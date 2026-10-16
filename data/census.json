@@ -219,7 +219,7 @@
   },
   {
    "name": "node",
-   "version": "26.11.1",
+   "version": "26.12.0",
    "risk": "SAFE",
    "downloads": 1396315,
    "rows": [
@@ -608,15 +608,15 @@
    ]
   }
  ],
- "generated_utc": "2026-10-15T05:02:59Z",
+ "generated_utc": "2026-10-16T05:02:25Z",
  "corpus_candidates": 5090,
  "requested": 3389,
  "resolved": 3389,
  "coverage": 1.0,
  "resolution": {
-  "refreshed": 174,
-  "from_cache": 3215,
+  "refreshed": 200,
+  "from_cache": 3189,
   "expired": 0
  },
- "audit_seconds": 64.4
+ "audit_seconds": 36.9
 }
