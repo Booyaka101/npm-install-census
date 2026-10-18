@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-11T05:02:50Z",
- "candidates": 5090,
+ "generated": "2026-10-18T05:02:21Z",
+ "candidates": 5115,
  "method": "npm search keyword sweep nominates; npm downloads API ranks by real weekly downloads",
  "packages": [
   {
@@ -1394,6 +1394,10 @@
   {
    "name": "joycon",
    "downloads": 23265321
+  },
+  {
+   "name": "standardwebhooks",
+   "downloads": 23225155
   },
   {
    "name": "@emotion/cache",
@@ -3976,6 +3980,10 @@
    "downloads": 2097234
   },
   {
+   "name": "workbox-webpack-plugin",
+   "downloads": 2096268
+  },
+  {
    "name": "mongodb-memory-server",
    "downloads": 2084289
   },
@@ -4306,6 +4314,10 @@
   {
    "name": "graphql-subscriptions",
    "downloads": 1609782
+  },
+  {
+   "name": "json-schema-to-zod",
+   "downloads": 1601804
   },
   {
    "name": "dprint-node",
@@ -4698,6 +4710,10 @@
   {
    "name": "@typescript/typescript-darwin-arm64",
    "downloads": 1212864
+  },
+  {
+   "name": "@algolia/cache-browser-local-storage",
+   "downloads": 1211466
   },
   {
    "name": "eslint-plugin-i18next",
@@ -5410,6 +5426,10 @@
   {
    "name": "eazy-logger",
    "downloads": 765643
+  },
+  {
+   "name": "prettier-plugin-astro",
+   "downloads": 763068
   },
   {
    "name": "@scalar/oas-utils",
@@ -8080,6 +8100,10 @@
    "downloads": 148789
   },
   {
+   "name": "@tree-sitter-grammars/tree-sitter-markdown",
+   "downloads": 148713
+  },
+  {
    "name": "svg-react-loader",
    "downloads": 148610
   },
@@ -8560,6 +8584,10 @@
    "downloads": 114806
   },
   {
+   "name": "@mcp-b/webmcp-polyfill",
+   "downloads": 114746
+  },
+  {
    "name": "@astrojs/compiler-binding-linux-arm64-gnu",
    "downloads": 114580
   },
@@ -8762,6 +8790,10 @@
   {
    "name": "filepond-plugin-image-exif-orientation",
    "downloads": 104377
+  },
+  {
+   "name": "@solidjs/compiler-linux-x64-gnu",
+   "downloads": 104043
   },
   {
    "name": "react-native-promise-rejection-utils",
@@ -9284,6 +9316,10 @@
    "downloads": 79118
   },
   {
+   "name": "@wp-playground/cli",
+   "downloads": 78921
+  },
+  {
    "name": "@thallesp/nestjs-better-auth",
    "downloads": 78480
   },
@@ -9624,6 +9660,10 @@
    "downloads": 62224
   },
   {
+   "name": "@pandacss/compiler-shared",
+   "downloads": 62182
+  },
+  {
    "name": "graphql-constraint-directive",
    "downloads": 62126
   },
@@ -9810,6 +9850,10 @@
   {
    "name": "esbuild-plugin-stimulus",
    "downloads": 56984
+  },
+  {
+   "name": "event-reduce-js",
+   "downloads": 56876
   },
   {
    "name": "@apple/mapkit-loader",
@@ -10078,6 +10122,10 @@
   {
    "name": "react-async-button",
    "downloads": 49535
+  },
+  {
+   "name": "supertest-graphql",
+   "downloads": 49152
   },
   {
    "name": "rollup-plugin-pure",
@@ -10836,6 +10884,10 @@
    "downloads": 28972
   },
   {
+   "name": "@bemi-io/drizzle",
+   "downloads": 28904
+  },
+  {
    "name": "quilljs-markdown",
    "downloads": 28826
   },
@@ -11262,6 +11314,10 @@
   {
    "name": "write-yaml",
    "downloads": 20730
+  },
+  {
+   "name": "@stacksjs/desktop-build",
+   "downloads": 20721
   },
   {
    "name": "babel-plugin-date-fns",
@@ -11936,6 +11992,10 @@
    "downloads": 10767
   },
   {
+   "name": "esdoc-integrate-test-plugin",
+   "downloads": 10747
+  },
+  {
    "name": "promise-readable",
    "downloads": 10697
   },
@@ -12320,6 +12380,10 @@
    "downloads": 7288
   },
   {
+   "name": "@mary-ext/ds-queue",
+   "downloads": 7227
+  },
+  {
    "name": "@tutorialkit/runtime",
    "downloads": 7198
   },
@@ -12568,6 +12632,10 @@
    "downloads": 5295
   },
   {
+   "name": "@mastra/auth-better-auth",
+   "downloads": 5284
+  },
+  {
    "name": "yaml-include",
    "downloads": 5279
   },
@@ -12796,6 +12864,10 @@
    "downloads": 3750
   },
   {
+   "name": "@mastra/auth-workos",
+   "downloads": 3747
+  },
+  {
    "name": "gulp-yaml",
    "downloads": 3744
   },
@@ -12834,6 +12906,10 @@
   {
    "name": "@sclable/nestjs-queue",
    "downloads": 3536
+  },
+  {
+   "name": "webpack-build-utils",
+   "downloads": 3533
   },
   {
    "name": "tplink-smarthome-crypto",
@@ -13064,6 +13140,10 @@
    "downloads": 2087
   },
   {
+   "name": "@lingo.dev/compiler",
+   "downloads": 2086
+  },
+  {
    "name": "@inversifyjs/validation-common",
    "downloads": 2060
   },
@@ -13110,6 +13190,10 @@
   {
    "name": "react-validation-mixin",
    "downloads": 1936
+  },
+  {
+   "name": "graphql-date-scalars",
+   "downloads": 1908
   },
   {
    "name": "angular5-csv",
@@ -13292,6 +13376,10 @@
    "downloads": 1195
   },
   {
+   "name": "@neo4j-cypher/lint-worker",
+   "downloads": 1190
+  },
+  {
    "name": "priority-queue-typed",
    "downloads": 1189
   },
@@ -13326,6 +13414,10 @@
   {
    "name": "ts-swc-loaders",
    "downloads": 1034
+  },
+  {
+   "name": "@inversifyjs/http-validation",
+   "downloads": 1004
   },
   {
    "name": "@zerotal/orm",
@@ -13402,6 +13494,10 @@
   {
    "name": "@promakeai/orm",
    "downloads": 715
+  },
+  {
+   "name": "@emartech/easy-crypto",
+   "downloads": 701
   },
   {
    "name": "swc-jest",
@@ -13482,6 +13578,10 @@
   {
    "name": "gi-util",
    "downloads": 342
+  },
+  {
+   "name": "reflect-metadata-util",
+   "downloads": 333
   },
   {
    "name": "@axiljs/orm",

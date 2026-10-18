@@ -1,38 +1,38 @@
 {
- "total": 3389,
- "scoped": 831,
+ "total": 3414,
+ "scoped": 846,
  "bands": [
   {
-   "band": "1-847",
-   "packages": 847,
+   "band": "1-853",
+   "packages": 853,
    "scripted": 6,
    "risky": 4,
    "pct_scripted": 0.7
   },
   {
-   "band": "848-1694",
-   "packages": 847,
+   "band": "854-1706",
+   "packages": 853,
    "scripted": 8,
    "risky": 4,
    "pct_scripted": 0.9
   },
   {
-   "band": "1695-2541",
-   "packages": 847,
-   "scripted": 11,
-   "risky": 9,
-   "pct_scripted": 1.3
+   "band": "1707-2559",
+   "packages": 853,
+   "scripted": 12,
+   "risky": 10,
+   "pct_scripted": 1.4
   },
   {
-   "band": "2542-3388",
-   "packages": 847,
+   "band": "2560-3412",
+   "packages": 853,
    "scripted": 5,
    "risky": 3,
    "pct_scripted": 0.6
   },
   {
-   "band": "3389-3389",
-   "packages": 1,
+   "band": "3413-3414",
+   "packages": 2,
    "scripted": 0,
    "risky": 0,
    "pct_scripted": 0.0
@@ -50,7 +50,7 @@
   {
    "cut": "Top 500",
    "packages": 500,
-   "floor": 11426507,
+   "floor": 11470195,
    "scripted": 4,
    "risky": 3,
    "pct_scripted": 0.8
@@ -58,7 +58,7 @@
   {
    "cut": "Top 1,000",
    "packages": 1000,
-   "floor": 2056281,
+   "floor": 2065371,
    "scripted": 7,
    "risky": 4,
    "pct_scripted": 0.7
@@ -66,33 +66,33 @@
   {
    "cut": "Top 2,000",
    "packages": 2000,
-   "floor": 155347,
+   "floor": 158227,
    "scripted": 19,
    "risky": 13,
    "pct_scripted": 0.95
   },
   {
    "cut": "Full sample",
-   "packages": 3389,
+   "packages": 3414,
    "floor": 4,
-   "scripted": 30,
-   "risky": 20,
-   "pct_scripted": 0.89
+   "scripted": 31,
+   "risky": 21,
+   "pct_scripted": 0.91
   }
  ],
- "with_install_scripts": 30,
+ "with_install_scripts": 31,
  "risk": {
-  "SAFE": 3366,
+  "SAFE": 3390,
   "LOW": 3,
   "MEDIUM": 0,
-  "HIGH": 20
+  "HIGH": 21
  },
  "signal_classes": {
-  "exec": 48,
-  "env": 14,
+  "exec": 52,
+  "env": 15,
   "fs": 13,
   "net": 12,
-  "bin": 5,
+  "bin": 6,
   "gyp": 4,
   "obf": 2,
   "exec-local": 2
@@ -152,7 +152,7 @@
   },
   {
    "name": "workerd",
-   "version": "1.20261010.1",
+   "version": "1.20261018.1",
    "risk": "HIGH",
    "downloads": 18988497,
    "rows": [
@@ -419,6 +419,24 @@
    ]
   },
   {
+   "name": "@tree-sitter-grammars/tree-sitter-markdown",
+   "version": "0.3.2",
+   "risk": "HIGH",
+   "downloads": 148713,
+   "rows": [
+    {
+     "script": "install",
+     "command": "node-gyp-build",
+     "risk": "HIGH",
+     "signals": [
+      "bin",
+      "env",
+      "exec"
+     ]
+    }
+   ]
+  },
+  {
    "name": "nodent-runtime",
    "version": "3.2.1",
    "risk": "HIGH",
@@ -608,15 +626,15 @@
    ]
   }
  ],
- "generated_utc": "2026-10-17T05:03:00Z",
- "corpus_candidates": 5090,
- "requested": 3389,
- "resolved": 3389,
+ "generated_utc": "2026-10-18T05:03:47Z",
+ "corpus_candidates": 5115,
+ "requested": 3414,
+ "resolved": 3414,
  "coverage": 1.0,
  "resolution": {
   "refreshed": 700,
-  "from_cache": 2689,
+  "from_cache": 2714,
   "expired": 0
  },
- "audit_seconds": 55.5
+ "audit_seconds": 58.1
 }
