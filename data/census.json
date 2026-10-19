@@ -473,7 +473,7 @@
   },
   {
    "name": "@lightdash/cli",
-   "version": "2.558.0",
+   "version": "2.604.0",
    "risk": "HIGH",
    "downloads": 96801,
    "rows": [
@@ -561,7 +561,7 @@
   },
   {
    "name": "swc-plugin-import-meta-env",
-   "version": "1.16.13",
+   "version": "1.16.18",
    "risk": "HIGH",
    "downloads": 21864,
    "rows": [
@@ -626,7 +626,7 @@
    ]
   }
  ],
- "generated_utc": "2026-10-18T05:03:47Z",
+ "generated_utc": "2026-10-19T05:03:23Z",
  "corpus_candidates": 5115,
  "requested": 3414,
  "resolved": 3414,
@@ -636,5 +636,5 @@
   "from_cache": 2714,
   "expired": 0
  },
- "audit_seconds": 58.1
+ "audit_seconds": 58.0
 }
