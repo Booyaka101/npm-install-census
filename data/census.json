@@ -1,38 +1,38 @@
 {
- "total": 3414,
- "scoped": 846,
+ "total": 3451,
+ "scoped": 871,
  "bands": [
   {
-   "band": "1-853",
-   "packages": 853,
+   "band": "1-862",
+   "packages": 862,
    "scripted": 6,
    "risky": 4,
    "pct_scripted": 0.7
   },
   {
-   "band": "854-1706",
-   "packages": 853,
+   "band": "863-1724",
+   "packages": 862,
    "scripted": 8,
    "risky": 4,
    "pct_scripted": 0.9
   },
   {
-   "band": "1707-2559",
-   "packages": 853,
+   "band": "1725-2586",
+   "packages": 862,
    "scripted": 12,
    "risky": 10,
    "pct_scripted": 1.4
   },
   {
-   "band": "2560-3412",
-   "packages": 853,
-   "scripted": 5,
-   "risky": 3,
-   "pct_scripted": 0.6
+   "band": "2587-3448",
+   "packages": 862,
+   "scripted": 6,
+   "risky": 4,
+   "pct_scripted": 0.7
   },
   {
-   "band": "3413-3414",
-   "packages": 2,
+   "band": "3449-3451",
+   "packages": 3,
    "scripted": 0,
    "risky": 0,
    "pct_scripted": 0.0
@@ -58,7 +58,7 @@
   {
    "cut": "Top 1,000",
    "packages": 1000,
-   "floor": 2065371,
+   "floor": 2082032,
    "scripted": 7,
    "risky": 4,
    "pct_scripted": 0.7
@@ -66,29 +66,29 @@
   {
    "cut": "Top 2,000",
    "packages": 2000,
-   "floor": 158227,
-   "scripted": 19,
-   "risky": 13,
-   "pct_scripted": 0.95
+   "floor": 161784,
+   "scripted": 18,
+   "risky": 12,
+   "pct_scripted": 0.9
   },
   {
    "cut": "Full sample",
-   "packages": 3414,
+   "packages": 3451,
    "floor": 4,
-   "scripted": 31,
-   "risky": 21,
-   "pct_scripted": 0.91
+   "scripted": 32,
+   "risky": 22,
+   "pct_scripted": 0.93
   }
  ],
- "with_install_scripts": 31,
+ "with_install_scripts": 32,
  "risk": {
-  "SAFE": 3390,
+  "SAFE": 3426,
   "LOW": 3,
   "MEDIUM": 0,
-  "HIGH": 21
+  "HIGH": 22
  },
  "signal_classes": {
-  "exec": 52,
+  "exec": 56,
   "env": 15,
   "fs": 13,
   "net": 12,
@@ -594,6 +594,22 @@
    ]
   },
   {
+   "name": "arib-b25-stream-test",
+   "version": "0.2.9",
+   "risk": "HIGH",
+   "downloads": 16750,
+   "rows": [
+    {
+     "script": "preinstall",
+     "command": "make clean && make && mkdir bin && cp src/b25 bin/",
+     "risk": "HIGH",
+     "signals": [
+      "exec"
+     ]
+    }
+   ]
+  },
+  {
    "name": "better-auth-studio",
    "version": "1.1.5",
    "risk": "SAFE",
@@ -626,15 +642,15 @@
    ]
   }
  ],
- "generated_utc": "2026-10-24T05:02:27Z",
- "corpus_candidates": 5115,
- "requested": 3414,
- "resolved": 3414,
+ "generated_utc": "2026-10-25T05:03:29Z",
+ "corpus_candidates": 5152,
+ "requested": 3451,
+ "resolved": 3451,
  "coverage": 1.0,
  "resolution": {
   "refreshed": 700,
-  "from_cache": 2714,
+  "from_cache": 2751,
   "expired": 0
  },
- "audit_seconds": 49.5
+ "audit_seconds": 46.2
 }

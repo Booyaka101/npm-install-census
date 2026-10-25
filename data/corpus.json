@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-18T05:02:21Z",
- "candidates": 5115,
+ "generated": "2026-10-25T05:02:19Z",
+ "candidates": 5152,
  "method": "npm search keyword sweep nominates; npm downloads API ranks by real weekly downloads",
  "packages": [
   {
@@ -2224,6 +2224,10 @@
    "downloads": 9909715
   },
   {
+   "name": "@aws-sdk/eventstream-handler-node",
+   "downloads": 9882245
+  },
+  {
    "name": "async-mutex",
    "downloads": 9866111
   },
@@ -2894,6 +2898,10 @@
   {
    "name": "is-stream-ended",
    "downloads": 5056520
+  },
+  {
+   "name": "@algolia/requester-node-http",
+   "downloads": 5054979
   },
   {
    "name": "@react-three/fiber",
@@ -3748,6 +3756,10 @@
    "downloads": 2517026
   },
   {
+   "name": "@sentry/server-runtime-injection",
+   "downloads": 2514635
+  },
+  {
    "name": "volar-service-typescript",
    "downloads": 2514212
   },
@@ -4548,6 +4560,10 @@
    "downloads": 1375919
   },
   {
+   "name": "@rolldown/binding-linux-arm-gnueabihf",
+   "downloads": 1373214
+  },
+  {
    "name": "@rollup/wasm-node",
    "downloads": 1373192
   },
@@ -4678,6 +4694,10 @@
   {
    "name": "await-lock",
    "downloads": 1241991
+  },
+  {
+   "name": "@rolldown/binding-linux-s390x-gnu",
+   "downloads": 1240171
   },
   {
    "name": "@secretlint/config-creator",
@@ -5308,6 +5328,10 @@
    "downloads": 826019
   },
   {
+   "name": "@sentry/cli-win32-arm64",
+   "downloads": 825658
+  },
+  {
    "name": "@typescript/typescript-darwin-x64",
    "downloads": 825254
   },
@@ -5788,6 +5812,14 @@
    "downloads": 602596
   },
   {
+   "name": "@react-three/postprocessing",
+   "downloads": 602540
+  },
+  {
+   "name": "extension-port-stream",
+   "downloads": 599373
+  },
+  {
    "name": "eslint-config-standard-jsx",
    "downloads": 598839
   },
@@ -6184,6 +6216,10 @@
    "downloads": 474302
   },
   {
+   "name": "babel-plugin-transform-hook-names",
+   "downloads": 474152
+  },
+  {
    "name": "babel-plugin-import",
    "downloads": 473865
   },
@@ -6330,6 +6366,10 @@
   {
    "name": "serverless-esbuild",
    "downloads": 442800
+  },
+  {
+   "name": "@types/http-link-header",
+   "downloads": 442607
   },
   {
    "name": "apollo-graphql",
@@ -8032,6 +8072,10 @@
    "downloads": 154330
   },
   {
+   "name": "@medusajs/types",
+   "downloads": 154039
+  },
+  {
    "name": "remark-lint-no-multiple-toplevel-headings",
    "downloads": 153790
   },
@@ -8480,6 +8524,10 @@
    "downloads": 120433
   },
   {
+   "name": "image-size-next",
+   "downloads": 120230
+  },
+  {
    "name": "vue-metamorph",
    "downloads": 120040
   },
@@ -8728,6 +8776,10 @@
    "downloads": 107448
   },
   {
+   "name": "@mtcute/markdown-parser",
+   "downloads": 107360
+  },
+  {
    "name": "path-webpack",
    "downloads": 107308
   },
@@ -8822,6 +8874,10 @@
   {
    "name": "vueuc",
    "downloads": 103671
+  },
+  {
+   "name": "vue-types",
+   "downloads": 103564
   },
   {
    "name": "val-loader",
@@ -8926,6 +8982,10 @@
   {
    "name": "eas-build-cache-provider",
    "downloads": 98459
+  },
+  {
+   "name": "@fortune-sheet/formula-parser",
+   "downloads": 97962
   },
   {
    "name": "@types/dotenv-webpack",
@@ -9470,6 +9530,10 @@
   {
    "name": "@types/koa-logger",
    "downloads": 70573
+  },
+  {
+   "name": "@pandacss/compiler-linux-x64-gnu",
+   "downloads": 70564
   },
   {
    "name": "@elysiajs/server-timing",
@@ -10584,6 +10648,10 @@
    "downloads": 36482
   },
   {
+   "name": "@neftaly/editcontext-polyfill",
+   "downloads": 36074
+  },
+  {
    "name": "base64-loader",
    "downloads": 35983
   },
@@ -10740,6 +10808,10 @@
    "downloads": 32389
   },
   {
+   "name": "@remix-run/test",
+   "downloads": 32356
+  },
+  {
    "name": "warehouse",
    "downloads": 32314
   },
@@ -10840,8 +10912,16 @@
    "downloads": 30465
   },
   {
+   "name": "@tsrx/runtime",
+   "downloads": 29830
+  },
+  {
    "name": "overlayscrollbars-vue",
    "downloads": 29805
+  },
+  {
+   "name": "resize-image-data",
+   "downloads": 29791
   },
   {
    "name": "write-file-queue",
@@ -11068,6 +11148,10 @@
    "downloads": 25445
   },
   {
+   "name": "@stacksjs/pagination",
+   "downloads": 25121
+  },
+  {
    "name": "form-request-submit-polyfill",
    "downloads": 24926
   },
@@ -11228,6 +11312,10 @@
    "downloads": 22256
   },
   {
+   "name": "worklet-loader",
+   "downloads": 22185
+  },
+  {
    "name": "miniprogram-compiler",
    "downloads": 22105
   },
@@ -11336,6 +11424,10 @@
    "downloads": 20458
   },
   {
+   "name": "@speclynx/apidom-parser-adapter-openapi-yaml-3-0",
+   "downloads": 20404
+  },
+  {
    "name": "anylogger",
    "downloads": 20228
   },
@@ -11374,6 +11466,10 @@
   {
    "name": "koa-websocket",
    "downloads": 19546
+  },
+  {
+   "name": "@getpaseo/server",
+   "downloads": 19490
   },
   {
    "name": "archiver-promise",
@@ -11558,6 +11654,10 @@
   {
    "name": "@discord/intl-message-database-linux-x64-gnu",
    "downloads": 16824
+  },
+  {
+   "name": "arib-b25-stream-test",
+   "downloads": 16750
   },
   {
    "name": "bare-logger",
@@ -11758,6 +11858,10 @@
   {
    "name": "@astryxdesign/build",
    "downloads": 13386
+  },
+  {
+   "name": "@napi-rs/image-linux-arm64-gnu",
+   "downloads": 13190
   },
   {
    "name": "@inversifyjs/logger",
@@ -12050,6 +12154,10 @@
   {
    "name": "@hugerte/framework-integration-shared",
    "downloads": 10226
+  },
+  {
+   "name": "@virmator/test",
+   "downloads": 10202
   },
   {
    "name": "@subsquid/util-internal-validation",
@@ -12824,6 +12932,10 @@
    "downloads": 4060
   },
   {
+   "name": "@lovable.dev/lovable-auth-js",
+   "downloads": 4009
+  },
+  {
    "name": "@blockly/field-date",
    "downloads": 4006
   },
@@ -12952,6 +13064,10 @@
    "downloads": 3353
   },
   {
+   "name": "@spinajs/queue",
+   "downloads": 3340
+  },
+  {
    "name": "node-csv",
    "downloads": 3291
   },
@@ -13000,6 +13116,10 @@
    "downloads": 3104
   },
   {
+   "name": "@rnw-community/nestjs-webpack-swc",
+   "downloads": 3035
+  },
+  {
    "name": "global-queue",
    "downloads": 2993
   },
@@ -13018,6 +13138,10 @@
   {
    "name": "@spinajs/orm-sqlite",
    "downloads": 2907
+  },
+  {
+   "name": "json-csv",
+   "downloads": 2825
   },
   {
    "name": "mercurius-validation",
@@ -13176,6 +13300,10 @@
    "downloads": 1970
   },
   {
+   "name": "drizzle-adapter",
+   "downloads": 1959
+  },
+  {
    "name": "uql-orm",
    "downloads": 1955
   },
@@ -13278,6 +13406,10 @@
   {
    "name": "@tachybase/plugin-database-clean",
    "downloads": 1557
+  },
+  {
+   "name": "bz-date",
+   "downloads": 1555
   },
   {
    "name": "validation",
@@ -13476,6 +13608,10 @@
    "downloads": 854
   },
   {
+   "name": "swc-plugin-gem",
+   "downloads": 854
+  },
+  {
    "name": "@voxgig/util",
    "downloads": 853
   },
@@ -13488,8 +13624,16 @@
    "downloads": 747
   },
   {
+   "name": "@pie-framework/math-validation",
+   "downloads": 746
+  },
+  {
    "name": "orm-paging",
    "downloads": 745
+  },
+  {
+   "name": "@plumeria/swc-jest",
+   "downloads": 721
   },
   {
    "name": "@promakeai/orm",
@@ -13618,6 +13762,10 @@
   {
    "name": "@swc/plugin-swc-confidential",
    "downloads": 216
+  },
+  {
+   "name": "dcl-crypto",
+   "downloads": 201
   },
   {
    "name": "@swc/plugin-swc-magic",
