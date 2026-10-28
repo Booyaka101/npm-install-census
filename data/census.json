@@ -133,7 +133,7 @@
   },
   {
    "name": "@sentry/cli",
-   "version": "3.8.0",
+   "version": "3.8.2",
    "risk": "HIGH",
    "downloads": 23636768,
    "rows": [
@@ -315,7 +315,7 @@
   },
   {
    "name": "@azure/msal-node-extensions",
-   "version": "5.5.2",
+   "version": "5.5.4",
    "risk": "SAFE",
    "downloads": 391268,
    "rows": [
@@ -642,15 +642,15 @@
    ]
   }
  ],
- "generated_utc": "2026-10-27T05:03:11Z",
+ "generated_utc": "2026-10-28T05:03:08Z",
  "corpus_candidates": 5152,
  "requested": 3451,
  "resolved": 3451,
  "coverage": 1.0,
  "resolution": {
-  "refreshed": 700,
-  "from_cache": 2751,
+  "refreshed": 453,
+  "from_cache": 2998,
   "expired": 0
  },
- "audit_seconds": 65.3
+ "audit_seconds": 76.5
 }
