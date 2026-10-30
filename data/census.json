@@ -267,13 +267,13 @@
   },
   {
    "name": "@pulumi/docker-build",
-   "version": "0.0.22",
+   "version": "0.0.23",
    "risk": "HIGH",
    "downloads": 806176,
    "rows": [
     {
      "script": "install",
-     "command": "node scripts/install-pulumi-plugin.js resource docker-build 0.0.22",
+     "command": "node scripts/install-pulumi-plugin.js resource docker-build 0.0.23",
      "risk": "HIGH",
      "signals": [
       "exec"
@@ -642,15 +642,15 @@
    ]
   }
  ],
- "generated_utc": "2026-10-29T05:02:36Z",
+ "generated_utc": "2026-10-30T05:02:24Z",
  "corpus_candidates": 5152,
  "requested": 3451,
  "resolved": 3451,
  "coverage": 1.0,
  "resolution": {
-  "refreshed": 47,
-  "from_cache": 3404,
+  "refreshed": 383,
+  "from_cache": 3068,
   "expired": 0
  },
- "audit_seconds": 56.5
+ "audit_seconds": 50.4
 }
