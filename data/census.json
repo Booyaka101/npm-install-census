@@ -1,37 +1,37 @@
 {
- "total": 3451,
- "scoped": 871,
+ "total": 3523,
+ "scoped": 921,
  "bands": [
   {
-   "band": "1-862",
-   "packages": 862,
+   "band": "1-880",
+   "packages": 880,
    "scripted": 6,
    "risky": 4,
    "pct_scripted": 0.7
   },
   {
-   "band": "863-1724",
-   "packages": 862,
-   "scripted": 8,
-   "risky": 4,
-   "pct_scripted": 0.9
+   "band": "881-1760",
+   "packages": 880,
+   "scripted": 9,
+   "risky": 5,
+   "pct_scripted": 1.0
   },
   {
-   "band": "1725-2586",
-   "packages": 862,
+   "band": "1761-2640",
+   "packages": 880,
    "scripted": 12,
    "risky": 10,
    "pct_scripted": 1.4
   },
   {
-   "band": "2587-3448",
-   "packages": 862,
-   "scripted": 6,
-   "risky": 4,
-   "pct_scripted": 0.7
+   "band": "2641-3520",
+   "packages": 880,
+   "scripted": 7,
+   "risky": 5,
+   "pct_scripted": 0.8
   },
   {
-   "band": "3449-3451",
+   "band": "3521-3523",
    "packages": 3,
    "scripted": 0,
    "risky": 0,
@@ -50,7 +50,7 @@
   {
    "cut": "Top 500",
    "packages": 500,
-   "floor": 11470195,
+   "floor": 11489067,
    "scripted": 4,
    "risky": 3,
    "pct_scripted": 0.8
@@ -58,40 +58,40 @@
   {
    "cut": "Top 1,000",
    "packages": 1000,
-   "floor": 2082032,
-   "scripted": 7,
+   "floor": 2096268,
+   "scripted": 6,
    "risky": 4,
-   "pct_scripted": 0.7
+   "pct_scripted": 0.6
   },
   {
    "cut": "Top 2,000",
    "packages": 2000,
-   "floor": 161784,
-   "scripted": 18,
-   "risky": 12,
-   "pct_scripted": 0.9
+   "floor": 168353,
+   "scripted": 19,
+   "risky": 13,
+   "pct_scripted": 0.95
   },
   {
    "cut": "Full sample",
-   "packages": 3451,
+   "packages": 3523,
    "floor": 4,
-   "scripted": 32,
-   "risky": 22,
-   "pct_scripted": 0.93
+   "scripted": 34,
+   "risky": 24,
+   "pct_scripted": 0.97
   }
  ],
- "with_install_scripts": 32,
+ "with_install_scripts": 34,
  "risk": {
-  "SAFE": 3426,
+  "SAFE": 3496,
   "LOW": 3,
-  "MEDIUM": 0,
-  "HIGH": 22
+  "MEDIUM": 1,
+  "HIGH": 23
  },
  "signal_classes": {
-  "exec": 56,
-  "env": 15,
-  "fs": 13,
-  "net": 12,
+  "exec": 58,
+  "env": 17,
+  "fs": 16,
+  "net": 15,
   "bin": 6,
   "gyp": 4,
   "obf": 2,
@@ -245,6 +245,24 @@
       "bin",
       "env",
       "exec"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "tree-sitter-cli",
+   "version": "0.27.1",
+   "risk": "MEDIUM",
+   "downloads": 839002,
+   "rows": [
+    {
+     "script": "install",
+     "command": "node install.js",
+     "risk": "MEDIUM",
+     "signals": [
+      "env",
+      "fs",
+      "net"
      ]
     }
    ]
@@ -610,6 +628,24 @@
    ]
   },
   {
+   "name": "@meteorjs/swc-core",
+   "version": "1.16.2",
+   "risk": "HIGH",
+   "downloads": 7974,
+   "rows": [
+    {
+     "script": "postinstall",
+     "command": "node install.js",
+     "risk": "HIGH",
+     "signals": [
+      "env",
+      "exec",
+      "fs"
+     ]
+    }
+   ]
+  },
+  {
    "name": "better-auth-studio",
    "version": "1.1.5",
    "risk": "SAFE",
@@ -642,14 +678,14 @@
    ]
   }
  ],
- "generated_utc": "2026-10-31T05:02:44Z",
- "corpus_candidates": 5152,
- "requested": 3451,
- "resolved": 3451,
+ "generated_utc": "2026-11-01T05:03:49Z",
+ "corpus_candidates": 5229,
+ "requested": 3523,
+ "resolved": 3523,
  "coverage": 1.0,
  "resolution": {
-  "refreshed": 325,
-  "from_cache": 3126,
+  "refreshed": 429,
+  "from_cache": 3094,
   "expired": 0
  },
  "audit_seconds": 56.0

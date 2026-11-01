@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-25T05:02:19Z",
- "candidates": 5152,
+ "generated": "2026-11-01T05:02:39Z",
+ "candidates": 5229,
  "method": "npm search keyword sweep nominates; npm downloads API ranks by real weekly downloads",
  "packages": [
   {
@@ -1706,6 +1706,10 @@
   {
    "name": "@prisma/client",
    "downloads": 15046090
+  },
+  {
+   "name": "@graphql-tools/wrap",
+   "downloads": 14962525
   },
   {
    "name": "oxlint",
@@ -3508,6 +3512,10 @@
    "downloads": 3069287
   },
   {
+   "name": "@rolldown/binding-android-arm64",
+   "downloads": 3052228
+  },
+  {
    "name": "css-color-names",
    "downloads": 3032664
   },
@@ -4412,6 +4420,10 @@
    "downloads": 1490682
   },
   {
+   "name": "@sveltejs/adapter-node",
+   "downloads": 1486082
+  },
+  {
    "name": "@rolldown/binding-freebsd-x64",
    "downloads": 1485981
   },
@@ -5160,6 +5172,10 @@
    "downloads": 910547
   },
   {
+   "name": "@nuxt/vite-server",
+   "downloads": 907923
+  },
+  {
    "name": "expo-sqlite",
    "downloads": 907165
   },
@@ -5266,6 +5282,10 @@
   {
    "name": "@nuxt/eslint-plugin",
    "downloads": 843307
+  },
+  {
+   "name": "tree-sitter-cli",
+   "downloads": 839002
   },
   {
    "name": "css-parse",
@@ -5674,6 +5694,10 @@
   {
    "name": "react-popper-tooltip",
    "downloads": 651741
+  },
+  {
+   "name": "json-crawl",
+   "downloads": 650883
   },
   {
    "name": "type-graphql",
@@ -6188,6 +6212,10 @@
    "downloads": 479882
   },
   {
+   "name": "@tanstack/markdown",
+   "downloads": 479746
+  },
+  {
    "name": "eslint-plugin-pnpm",
    "downloads": 479368
   },
@@ -6234,6 +6262,10 @@
   {
    "name": "@swc/plugin-emotion",
    "downloads": 467817
+  },
+  {
+   "name": "@standard-server/shared",
+   "downloads": 465725
   },
   {
    "name": "css-to-mat",
@@ -6744,6 +6776,10 @@
    "downloads": 355285
   },
   {
+   "name": "@mcp-b/webmcp-types",
+   "downloads": 354703
+  },
+  {
    "name": "@textlint/textlint-plugin-markdown",
    "downloads": 352527
   },
@@ -6914,6 +6950,10 @@
   {
    "name": "pretty-cache-header",
    "downloads": 323980
+  },
+  {
+   "name": "@renovatebot/base-image",
+   "downloads": 323010
   },
   {
    "name": "micro-api-client",
@@ -7816,6 +7856,10 @@
    "downloads": 182532
   },
   {
+   "name": "geojson-stream",
+   "downloads": 182265
+  },
+  {
    "name": "@oddbird/popover-polyfill",
    "downloads": 181761
   },
@@ -8030,6 +8074,10 @@
   {
    "name": "@types/babel-traverse",
    "downloads": 159908
+  },
+  {
+   "name": "rollup-plugin-import-trace",
+   "downloads": 159647
   },
   {
    "name": "keycloak-angular",
@@ -8532,6 +8580,10 @@
    "downloads": 120040
   },
   {
+   "name": "@comunica/actor-http-proxy",
+   "downloads": 119782
+  },
+  {
    "name": "iced-runtime",
    "downloads": 119731
   },
@@ -8666,6 +8718,10 @@
   {
    "name": "handlebars-loader",
    "downloads": 113704
+  },
+  {
+   "name": "async-ratelimiter",
+   "downloads": 113667
   },
   {
    "name": "nodent-runtime",
@@ -8972,6 +9028,10 @@
    "downloads": 98880
   },
   {
+   "name": "@ionic/vue",
+   "downloads": 98818
+  },
+  {
    "name": "vue-docgen-loader",
    "downloads": 98736
   },
@@ -9188,6 +9248,14 @@
    "downloads": 87502
   },
   {
+   "name": "react-filerobot-image-editor",
+   "downloads": 87400
+  },
+  {
+   "name": "@univerjs-pro/pivot-cache",
+   "downloads": 87379
+  },
+  {
    "name": "@connectrpc/validate",
    "downloads": 87358
   },
@@ -9296,6 +9364,10 @@
    "downloads": 82351
   },
   {
+   "name": "vitest-browser-angular",
+   "downloads": 81815
+  },
+  {
    "name": "proxy-polyfill",
    "downloads": 81410
   },
@@ -9322,6 +9394,10 @@
   {
    "name": "@redocly/api-docs",
    "downloads": 80532
+  },
+  {
+   "name": "squirrelly",
+   "downloads": 80490
   },
   {
    "name": "@aws-amplify/graphql-predictions-transformer",
@@ -9612,6 +9688,10 @@
    "downloads": 67758
   },
   {
+   "name": "@hughescr/stryker-bun-runner",
+   "downloads": 67728
+  },
+  {
    "name": "@stylexswc/rs-compiler-linux-x64-musl",
    "downloads": 67709
   },
@@ -9850,6 +9930,10 @@
   {
    "name": "react-native-fast-crypto",
    "downloads": 58780
+  },
+  {
+   "name": "@comunica/actor-function-factory-term-xsd-to-date",
+   "downloads": 58747
   },
   {
    "name": "sanity-plugin-markdown",
@@ -10206,6 +10290,14 @@
   {
    "name": "draft-js-import-markdown",
    "downloads": 48738
+  },
+  {
+   "name": "@remix-run/data-table-sqlite",
+   "downloads": 48729
+  },
+  {
+   "name": "@remix-run/data-table-postgres",
+   "downloads": 48690
   },
   {
    "name": "@ava/typescript",
@@ -10714,6 +10806,10 @@
   {
    "name": "drizzle-zero",
    "downloads": 34964
+  },
+  {
+   "name": "freeport-promise",
+   "downloads": 34904
   },
   {
    "name": "iced-runtime-3",
@@ -11512,6 +11608,10 @@
    "downloads": 18913
   },
   {
+   "name": "@hedystia/better-auth-typeorm",
+   "downloads": 18871
+  },
+  {
    "name": "@bpmn-io/element-template-chooser",
    "downloads": 18805
   },
@@ -11606,6 +11706,10 @@
   {
    "name": "@microsoft/gulp-core-build-typescript",
    "downloads": 17281
+  },
+  {
+   "name": "@internationalized/string-compiler",
+   "downloads": 17278
   },
   {
    "name": "bcrypto",
@@ -11734,6 +11838,10 @@
   {
    "name": "@foxglove/ws-protocol",
    "downloads": 15148
+  },
+  {
+   "name": "@interfere/build",
+   "downloads": 15136
   },
   {
    "name": "swc",
@@ -11888,6 +11996,10 @@
    "downloads": 12845
   },
   {
+   "name": "unexpected-date",
+   "downloads": 12844
+  },
+  {
    "name": "@hapi/nes",
    "downloads": 12819
   },
@@ -11992,8 +12104,16 @@
    "downloads": 11792
   },
   {
+   "name": "@codecov/rollup-plugin",
+   "downloads": 11790
+  },
+  {
    "name": "calendar-date",
    "downloads": 11759
+  },
+  {
+   "name": "@swc-next/types",
+   "downloads": 11747
   },
   {
    "name": "@web/test-runner-puppeteer",
@@ -12428,6 +12548,10 @@
    "downloads": 7986
   },
   {
+   "name": "@meteorjs/swc-core",
+   "downloads": 7974
+  },
+  {
    "name": "@flexbase/logger",
    "downloads": 7898
   },
@@ -12438,6 +12562,10 @@
   {
    "name": "@pikku/better-auth",
    "downloads": 7694
+  },
+  {
+   "name": "fastify-queue",
+   "downloads": 7573
   },
   {
    "name": "react-json-to-csv",
@@ -12546,6 +12674,10 @@
   {
    "name": "nestjs-supabase-auth",
    "downloads": 6739
+  },
+  {
+   "name": "@sequenceholdings/orm",
+   "downloads": 6727
   },
   {
    "name": "@openedx/frontend-build",
@@ -12752,6 +12884,10 @@
    "downloads": 5232
   },
   {
+   "name": "nice-simple-logger",
+   "downloads": 5196
+  },
+  {
    "name": "shopify-reconnecting-websocket",
    "downloads": 5174
   },
@@ -12900,6 +13036,10 @@
    "downloads": 4160
   },
   {
+   "name": "promise-js",
+   "downloads": 4148
+  },
+  {
    "name": "validate-date",
    "downloads": 4122
   },
@@ -12988,6 +13128,10 @@
    "downloads": 3732
   },
   {
+   "name": "@exa-ai/cache-manager",
+   "downloads": 3724
+  },
+  {
    "name": "env-yaml",
    "downloads": 3707
   },
@@ -12998,6 +13142,10 @@
   {
    "name": "@types/parcel-bundler",
    "downloads": 3678
+  },
+  {
+   "name": "@qavajs/validation",
+   "downloads": 3617
   },
   {
    "name": "js-yaml-source-map",
@@ -13068,6 +13216,10 @@
    "downloads": 3340
   },
   {
+   "name": "@serverless/test",
+   "downloads": 3307
+  },
+  {
    "name": "node-csv",
    "downloads": 3291
   },
@@ -13090,6 +13242,10 @@
   {
    "name": "angular-websocket",
    "downloads": 3240
+  },
+  {
+   "name": "react-16-bootstrap-date-picker",
+   "downloads": 3219
   },
   {
    "name": "coc-yaml",
@@ -13160,6 +13316,10 @@
    "downloads": 2707
   },
   {
+   "name": "@tko/binding.template",
+   "downloads": 2689
+  },
+  {
    "name": "vue-csv-import",
    "downloads": 2663
   },
@@ -13220,6 +13380,10 @@
    "downloads": 2333
   },
   {
+   "name": "@spinajs/authn-orm",
+   "downloads": 2315
+  },
+  {
    "name": "linkgress-orm",
    "downloads": 2294
   },
@@ -13272,6 +13436,10 @@
    "downloads": 2060
   },
   {
+   "name": "presidium-websocket",
+   "downloads": 2051
+  },
+  {
    "name": "clickhouse-orm",
    "downloads": 2050
   },
@@ -13294,6 +13462,10 @@
   {
    "name": "@adonisjs/websocket-packet",
    "downloads": 2008
+  },
+  {
+   "name": "indicative-compiler",
+   "downloads": 1990
   },
   {
    "name": "@ankhorage/supabase-auth",
@@ -13344,6 +13516,10 @@
    "downloads": 1875
   },
   {
+   "name": "@pangza/orm",
+   "downloads": 1865
+  },
+  {
    "name": "@xemahq/database-driver-postgres",
    "downloads": 1842
   },
@@ -13380,6 +13556,10 @@
    "downloads": 1672
   },
   {
+   "name": "@spinajs/email-verification-orm",
+   "downloads": 1659
+  },
+  {
    "name": "concurrent-queue",
    "downloads": 1637
   },
@@ -13398,6 +13578,10 @@
   {
    "name": "objects-to-csv-file",
    "downloads": 1590
+  },
+  {
+   "name": "@eggjs/tegg-runtime",
+   "downloads": 1587
   },
   {
    "name": "@playform/build",
@@ -13428,6 +13612,10 @@
    "downloads": 1463
   },
   {
+   "name": "@linode/validation",
+   "downloads": 1460
+  },
+  {
    "name": "@cherrystudio/embedjs-loader-csv",
    "downloads": 1428
   },
@@ -13454,6 +13642,10 @@
   {
    "name": "@neaps/tide-database",
    "downloads": 1388
+  },
+  {
+   "name": "@metorial/util-async-iterator",
+   "downloads": 1385
   },
   {
    "name": "w-serv-orm",
@@ -13536,12 +13728,20 @@
    "downloads": 1145
   },
   {
+   "name": "svelte-preprocess-esbuild",
+   "downloads": 1065
+  },
+  {
    "name": "@browsery/util",
    "downloads": 1062
   },
   {
    "name": "vuex-orm-json-api",
    "downloads": 1061
+  },
+  {
+   "name": "ppt-template",
+   "downloads": 1035
   },
   {
    "name": "ts-swc-loaders",
@@ -13572,11 +13772,19 @@
    "downloads": 956
   },
   {
+   "name": "muxrpc-validation",
+   "downloads": 936
+  },
+  {
    "name": "pull-websocket",
    "downloads": 934
   },
   {
    "name": "alp-websocket",
+   "downloads": 927
+  },
+  {
+   "name": "native-addon-loader",
    "downloads": 927
   },
   {
@@ -13614,6 +13822,10 @@
   {
    "name": "@voxgig/util",
    "downloads": 853
+  },
+  {
+   "name": "@traveloka/validation",
+   "downloads": 844
   },
   {
    "name": "@spinajs/orm-postgres",
@@ -13676,6 +13888,10 @@
    "downloads": 583
   },
   {
+   "name": "@date-fns/docs",
+   "downloads": 580
+  },
+  {
    "name": "swc-plugin-nativewind",
    "downloads": 575
   },
@@ -13732,6 +13948,10 @@
    "downloads": 324
   },
   {
+   "name": "@types/mongodb-queue",
+   "downloads": 316
+  },
+  {
    "name": "@builder/swc-loader",
    "downloads": 312
   },
@@ -13768,8 +13988,16 @@
    "downloads": 201
   },
   {
+   "name": "@mgcrea/fastify-session-sodium-crypto",
+   "downloads": 188
+  },
+  {
    "name": "@swc/plugin-swc-magic",
    "downloads": 177
+  },
+  {
+   "name": "@globalart/nestjs-logger",
+   "downloads": 173
   },
   {
    "name": "sussy-util",
@@ -13780,12 +14008,32 @@
    "downloads": 136
   },
   {
+   "name": "@vect/vector",
+   "downloads": 123
+  },
+  {
+   "name": "@salaku/sm-crypto",
+   "downloads": 117
+  },
+  {
    "name": "compiler",
    "downloads": 115
   },
   {
    "name": "parse-csv",
    "downloads": 111
+  },
+  {
+   "name": "@vect/vector-margin",
+   "downloads": 105
+  },
+  {
+   "name": "@phantomchain/crypto",
+   "downloads": 96
+  },
+  {
+   "name": "@vect/matrix-init",
+   "downloads": 86
   },
   {
    "name": "framework",
@@ -13796,12 +14044,52 @@
    "downloads": 77
   },
   {
+   "name": "@dana180597/date-time-logger",
+   "downloads": 73
+  },
+  {
+   "name": "plus-websocket",
+   "downloads": 48
+  },
+  {
    "name": "stout-orm",
    "downloads": 42
   },
   {
+   "name": "sveltekit-image-optimize",
+   "downloads": 42
+  },
+  {
+   "name": "@phantomchain/core-database",
+   "downloads": 40
+  },
+  {
+   "name": "@nosplatform/crypto",
+   "downloads": 39
+  },
+  {
+   "name": "@sequelize-orm/core",
+   "downloads": 36
+  },
+  {
+   "name": "@damatjs/orm-core",
+   "downloads": 30
+  },
+  {
+   "name": "@damatjs/orm-cli",
+   "downloads": 26
+  },
+  {
+   "name": "@ctx-core/csv",
+   "downloads": 22
+  },
+  {
    "name": "mysql-model-orm",
    "downloads": 14
+  },
+  {
+   "name": "@reachu/database",
+   "downloads": 9
   },
   {
    "name": "stockshark-util",
