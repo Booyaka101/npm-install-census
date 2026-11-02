@@ -5,9 +5,9 @@
 npm v12 flipped install scripts off by default. You now approve them one by one via `allowScripts`. Nobody had published what that approval queue actually looks like across the ecosystem, so this measures it, daily.
 
 <!-- auto:headline -->
-> **34 of 3,523** packages in the current sample run an install script. **23** score HIGH. The most-installed one is `esbuild` at 255.5M downloads a week.
+> **33 of 3,523** packages in the current sample run an install script. **23** score HIGH. The most-installed one is `esbuild` at 255.5M downloads a week.
 >
-> <sub>Rebuilt 2026-11-01.</sub>
+> <sub>Rebuilt 2026-11-02.</sub>
 <!-- /auto:headline -->
 
 **[Live dashboard](https://booyaka101.github.io/npm-install-census/)** - the whole approval queue, searchable and filterable by risk.
@@ -22,10 +22,10 @@ Install scripts are rare, and they are roughly as rare at the top of the ecosyst
 | Sample | Download floor | Run an install script | HIGH risk |
 |---|---|---|---|
 | Top 100 | 101.9M/week | 1 (1.00%) | 1 |
-| Top 500 | 11.5M/week | 4 (0.80%) | 3 |
-| Top 1,000 | 2.1M/week | 6 (0.60%) | 4 |
-| Top 2,000 | 168.4K/week | 19 (0.95%) | 13 |
-| Full sample (3,523) | 4/week | 34 (0.97%) | 24 |
+| Top 500 | 11.5M/week | 3 (0.60%) | 3 |
+| Top 1,000 | 2.1M/week | 5 (0.50%) | 4 |
+| Top 2,000 | 168.4K/week | 18 (0.90%) | 13 |
+| Full sample (3,523) | 4/week | 33 (0.94%) | 24 |
 <!-- /auto:cuts -->
 
 That flatness is the result. There is no long tail where install scripts suddenly proliferate, and no clean gradient by popularity. It sits near 1% wherever you cut it.
@@ -40,7 +40,6 @@ These are the packages npm v12 will actually ask you about, ordered by weekly do
 | Package | Downloads/week | Script | Command | Risk | Signals |
 |---|---|---|---|---|---|
 | `esbuild` | 255.5M | postinstall | `node install.js` | HIGH | env, exec, fs, net |
-| `unrs-resolver` | 51.3M | postinstall | `node postinstall.js` | SAFE | none |
 | `@sentry/cli` | 23.6M | postinstall | `node ./scripts/install.js` | HIGH | env, exec, fs, net |
 | `workerd` | 19.0M | postinstall | `node install.js` | HIGH | env, exec, fs, net |
 | `vue-demi` | 8.0M | postinstall | `node -e "try{require('./scripts/postinstall.js')}catch(e){}"` | LOW | fs |
@@ -79,7 +78,7 @@ These are the packages npm v12 will actually ask you about, ordered by weekly do
 **None of this is an accusation.** Every one of these is a well-known package doing something legitimate: fetching a prebuilt binary, or building a native addon. The point is that these are the ones you are now being asked to approve, and "what does it actually do" is a question you have to answer per package. That is what the capability signals are for.
 
 <!-- auto:mix -->
-Scripted does not mean risky. Of the 34 scripted packages, 23 HIGH, 1 MEDIUM, 3 LOW, 7 SAFE. Across the whole sample the signal classes break down as: `exec` 58, `env` 17, `fs` 16, `net` 15, `bin` 6, `gyp` 4, `obf` 2, `exec-local` 2.
+Scripted does not mean risky. Of the 33 scripted packages, 23 HIGH, 1 MEDIUM, 3 LOW, 6 SAFE. Across the whole sample the signal classes break down as: `exec` 58, `env` 17, `fs` 16, `net` 15, `bin` 6, `gyp` 4, `obf` 2, `exec-local` 2.
 <!-- /auto:mix -->
 
 Three worth singling out, further down the list:

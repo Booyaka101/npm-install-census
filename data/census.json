@@ -5,9 +5,9 @@
   {
    "band": "1-880",
    "packages": 880,
-   "scripted": 6,
+   "scripted": 5,
    "risky": 4,
-   "pct_scripted": 0.7
+   "pct_scripted": 0.6
   },
   {
    "band": "881-1760",
@@ -51,36 +51,36 @@
    "cut": "Top 500",
    "packages": 500,
    "floor": 11489067,
-   "scripted": 4,
+   "scripted": 3,
    "risky": 3,
-   "pct_scripted": 0.8
+   "pct_scripted": 0.6
   },
   {
    "cut": "Top 1,000",
    "packages": 1000,
    "floor": 2096268,
-   "scripted": 6,
+   "scripted": 5,
    "risky": 4,
-   "pct_scripted": 0.6
+   "pct_scripted": 0.5
   },
   {
    "cut": "Top 2,000",
    "packages": 2000,
    "floor": 168353,
-   "scripted": 19,
+   "scripted": 18,
    "risky": 13,
-   "pct_scripted": 0.95
+   "pct_scripted": 0.9
   },
   {
    "cut": "Full sample",
    "packages": 3523,
    "floor": 4,
-   "scripted": 34,
+   "scripted": 33,
    "risky": 24,
-   "pct_scripted": 0.97
+   "pct_scripted": 0.94
   }
  ],
- "with_install_scripts": 34,
+ "with_install_scripts": 33,
  "risk": {
   "SAFE": 3496,
   "LOW": 3,
@@ -114,20 +114,6 @@
       "fs",
       "net"
      ]
-    }
-   ]
-  },
-  {
-   "name": "unrs-resolver",
-   "version": "1.12.2",
-   "risk": "SAFE",
-   "downloads": 51290045,
-   "rows": [
-    {
-     "script": "postinstall",
-     "command": "node postinstall.js",
-     "risk": "SAFE",
-     "signals": []
     }
    ]
   },
@@ -678,15 +664,15 @@
    ]
   }
  ],
- "generated_utc": "2026-11-01T05:03:49Z",
+ "generated_utc": "2026-11-02T05:02:51Z",
  "corpus_candidates": 5229,
  "requested": 3523,
  "resolved": 3523,
  "coverage": 1.0,
  "resolution": {
-  "refreshed": 429,
-  "from_cache": 3094,
+  "refreshed": 510,
+  "from_cache": 3013,
   "expired": 0
  },
- "audit_seconds": 56.0
+ "audit_seconds": 49.7
 }
