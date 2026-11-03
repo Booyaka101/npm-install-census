@@ -138,7 +138,7 @@
   },
   {
    "name": "workerd",
-   "version": "1.20261026.1",
+   "version": "1.20261103.1",
    "risk": "HIGH",
    "downloads": 18988497,
    "rows": [
@@ -477,7 +477,7 @@
   },
   {
    "name": "@lightdash/cli",
-   "version": "3.61.0",
+   "version": "3.128.1",
    "risk": "HIGH",
    "downloads": 96801,
    "rows": [
@@ -664,15 +664,15 @@
    ]
   }
  ],
- "generated_utc": "2026-11-02T05:02:51Z",
+ "generated_utc": "2026-11-03T05:02:48Z",
  "corpus_candidates": 5229,
  "requested": 3523,
  "resolved": 3523,
  "coverage": 1.0,
  "resolution": {
-  "refreshed": 510,
-  "from_cache": 3013,
+  "refreshed": 700,
+  "from_cache": 2823,
   "expired": 0
  },
- "audit_seconds": 49.7
+ "audit_seconds": 56.2
 }
