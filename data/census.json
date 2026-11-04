@@ -305,7 +305,7 @@
   },
   {
    "name": "stream-chat",
-   "version": "9.54.0",
+   "version": "9.54.4",
    "risk": "SAFE",
    "downloads": 496189,
    "rows": [
@@ -664,7 +664,7 @@
    ]
   }
  ],
- "generated_utc": "2026-11-03T05:02:48Z",
+ "generated_utc": "2026-11-04T05:03:13Z",
  "corpus_candidates": 5229,
  "requested": 3523,
  "resolved": 3523,
@@ -674,5 +674,5 @@
   "from_cache": 2823,
   "expired": 0
  },
- "audit_seconds": 56.2
+ "audit_seconds": 63.9
 }
