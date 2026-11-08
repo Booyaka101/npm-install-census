@@ -1,37 +1,37 @@
 {
- "total": 3523,
- "scoped": 921,
+ "total": 3595,
+ "scoped": 968,
  "bands": [
   {
-   "band": "1-880",
-   "packages": 880,
+   "band": "1-898",
+   "packages": 898,
    "scripted": 5,
    "risky": 4,
    "pct_scripted": 0.6
   },
   {
-   "band": "881-1760",
-   "packages": 880,
-   "scripted": 9,
-   "risky": 5,
-   "pct_scripted": 1.0
+   "band": "899-1796",
+   "packages": 898,
+   "scripted": 10,
+   "risky": 6,
+   "pct_scripted": 1.1
   },
   {
-   "band": "1761-2640",
-   "packages": 880,
-   "scripted": 12,
-   "risky": 10,
-   "pct_scripted": 1.4
+   "band": "1797-2694",
+   "packages": 898,
+   "scripted": 11,
+   "risky": 9,
+   "pct_scripted": 1.2
   },
   {
-   "band": "2641-3520",
-   "packages": 880,
-   "scripted": 7,
-   "risky": 5,
-   "pct_scripted": 0.8
+   "band": "2695-3592",
+   "packages": 898,
+   "scripted": 8,
+   "risky": 6,
+   "pct_scripted": 0.9
   },
   {
-   "band": "3521-3523",
+   "band": "3593-3595",
    "packages": 3,
    "scripted": 0,
    "risky": 0,
@@ -50,7 +50,7 @@
   {
    "cut": "Top 500",
    "packages": 500,
-   "floor": 11489067,
+   "floor": 11539150,
    "scripted": 3,
    "risky": 3,
    "pct_scripted": 0.6
@@ -58,7 +58,7 @@
   {
    "cut": "Top 1,000",
    "packages": 1000,
-   "floor": 2096268,
+   "floor": 2146903,
    "scripted": 5,
    "risky": 4,
    "pct_scripted": 0.5
@@ -66,32 +66,32 @@
   {
    "cut": "Top 2,000",
    "packages": 2000,
-   "floor": 168353,
-   "scripted": 18,
-   "risky": 13,
-   "pct_scripted": 0.9
+   "floor": 175607,
+   "scripted": 17,
+   "risky": 12,
+   "pct_scripted": 0.85
   },
   {
    "cut": "Full sample",
-   "packages": 3523,
+   "packages": 3595,
    "floor": 4,
-   "scripted": 33,
-   "risky": 24,
-   "pct_scripted": 0.94
+   "scripted": 34,
+   "risky": 25,
+   "pct_scripted": 0.95
   }
  ],
- "with_install_scripts": 33,
+ "with_install_scripts": 34,
  "risk": {
-  "SAFE": 3496,
+  "SAFE": 3567,
   "LOW": 3,
   "MEDIUM": 1,
-  "HIGH": 23
+  "HIGH": 24
  },
  "signal_classes": {
-  "exec": 58,
-  "env": 17,
-  "fs": 16,
-  "net": 15,
+  "exec": 61,
+  "fs": 19,
+  "env": 18,
+  "net": 17,
   "bin": 6,
   "gyp": 4,
   "obf": 2,
@@ -614,6 +614,25 @@
    ]
   },
   {
+   "name": "qdd-framework",
+   "version": "2.9.11",
+   "risk": "HIGH",
+   "downloads": 15396,
+   "rows": [
+    {
+     "script": "postinstall",
+     "command": "node install.js",
+     "risk": "HIGH",
+     "signals": [
+      "env",
+      "exec",
+      "fs",
+      "net"
+     ]
+    }
+   ]
+  },
+  {
    "name": "@meteorjs/swc-core",
    "version": "1.16.2",
    "risk": "HIGH",
@@ -664,15 +683,15 @@
    ]
   }
  ],
- "generated_utc": "2026-11-07T05:02:53Z",
- "corpus_candidates": 5229,
- "requested": 3523,
- "resolved": 3523,
+ "generated_utc": "2026-11-08T05:03:31Z",
+ "corpus_candidates": 5303,
+ "requested": 3595,
+ "resolved": 3595,
  "coverage": 1.0,
  "resolution": {
-  "refreshed": 472,
-  "from_cache": 3051,
+  "refreshed": 608,
+  "from_cache": 2987,
   "expired": 0
  },
- "audit_seconds": 57.4
+ "audit_seconds": 52.7
 }

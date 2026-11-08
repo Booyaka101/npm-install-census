@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-01T05:02:39Z",
- "candidates": 5229,
+ "generated": "2026-11-08T05:02:14Z",
+ "candidates": 5303,
  "method": "npm search keyword sweep nominates; npm downloads API ranks by real weekly downloads",
  "packages": [
   {
@@ -1444,6 +1444,10 @@
    "downloads": 21904721
   },
   {
+   "name": "abstract-logging",
+   "downloads": 21860470
+  },
+  {
    "name": "engine.io-parser",
    "downloads": 21858444
   },
@@ -1454,6 +1458,10 @@
   {
    "name": "@vue/compiler-sfc",
    "downloads": 21626160
+  },
+  {
+   "name": "@fastify/ajv-compiler",
+   "downloads": 21583092
   },
   {
    "name": "bplist-parser",
@@ -1830,6 +1838,10 @@
   {
    "name": "@graphql-tools/delegate",
    "downloads": 13476138
+  },
+  {
+   "name": "@stripe/react-stripe-js",
+   "downloads": 13472803
   },
   {
    "name": "metro-babel-transformer",
@@ -2628,6 +2640,10 @@
    "downloads": 6595625
   },
   {
+   "name": "@expo/expo-modules-macros-plugin",
+   "downloads": 6592571
+  },
+  {
    "name": "types-registry",
    "downloads": 6590411
   },
@@ -2962,6 +2978,10 @@
   {
    "name": "detective-typescript",
    "downloads": 4790016
+  },
+  {
+   "name": "markdownlint",
+   "downloads": 4777203
   },
   {
    "name": "@oxfmt/binding-linux-x64-musl",
@@ -3328,6 +3348,10 @@
    "downloads": 3578322
   },
   {
+   "name": "@solana/web3.js",
+   "downloads": 3573264
+  },
+  {
    "name": "@types/webpack-env",
    "downloads": 3567897
   },
@@ -3562,6 +3586,10 @@
   {
    "name": "acorn-node",
    "downloads": 2922411
+  },
+  {
+   "name": "@unhead/bundler",
+   "downloads": 2916953
   },
   {
    "name": "react-compiler-runtime",
@@ -4004,6 +4032,10 @@
    "downloads": 2096268
   },
   {
+   "name": "mcp-handler",
+   "downloads": 2085816
+  },
+  {
    "name": "mongodb-memory-server",
    "downloads": 2084289
   },
@@ -4090,6 +4122,10 @@
   {
    "name": "graphql-depth-limit",
    "downloads": 1936648
+  },
+  {
+   "name": "geotiff",
+   "downloads": 1936018
   },
   {
    "name": "babel-register",
@@ -4680,6 +4716,10 @@
    "downloads": 1272387
   },
   {
+   "name": "@loaders.gl/gltf",
+   "downloads": 1272378
+  },
+  {
    "name": "babel-helper-remap-async-to-generator",
    "downloads": 1272096
   },
@@ -4710,6 +4750,10 @@
   {
    "name": "@rolldown/binding-linux-s390x-gnu",
    "downloads": 1240171
+  },
+  {
+   "name": "@prefresh/babel-plugin",
+   "downloads": 1236512
   },
   {
    "name": "@secretlint/config-creator",
@@ -4924,6 +4968,10 @@
    "downloads": 1081867
   },
   {
+   "name": "loadjs",
+   "downloads": 1077413
+  },
+  {
    "name": "font-awesome",
    "downloads": 1069730
   },
@@ -5086,6 +5134,10 @@
   {
    "name": "appium-uiautomator2-server",
    "downloads": 951076
+  },
+  {
+   "name": "@cloudflare/build-output-utils",
+   "downloads": 946982
   },
   {
    "name": "@babel/node",
@@ -5608,6 +5660,10 @@
    "downloads": 697089
   },
   {
+   "name": "botframework-streaming",
+   "downloads": 692985
+  },
+  {
    "name": "eslint-plugin-formatjs",
    "downloads": 692117
   },
@@ -6040,6 +6096,10 @@
    "downloads": 533153
   },
   {
+   "name": "@sentry/react-router",
+   "downloads": 531163
+  },
+  {
    "name": "astrojs-compiler-sync",
    "downloads": 529764
   },
@@ -6250,6 +6310,10 @@
   {
    "name": "babel-plugin-import",
    "downloads": 473865
+  },
+  {
+   "name": "@escape.tech/graphql-armor-cost-limit",
+   "downloads": 470756
   },
   {
    "name": "react-use-websocket",
@@ -6484,6 +6548,10 @@
    "downloads": 423546
   },
   {
+   "name": "react-native-css",
+   "downloads": 421066
+  },
+  {
    "name": "r-json",
    "downloads": 420548
   },
@@ -6554,6 +6622,10 @@
   {
    "name": "crypto-hash",
    "downloads": 408860
+  },
+  {
+   "name": "react-native-audio-api",
+   "downloads": 408735
   },
   {
    "name": "graphql-compose",
@@ -6674,6 +6746,10 @@
   {
    "name": "fork-stream",
    "downloads": 380729
+  },
+  {
+   "name": "@rollup/rollup-android-x64",
+   "downloads": 379544
   },
   {
    "name": "mdast-util-to-markdown-cjk-friendly-gfm-strikethrough",
@@ -6896,6 +6972,10 @@
    "downloads": 333939
   },
   {
+   "name": "@netlify/server-dev",
+   "downloads": 333633
+  },
+  {
    "name": "progress-webpack-plugin",
    "downloads": 333325
   },
@@ -6966,6 +7046,10 @@
   {
    "name": "@types/angular",
    "downloads": 320558
+  },
+  {
+   "name": "zod-formik-adapter",
+   "downloads": 320512
   },
   {
    "name": "@univerjs/sheets-data-validation-ui",
@@ -7680,6 +7764,10 @@
    "downloads": 204816
   },
   {
+   "name": "@html-eslint/core",
+   "downloads": 204686
+  },
+  {
    "name": "@giphy/js-fetch-api",
    "downloads": 204506
   },
@@ -7970,6 +8058,10 @@
   {
    "name": "ts-markdown-builder",
    "downloads": 170690
+  },
+  {
+   "name": "cloudformation-js-yaml-schema",
+   "downloads": 170293
   },
   {
    "name": "neat-csv",
@@ -8304,6 +8396,10 @@
    "downloads": 138985
   },
   {
+   "name": "cm6-graphql",
+   "downloads": 138778
+  },
+  {
    "name": "promise-to-callback",
    "downloads": 137694
   },
@@ -8386,6 +8482,10 @@
   {
    "name": "@aws-amplify/backend-auth",
    "downloads": 133432
+  },
+  {
+   "name": "node-opcua-server",
+   "downloads": 133396
   },
   {
    "name": "@dynamic-labs-wallet/forward-mpc-client",
@@ -8554,6 +8654,10 @@
   {
    "name": "babel-plugin-espower",
    "downloads": 122746
+  },
+  {
+   "name": "rxdb",
+   "downloads": 121926
   },
   {
    "name": "vue-codemirror",
@@ -8756,6 +8860,10 @@
    "downloads": 111682
   },
   {
+   "name": "@jongleberry/api-server",
+   "downloads": 111283
+  },
+  {
    "name": "twoslash-vue",
    "downloads": 110950
   },
@@ -8770,6 +8878,10 @@
   {
    "name": "remark-lint-table-pipe-alignment",
    "downloads": 110600
+  },
+  {
+   "name": "@vouchington/frontmatter",
+   "downloads": 110570
   },
   {
    "name": "better-queue-memory",
@@ -9016,6 +9128,10 @@
    "downloads": 99780
   },
   {
+   "name": "@effect/graphql-generator",
+   "downloads": 99643
+  },
+  {
    "name": "http-status-emojis",
    "downloads": 99335
   },
@@ -9216,6 +9332,10 @@
    "downloads": 89014
   },
   {
+   "name": "@heliofi/deposit-react",
+   "downloads": 88485
+  },
+  {
    "name": "vite-plugin-enter-dev",
    "downloads": 88471
   },
@@ -9300,6 +9420,10 @@
    "downloads": 85804
   },
   {
+   "name": "@shopify/legacy-apollo-subscriptions-transport",
+   "downloads": 85329
+  },
+  {
    "name": "@e2b/cli",
    "downloads": 85328
   },
@@ -9322,6 +9446,10 @@
   {
    "name": "vite-plugin-eslint2",
    "downloads": 84443
+  },
+  {
+   "name": "@knocklabs/cli",
+   "downloads": 84334
   },
   {
    "name": "pouchdb",
@@ -9580,6 +9708,10 @@
    "downloads": 71502
   },
   {
+   "name": "@pandacss/vite",
+   "downloads": 71438
+  },
+  {
    "name": "browser-image-hash",
    "downloads": 71355
   },
@@ -9634,6 +9766,10 @@
   {
    "name": "md5-typescript",
    "downloads": 69864
+  },
+  {
+   "name": "@clerk/vue",
+   "downloads": 69639
   },
   {
    "name": "remark-lint-no-heading-indent",
@@ -9856,6 +9992,10 @@
    "downloads": 60910
   },
   {
+   "name": "@binance/agentic-wallet",
+   "downloads": 60694
+  },
+  {
    "name": "rollup-plugin-inject-process-env",
    "downloads": 60638
   },
@@ -10008,6 +10148,10 @@
    "downloads": 56824
   },
   {
+   "name": "ejs-compiled-loader",
+   "downloads": 56732
+  },
+  {
    "name": "@rollup/plugin-html",
    "downloads": 56455
   },
@@ -10088,6 +10232,10 @@
    "downloads": 54686
   },
   {
+   "name": "@graphql-hive/apollo",
+   "downloads": 54660
+  },
+  {
    "name": "@vaadin/markdown",
    "downloads": 54530
   },
@@ -10134,6 +10282,10 @@
   {
    "name": "pngjs-image",
    "downloads": 52952
+  },
+  {
+   "name": "@remix-run/data-table-mysql",
+   "downloads": 52934
   },
   {
    "name": "cancelable-promise",
@@ -10270,6 +10422,10 @@
   {
    "name": "react-async-button",
    "downloads": 49535
+  },
+  {
+   "name": "@pandacss/compiler-linux-x64-musl",
+   "downloads": 49354
   },
   {
    "name": "supertest-graphql",
@@ -10632,6 +10788,10 @@
    "downloads": 39103
   },
   {
+   "name": "@rschedule/standard-date-adapter",
+   "downloads": 39095
+  },
+  {
    "name": "ng-lazyload-image",
    "downloads": 39087
   },
@@ -10738,6 +10898,10 @@
   {
    "name": "hypercore-crypto",
    "downloads": 36482
+  },
+  {
+   "name": "http-codex",
+   "downloads": 36202
   },
   {
    "name": "@neftaly/editcontext-polyfill",
@@ -11004,6 +11168,10 @@
    "downloads": 30719
   },
   {
+   "name": "cloudformation-schema-js-yaml",
+   "downloads": 30576
+  },
+  {
    "name": "@remix-run/html-template",
    "downloads": 30465
   },
@@ -11216,6 +11384,10 @@
    "downloads": 25848
   },
   {
+   "name": "@koopjs/logger",
+   "downloads": 25833
+  },
+  {
    "name": "@web/test-runner-junit-reporter",
    "downloads": 25794
   },
@@ -11344,6 +11516,10 @@
    "downloads": 23320
   },
   {
+   "name": "@augment-vir/test",
+   "downloads": 23229
+  },
+  {
    "name": "decap-cms-ui-auth",
    "downloads": 23228
   },
@@ -11460,6 +11636,10 @@
    "downloads": 21490
   },
   {
+   "name": "@storyshelf/auth",
+   "downloads": 21483
+  },
+  {
    "name": "ci-logger",
    "downloads": 21470
   },
@@ -11512,6 +11692,10 @@
    "downloads": 20594
   },
   {
+   "name": "@jsprismarine/logger",
+   "downloads": 20511
+  },
+  {
    "name": "angular-animations",
    "downloads": 20494
   },
@@ -11530,6 +11714,10 @@
   {
    "name": "@web/test-runner-visual-regression",
    "downloads": 20135
+  },
+  {
+   "name": "@denny-il/drizzle-pg-utils",
+   "downloads": 19983
   },
   {
    "name": "remark-lint-no-dead-urls",
@@ -11584,6 +11772,10 @@
    "downloads": 19156
   },
   {
+   "name": "aurelia-framework",
+   "downloads": 19133
+  },
+  {
    "name": "home-assistant-js-websocket",
    "downloads": 19114
   },
@@ -11594,6 +11786,10 @@
   {
    "name": "@lightsparkdev/crypto-wasm",
    "downloads": 19052
+  },
+  {
+   "name": "@creem_io/better-auth",
+   "downloads": 19033
   },
   {
    "name": "drizzle-cursor",
@@ -11810,6 +12006,10 @@
   {
    "name": "node-test-parser",
    "downloads": 15627
+  },
+  {
+   "name": "qdd-framework",
+   "downloads": 15396
   },
   {
    "name": "@napi-rs/image-darwin-arm64",
@@ -12292,6 +12492,10 @@
    "downloads": 10143
   },
   {
+   "name": "esbuild-decorators",
+   "downloads": 10126
+  },
+  {
    "name": "@tursodatabase/database-linux-arm64-gnu",
    "downloads": 10076
   },
@@ -12322,6 +12526,10 @@
   {
    "name": "gatsby-transformer-yaml",
    "downloads": 9827
+  },
+  {
+   "name": "@aws/aurora-dsql-drizzle",
+   "downloads": 9784
   },
   {
    "name": "react-use-websocket-lite",
@@ -12356,6 +12564,10 @@
    "downloads": 9526
   },
   {
+   "name": "csv-import-react",
+   "downloads": 9445
+  },
+  {
    "name": "react-image-fallback",
    "downloads": 9374
   },
@@ -12372,6 +12584,10 @@
    "downloads": 9315
   },
   {
+   "name": "@ctrl/golang-template",
+   "downloads": 9259
+  },
+  {
    "name": "@discord/intl-message-database-linux-x64-musl",
    "downloads": 9169
   },
@@ -12380,8 +12596,16 @@
    "downloads": 9151
   },
   {
+   "name": "@verii/crypto",
+   "downloads": 9135
+  },
+  {
    "name": "typeorm-logger-adaptor",
    "downloads": 9099
+  },
+  {
+   "name": "@texuli/date",
+   "downloads": 9092
   },
   {
    "name": "@swc/plugin-remove-console",
@@ -12504,6 +12728,10 @@
    "downloads": 8341
   },
   {
+   "name": "minimal-promise-pool",
+   "downloads": 8340
+  },
+  {
    "name": "branch-name-lint",
    "downloads": 8329
   },
@@ -12513,6 +12741,10 @@
   },
   {
    "name": "availity-reactstrap-validation",
+   "downloads": 8306
+  },
+  {
+   "name": "@ledgerhq/ledger-wallet-framework",
    "downloads": 8306
   },
   {
@@ -12558,6 +12790,10 @@
   {
    "name": "@putout/processor-yaml",
    "downloads": 7851
+  },
+  {
+   "name": "@doeixd/csv-utils",
+   "downloads": 7722
   },
   {
    "name": "@pikku/better-auth",
@@ -12610,6 +12846,10 @@
   {
    "name": "cache",
    "downloads": 7398
+  },
+  {
+   "name": "@tursodatabase/database-wasm",
+   "downloads": 7377
   },
   {
    "name": "@fastify/response-validation",
@@ -12840,6 +13080,10 @@
    "downloads": 5489
   },
   {
+   "name": "node-test-junit-reporter",
+   "downloads": 5475
+  },
+  {
    "name": "yaml-tag",
    "downloads": 5365
   },
@@ -12888,6 +13132,10 @@
    "downloads": 5196
   },
   {
+   "name": "@pplancq/react-template",
+   "downloads": 5182
+  },
+  {
    "name": "shopify-reconnecting-websocket",
    "downloads": 5174
   },
@@ -12898,6 +13146,10 @@
   {
    "name": "nestjs-context-logger",
    "downloads": 5143
+  },
+  {
+   "name": "@ezuikit/utils-logger",
+   "downloads": 5073
   },
   {
    "name": "@dxos/crypto",
@@ -13380,6 +13632,10 @@
    "downloads": 2333
   },
   {
+   "name": "@cerbos/orm-drizzle",
+   "downloads": 2320
+  },
+  {
    "name": "@spinajs/authn-orm",
    "downloads": 2315
   },
@@ -13394,6 +13650,10 @@
   {
    "name": "gulp-swc",
    "downloads": 2209
+  },
+  {
+   "name": "@neovici/cosmoz-queue",
+   "downloads": 2204
   },
   {
    "name": "jest-coverage-to-csv",
@@ -13468,6 +13728,10 @@
    "downloads": 1990
   },
   {
+   "name": "@hestia-earth/schema-validation",
+   "downloads": 1971
+  },
+  {
    "name": "@ankhorage/supabase-auth",
    "downloads": 1970
   },
@@ -13478,6 +13742,10 @@
   {
    "name": "uql-orm",
    "downloads": 1955
+  },
+  {
+   "name": "color-util",
+   "downloads": 1950
   },
   {
    "name": "csv-firestore",
@@ -13514,6 +13782,10 @@
   {
    "name": "rerobe-js-orm",
    "downloads": 1875
+  },
+  {
+   "name": "typescript-blocking-queue",
+   "downloads": 1869
   },
   {
    "name": "@pangza/orm",
@@ -13728,6 +14000,10 @@
    "downloads": 1145
   },
   {
+   "name": "@elysiajs/websocket",
+   "downloads": 1085
+  },
+  {
    "name": "svelte-preprocess-esbuild",
    "downloads": 1065
   },
@@ -13758,6 +14034,10 @@
   {
    "name": "graphql-tag-swc-plugin",
    "downloads": 990
+  },
+  {
+   "name": "@spinajs/authz-orm",
+   "downloads": 966
   },
   {
    "name": "swc-plugin-inferno",
@@ -13822,6 +14102,14 @@
   {
    "name": "@voxgig/util",
    "downloads": 853
+  },
+  {
+   "name": "@molecule/api-database",
+   "downloads": 851
+  },
+  {
+   "name": "jsonapi-util",
+   "downloads": 848
   },
   {
    "name": "@traveloka/validation",

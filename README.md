@@ -5,9 +5,9 @@
 npm v12 flipped install scripts off by default. You now approve them one by one via `allowScripts`. Nobody had published what that approval queue actually looks like across the ecosystem, so this measures it, daily.
 
 <!-- auto:headline -->
-> **33 of 3,523** packages in the current sample run an install script. **23** score HIGH. The most-installed one is `esbuild` at 255.5M downloads a week.
+> **34 of 3,595** packages in the current sample run an install script. **24** score HIGH. The most-installed one is `esbuild` at 255.5M downloads a week.
 >
-> <sub>Rebuilt 2026-11-07.</sub>
+> <sub>Rebuilt 2026-11-08.</sub>
 <!-- /auto:headline -->
 
 **[Live dashboard](https://booyaka101.github.io/npm-install-census/)** - the whole approval queue, searchable and filterable by risk.
@@ -24,8 +24,8 @@ Install scripts are rare, and they are roughly as rare at the top of the ecosyst
 | Top 100 | 101.9M/week | 1 (1.00%) | 1 |
 | Top 500 | 11.5M/week | 3 (0.60%) | 3 |
 | Top 1,000 | 2.1M/week | 5 (0.50%) | 4 |
-| Top 2,000 | 168.4K/week | 18 (0.90%) | 13 |
-| Full sample (3,523) | 4/week | 33 (0.94%) | 24 |
+| Top 2,000 | 175.6K/week | 17 (0.85%) | 12 |
+| Full sample (3,595) | 4/week | 34 (0.95%) | 25 |
 <!-- /auto:cuts -->
 
 That flatness is the result. There is no long tail where install scripts suddenly proliferate, and no clean gradient by popularity. It sits near 1% wherever you cut it.
@@ -70,6 +70,7 @@ These are the packages npm v12 will actually ask you about, ordered by weekly do
 | `swc-plugin-import-meta-env` | 21.9K | preinstall | `npx only-allow pnpm` | HIGH | exec, net |
 | `bcrypto` | 17.3K | install | `node-gyp rebuild` | HIGH | exec, gyp |
 | `arib-b25-stream-test` | 16.8K | preinstall | `make clean && make && mkdir bin && cp src/b25 bin/` | HIGH | exec |
+| `qdd-framework` | 15.4K | postinstall | `node install.js` | HIGH | env, exec, fs, net |
 | `@meteorjs/swc-core` | 8.0K | postinstall | `node install.js` | HIGH | env, exec, fs |
 | `better-auth-studio` | 6.3K | postinstall | `node scripts/postinstall.js` | SAFE | none |
 | `@qooxdoo/framework` | 4.1K | preinstall | `node ./addGitHook` | HIGH | env, exec, fs |
@@ -78,7 +79,7 @@ These are the packages npm v12 will actually ask you about, ordered by weekly do
 **None of this is an accusation.** Every one of these is a well-known package doing something legitimate: fetching a prebuilt binary, or building a native addon. The point is that these are the ones you are now being asked to approve, and "what does it actually do" is a question you have to answer per package. That is what the capability signals are for.
 
 <!-- auto:mix -->
-Scripted does not mean risky. Of the 33 scripted packages, 23 HIGH, 1 MEDIUM, 3 LOW, 6 SAFE. Across the whole sample the signal classes break down as: `exec` 58, `env` 17, `fs` 16, `net` 15, `bin` 6, `gyp` 4, `obf` 2, `exec-local` 2.
+Scripted does not mean risky. Of the 34 scripted packages, 24 HIGH, 1 MEDIUM, 3 LOW, 6 SAFE. Across the whole sample the signal classes break down as: `exec` 61, `fs` 19, `env` 18, `net` 17, `bin` 6, `gyp` 4, `obf` 2, `exec-local` 2.
 <!-- /auto:mix -->
 
 Three worth singling out, further down the list:
@@ -107,12 +108,12 @@ Step 4 is the tool exactly as published. The census measures the same thing you 
 ### What this is not
 
 <!-- auto:sample -->
-- **Not "the top 3,523 packages on npm."** npm has no top-N endpoint. This is a keyword-nominated sample ranked by real downloads, and the tail runs down to 4 downloads a week. Slices are reported with their download floor so you can see what each one covers.
+- **Not "the top 3,595 packages on npm."** npm has no top-N endpoint. This is a keyword-nominated sample ranked by real downloads, and the tail runs down to 4 downloads a week. Slices are reported with their download floor so you can see what each one covers.
 <!-- /auto:sample -->
 - **Not a malware scan.** It reports capability, not intent. `--no-trust` is set, so no OSV lookups.
 - **Never silently truncated.** The first CI run resolved only 705 of 3,077 packages because the registry rate-limited the runner and the failures were swallowed, publishing a 705-package sample as if it were the whole thing. Resolution now retries with backoff, and the run aborts rather than publishing if it covers less than 95% of the corpus. `data/census.json` records `requested`, `resolved` and `coverage` on every run.
 <!-- auto:scoped -->
-- **Not exhaustive on scoped packages.** 921 of 3,523 are scoped. The nomination sweep under-samples them relative to their real share of the registry.
+- **Not exhaustive on scoped packages.** 968 of 3,595 are scoped. The nomination sweep under-samples them relative to their real share of the registry.
 <!-- /auto:scoped -->
 
 The first version of this census excluded scoped packages entirely, and reported that the biggest scripted package was `bufferutil` at 6.8M downloads. Adding scoped packages surfaced `esbuild` at 255M and `@swc/core` at 40M. A corpus that structurally omits `@`-scoped packages is not measuring npm.
