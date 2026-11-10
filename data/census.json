@@ -477,7 +477,7 @@
   },
   {
    "name": "@lightdash/cli",
-   "version": "3.128.1",
+   "version": "3.190.0",
    "risk": "HIGH",
    "downloads": 96801,
    "rows": [
@@ -683,15 +683,15 @@
    ]
   }
  ],
- "generated_utc": "2026-11-09T05:02:23Z",
+ "generated_utc": "2026-11-10T05:02:48Z",
  "corpus_candidates": 5303,
  "requested": 3595,
  "resolved": 3595,
  "coverage": 1.0,
  "resolution": {
-  "refreshed": 36,
-  "from_cache": 3559,
+  "refreshed": 317,
+  "from_cache": 3278,
   "expired": 0
  },
- "audit_seconds": 48.4
+ "audit_seconds": 54.9
 }
