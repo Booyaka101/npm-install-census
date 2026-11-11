@@ -138,7 +138,7 @@
   },
   {
    "name": "workerd",
-   "version": "1.20261103.1",
+   "version": "1.20261110.1",
    "risk": "HIGH",
    "downloads": 18988497,
    "rows": [
@@ -237,7 +237,7 @@
   },
   {
    "name": "tree-sitter-cli",
-   "version": "0.27.1",
+   "version": "0.27.2",
    "risk": "MEDIUM",
    "downloads": 839002,
    "rows": [
@@ -683,15 +683,15 @@
    ]
   }
  ],
- "generated_utc": "2026-11-10T05:02:48Z",
+ "generated_utc": "2026-11-11T05:02:53Z",
  "corpus_candidates": 5303,
  "requested": 3595,
  "resolved": 3595,
  "coverage": 1.0,
  "resolution": {
-  "refreshed": 317,
-  "from_cache": 3278,
+  "refreshed": 536,
+  "from_cache": 3059,
   "expired": 0
  },
- "audit_seconds": 54.9
+ "audit_seconds": 61.0
 }
