@@ -333,7 +333,7 @@
   },
   {
    "name": "redis-memory-server",
-   "version": "0.17.1",
+   "version": "0.17.2",
    "risk": "HIGH",
    "downloads": 297209,
    "rows": [
@@ -683,15 +683,15 @@
    ]
   }
  ],
- "generated_utc": "2026-11-11T05:02:53Z",
+ "generated_utc": "2026-11-12T05:02:45Z",
  "corpus_candidates": 5303,
  "requested": 3595,
  "resolved": 3595,
  "coverage": 1.0,
  "resolution": {
-  "refreshed": 536,
-  "from_cache": 3059,
+  "refreshed": 567,
+  "from_cache": 3028,
   "expired": 0
  },
- "audit_seconds": 61.0
+ "audit_seconds": 51.8
 }
