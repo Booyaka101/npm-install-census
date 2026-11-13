@@ -173,7 +173,7 @@
   },
   {
    "name": "bufferutil",
-   "version": "4.1.0",
+   "version": "4.2.0",
    "risk": "HIGH",
    "downloads": 6816139,
    "rows": [
@@ -305,7 +305,7 @@
   },
   {
    "name": "stream-chat",
-   "version": "9.54.4",
+   "version": "10.0.2",
    "risk": "SAFE",
    "downloads": 496189,
    "rows": [
@@ -683,15 +683,15 @@
    ]
   }
  ],
- "generated_utc": "2026-11-12T05:02:45Z",
+ "generated_utc": "2026-11-13T05:02:24Z",
  "corpus_candidates": 5303,
  "requested": 3595,
  "resolved": 3595,
  "coverage": 1.0,
  "resolution": {
-  "refreshed": 567,
-  "from_cache": 3028,
+  "refreshed": 700,
+  "from_cache": 2895,
   "expired": 0
  },
- "audit_seconds": 51.8
+ "audit_seconds": 35.6
 }

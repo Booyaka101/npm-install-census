@@ -7,7 +7,7 @@ npm v12 flipped install scripts off by default. You now approve them one by one 
 <!-- auto:headline -->
 > **34 of 3,595** packages in the current sample run an install script. **24** score HIGH. The most-installed one is `esbuild` at 255.5M downloads a week.
 >
-> <sub>Rebuilt 2026-11-12.</sub>
+> <sub>Rebuilt 2026-11-13.</sub>
 <!-- /auto:headline -->
 
 **[Live dashboard](https://booyaka101.github.io/npm-install-census/)** - the whole approval queue, searchable and filterable by risk.
