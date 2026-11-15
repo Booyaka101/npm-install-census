@@ -5,9 +5,9 @@
 npm v12 flipped install scripts off by default. You now approve them one by one via `allowScripts`. Nobody had published what that approval queue actually looks like across the ecosystem, so this measures it, daily.
 
 <!-- auto:headline -->
-> **34 of 3,595** packages in the current sample run an install script. **24** score HIGH. The most-installed one is `esbuild` at 255.5M downloads a week.
+> **34 of 3,639** packages in the current sample run an install script. **24** score HIGH. The most-installed one is `esbuild` at 255.5M downloads a week.
 >
-> <sub>Rebuilt 2026-11-14.</sub>
+> <sub>Rebuilt 2026-11-15.</sub>
 <!-- /auto:headline -->
 
 **[Live dashboard](https://booyaka101.github.io/npm-install-census/)** - the whole approval queue, searchable and filterable by risk.
@@ -22,10 +22,10 @@ Install scripts are rare, and they are roughly as rare at the top of the ecosyst
 | Sample | Download floor | Run an install script | HIGH risk |
 |---|---|---|---|
 | Top 100 | 101.9M/week | 1 (1.00%) | 1 |
-| Top 500 | 11.5M/week | 3 (0.60%) | 3 |
-| Top 1,000 | 2.1M/week | 5 (0.50%) | 4 |
-| Top 2,000 | 175.6K/week | 17 (0.85%) | 12 |
-| Full sample (3,595) | 4/week | 34 (0.95%) | 25 |
+| Top 500 | 11.6M/week | 3 (0.60%) | 3 |
+| Top 1,000 | 2.2M/week | 5 (0.50%) | 4 |
+| Top 2,000 | 182.3K/week | 17 (0.85%) | 12 |
+| Full sample (3,639) | 4/week | 34 (0.93%) | 25 |
 <!-- /auto:cuts -->
 
 That flatness is the result. There is no long tail where install scripts suddenly proliferate, and no clean gradient by popularity. It sits near 1% wherever you cut it.
@@ -108,12 +108,12 @@ Step 4 is the tool exactly as published. The census measures the same thing you 
 ### What this is not
 
 <!-- auto:sample -->
-- **Not "the top 3,595 packages on npm."** npm has no top-N endpoint. This is a keyword-nominated sample ranked by real downloads, and the tail runs down to 4 downloads a week. Slices are reported with their download floor so you can see what each one covers.
+- **Not "the top 3,639 packages on npm."** npm has no top-N endpoint. This is a keyword-nominated sample ranked by real downloads, and the tail runs down to 4 downloads a week. Slices are reported with their download floor so you can see what each one covers.
 <!-- /auto:sample -->
 - **Not a malware scan.** It reports capability, not intent. `--no-trust` is set, so no OSV lookups.
 - **Never silently truncated.** The first CI run resolved only 705 of 3,077 packages because the registry rate-limited the runner and the failures were swallowed, publishing a 705-package sample as if it were the whole thing. Resolution now retries with backoff, and the run aborts rather than publishing if it covers less than 95% of the corpus. `data/census.json` records `requested`, `resolved` and `coverage` on every run.
 <!-- auto:scoped -->
-- **Not exhaustive on scoped packages.** 968 of 3,595 are scoped. The nomination sweep under-samples them relative to their real share of the registry.
+- **Not exhaustive on scoped packages.** 1,000 of 3,639 are scoped. The nomination sweep under-samples them relative to their real share of the registry.
 <!-- /auto:scoped -->
 
 The first version of this census excluded scoped packages entirely, and reported that the biggest scripted package was `bufferutil` at 6.8M downloads. Adding scoped packages surfaced `esbuild` at 255M and `@swc/core` at 40M. A corpus that structurally omits `@`-scoped packages is not measuring npm.

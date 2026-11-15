@@ -1,37 +1,37 @@
 {
- "total": 3595,
- "scoped": 968,
+ "total": 3639,
+ "scoped": 1000,
  "bands": [
   {
-   "band": "1-898",
-   "packages": 898,
+   "band": "1-909",
+   "packages": 909,
    "scripted": 5,
    "risky": 4,
    "pct_scripted": 0.6
   },
   {
-   "band": "899-1796",
-   "packages": 898,
+   "band": "910-1818",
+   "packages": 909,
    "scripted": 10,
    "risky": 6,
    "pct_scripted": 1.1
   },
   {
-   "band": "1797-2694",
-   "packages": 898,
+   "band": "1819-2727",
+   "packages": 909,
    "scripted": 11,
    "risky": 9,
    "pct_scripted": 1.2
   },
   {
-   "band": "2695-3592",
-   "packages": 898,
+   "band": "2728-3636",
+   "packages": 909,
    "scripted": 8,
    "risky": 6,
    "pct_scripted": 0.9
   },
   {
-   "band": "3593-3595",
+   "band": "3637-3639",
    "packages": 3,
    "scripted": 0,
    "risky": 0,
@@ -50,7 +50,7 @@
   {
    "cut": "Top 500",
    "packages": 500,
-   "floor": 11539150,
+   "floor": 11580461,
    "scripted": 3,
    "risky": 3,
    "pct_scripted": 0.6
@@ -58,7 +58,7 @@
   {
    "cut": "Top 1,000",
    "packages": 1000,
-   "floor": 2146903,
+   "floor": 2178871,
    "scripted": 5,
    "risky": 4,
    "pct_scripted": 0.5
@@ -66,23 +66,23 @@
   {
    "cut": "Top 2,000",
    "packages": 2000,
-   "floor": 175607,
+   "floor": 182265,
    "scripted": 17,
    "risky": 12,
    "pct_scripted": 0.85
   },
   {
    "cut": "Full sample",
-   "packages": 3595,
+   "packages": 3639,
    "floor": 4,
    "scripted": 34,
    "risky": 25,
-   "pct_scripted": 0.95
+   "pct_scripted": 0.93
   }
  ],
  "with_install_scripts": 34,
  "risk": {
-  "SAFE": 3567,
+  "SAFE": 3611,
   "LOW": 3,
   "MEDIUM": 1,
   "HIGH": 24
@@ -683,15 +683,15 @@
    ]
   }
  ],
- "generated_utc": "2026-11-14T05:02:40Z",
- "corpus_candidates": 5303,
- "requested": 3595,
- "resolved": 3595,
+ "generated_utc": "2026-11-15T05:03:58Z",
+ "corpus_candidates": 5347,
+ "requested": 3639,
+ "resolved": 3639,
  "coverage": 1.0,
  "resolution": {
-  "refreshed": 693,
-  "from_cache": 2902,
+  "refreshed": 700,
+  "from_cache": 2939,
   "expired": 0
  },
- "audit_seconds": 39.2
+ "audit_seconds": 61.5
 }
