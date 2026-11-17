@@ -205,7 +205,7 @@
   },
   {
    "name": "node",
-   "version": "27.0.0-alpha.0.0.0",
+   "version": "27.0.0-alpha.0.1.0",
    "risk": "SAFE",
    "downloads": 1396315,
    "rows": [
@@ -319,7 +319,7 @@
   },
   {
    "name": "@azure/msal-node-extensions",
-   "version": "5.6.1",
+   "version": "5.6.2",
    "risk": "SAFE",
    "downloads": 391268,
    "rows": [
@@ -477,7 +477,7 @@
   },
   {
    "name": "@lightdash/cli",
-   "version": "3.190.0",
+   "version": "3.275.3",
    "risk": "HIGH",
    "downloads": 96801,
    "rows": [
@@ -683,15 +683,15 @@
    ]
   }
  ],
- "generated_utc": "2026-11-16T05:02:46Z",
+ "generated_utc": "2026-11-17T05:02:28Z",
  "corpus_candidates": 5347,
  "requested": 3639,
  "resolved": 3639,
  "coverage": 1.0,
  "resolution": {
-  "refreshed": 364,
-  "from_cache": 3275,
+  "refreshed": 488,
+  "from_cache": 3151,
   "expired": 0
  },
- "audit_seconds": 59.5
+ "audit_seconds": 52.0
 }
