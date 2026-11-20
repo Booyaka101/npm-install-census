@@ -370,7 +370,7 @@
   },
   {
    "name": "react-native-enriched-markdown",
-   "version": "1.1.1",
+   "version": "1.2.0",
    "risk": "HIGH",
    "downloads": 214015,
    "rows": [
@@ -683,15 +683,15 @@
    ]
   }
  ],
- "generated_utc": "2026-11-19T05:02:28Z",
+ "generated_utc": "2026-11-20T05:02:41Z",
  "corpus_candidates": 5347,
  "requested": 3639,
  "resolved": 3639,
  "coverage": 1.0,
  "resolution": {
-  "refreshed": 309,
-  "from_cache": 3330,
+  "refreshed": 186,
+  "from_cache": 3453,
   "expired": 0
  },
- "audit_seconds": 40.4
+ "audit_seconds": 58.3
 }
