@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-15T05:02:29Z",
- "candidates": 5347,
+ "generated": "2026-11-22T05:02:21Z",
+ "candidates": 5388,
  "method": "npm search keyword sweep nominates; npm downloads API ranks by real weekly downloads",
  "packages": [
   {
@@ -3896,6 +3896,10 @@
    "downloads": 2370563
   },
   {
+   "name": "@astrojs/vite-plugin-astro",
+   "downloads": 2369543
+  },
+  {
    "name": "simple-lru-cache",
    "downloads": 2368522
   },
@@ -3942,6 +3946,10 @@
   {
    "name": "rollup-plugin-typescript2",
    "downloads": 2301631
+  },
+  {
+   "name": "@lingui/babel-plugin-lingui-macro",
+   "downloads": 2300540
   },
   {
    "name": "@astrojs/react",
@@ -5748,6 +5756,10 @@
    "downloads": 671192
   },
   {
+   "name": "@allurereport/plugin-dashboard",
+   "downloads": 669076
+  },
+  {
    "name": "astro-eslint-parser",
    "downloads": 662336
   },
@@ -6212,6 +6224,10 @@
    "downloads": 505287
   },
   {
+   "name": "@deepseek-ai/dsh-agent-preset",
+   "downloads": 505067
+  },
+  {
    "name": "rollup-plugin-peer-deps-external",
    "downloads": 504620
   },
@@ -6470,6 +6486,14 @@
   {
    "name": "priority-slot-queue",
    "downloads": 451467
+  },
+  {
+   "name": "@middy/http-error-handler",
+   "downloads": 450556
+  },
+  {
+   "name": "@backstage/config-loader",
+   "downloads": 449732
   },
   {
    "name": "rsocket-types",
@@ -6928,6 +6952,10 @@
    "downloads": 350073
   },
   {
+   "name": "@vue/component-compiler",
+   "downloads": 348918
+  },
+  {
    "name": "google-ads-api",
    "downloads": 344775
   },
@@ -7356,6 +7384,10 @@
    "downloads": 269492
   },
   {
+   "name": "@middy/http-router",
+   "downloads": 268458
+  },
+  {
    "name": "package-config",
    "downloads": 268158
   },
@@ -7522,6 +7554,10 @@
   {
    "name": "real-cancellable-promise",
    "downloads": 247302
+  },
+  {
+   "name": "zalgo-promise",
+   "downloads": 247246
   },
   {
    "name": "vue-server-renderer",
@@ -7900,6 +7936,10 @@
    "downloads": 194146
   },
   {
+   "name": "kafkajs-snappy-typescript",
+   "downloads": 193670
+  },
+  {
    "name": "@web/test-runner-commands",
    "downloads": 193382
   },
@@ -7982,6 +8022,10 @@
   {
    "name": "clipboard-polyfill",
    "downloads": 185121
+  },
+  {
+   "name": "@aptos-labs/aptos-cli",
+   "downloads": 184797
   },
   {
    "name": "sass-resources-loader",
@@ -8106,6 +8150,10 @@
   {
    "name": "@fumari/image-size",
    "downloads": 172172
+  },
+  {
+   "name": "@tursodatabase/api",
+   "downloads": 172041
   },
   {
    "name": "@rozenite/runtime",
@@ -8256,6 +8304,10 @@
    "downloads": 158109
   },
   {
+   "name": "@w3c/webmcp-polyfill",
+   "downloads": 156596
+  },
+  {
    "name": "vite-plugin-electron",
    "downloads": 156479
   },
@@ -8342,6 +8394,10 @@
   {
    "name": "vite-plugin-graphql-loader",
    "downloads": 148998
+  },
+  {
+   "name": "tiktoken-rs-node",
+   "downloads": 148969
   },
   {
    "name": "yml-loader",
@@ -8828,6 +8884,10 @@
    "downloads": 117489
   },
   {
+   "name": "vite-plugin-node",
+   "downloads": 117211
+  },
+  {
    "name": "cypress-image-snapshot",
    "downloads": 117002
   },
@@ -9156,6 +9216,10 @@
    "downloads": 102648
   },
   {
+   "name": "@node-red/registry",
+   "downloads": 102440
+  },
+  {
    "name": "remark-lint-file-extension",
    "downloads": 101478
   },
@@ -9262,6 +9326,10 @@
   {
    "name": "image-webpack-loader",
    "downloads": 97328
+  },
+  {
+   "name": "@alchemy.run/drizzle",
+   "downloads": 97218
   },
   {
    "name": "@netlify/framework-info",
@@ -9594,6 +9662,10 @@
   {
    "name": "@aws-amplify/graphql-auth-transformer",
    "downloads": 80849
+  },
+  {
+   "name": "@neon/auth",
+   "downloads": 80845
   },
   {
    "name": "relaxed-json",
@@ -9948,6 +10020,10 @@
    "downloads": 66653
   },
   {
+   "name": "@liveblocks/server",
+   "downloads": 66653
+  },
+  {
    "name": "requestidlecallback-polyfill",
    "downloads": 66202
   },
@@ -10138,6 +10214,10 @@
   {
    "name": "egg-logger",
    "downloads": 59770
+  },
+  {
+   "name": "shebang-loader",
+   "downloads": 59657
   },
   {
    "name": "next-rest-framework",
@@ -10844,6 +10924,10 @@
    "downloads": 40260
   },
   {
+   "name": "@stylexjs/rollup-plugin",
+   "downloads": 40245
+  },
+  {
    "name": "@sucrase/webpack-loader",
    "downloads": 40054
   },
@@ -11448,6 +11532,10 @@
    "downloads": 27459
   },
   {
+   "name": "@antelopejs/interface-database-decorators",
+   "downloads": 27445
+  },
+  {
    "name": "async-test-util",
    "downloads": 27292
   },
@@ -11596,6 +11684,10 @@
    "downloads": 24012
   },
   {
+   "name": "@limzykenneth/tl-util",
+   "downloads": 24001
+  },
+  {
    "name": "abstract-cache",
    "downloads": 23929
   },
@@ -11610,6 +11702,10 @@
   {
    "name": "nconf-yaml",
    "downloads": 23828
+  },
+  {
+   "name": "@import-lint/linux-x64-gnu",
+   "downloads": 23533
   },
   {
    "name": "vite-plugin-vue2",
@@ -11762,6 +11858,10 @@
   {
    "name": "ci-logger",
    "downloads": 21470
+  },
+  {
+   "name": "@antelopejs/interface-database-catalog",
+   "downloads": 21344
   },
   {
    "name": "ui5-test-runner",
@@ -12280,6 +12380,10 @@
    "downloads": 13739
   },
   {
+   "name": "ngx-date-fns",
+   "downloads": 13565
+  },
+  {
    "name": "@cloudflare/test-www-api",
    "downloads": 13552
   },
@@ -12364,6 +12468,10 @@
    "downloads": 12535
   },
   {
+   "name": "template-literal-table",
+   "downloads": 12502
+  },
+  {
    "name": "phantomjs-polyfill",
    "downloads": 12497
   },
@@ -12416,6 +12524,10 @@
    "downloads": 12113
   },
   {
+   "name": "@swc-next/parser-binding-linux-arm64-gnu",
+   "downloads": 12110
+  },
+  {
    "name": "@marko/compiler",
    "downloads": 12044
   },
@@ -12426,6 +12538,10 @@
   {
    "name": "plugin",
    "downloads": 11990
+  },
+  {
+   "name": "monosize-bundler-webpack",
+   "downloads": 11985
   },
   {
    "name": "universal-websocket-client",
@@ -12724,6 +12840,10 @@
    "downloads": 9259
   },
   {
+   "name": "csv-walker",
+   "downloads": 9213
+  },
+  {
    "name": "@discord/intl-message-database-linux-x64-musl",
    "downloads": 9169
   },
@@ -12912,6 +13032,10 @@
    "downloads": 8042
   },
   {
+   "name": "cbq",
+   "downloads": 7998
+  },
+  {
    "name": "ng-lint-staged",
    "downloads": 7986
   },
@@ -13052,6 +13176,10 @@
    "downloads": 6769
   },
   {
+   "name": "@ivlev-dev/silent-swc",
+   "downloads": 6748
+  },
+  {
    "name": "node-test",
    "downloads": 6743
   },
@@ -13066,6 +13194,10 @@
   {
    "name": "@openedx/frontend-build",
    "downloads": 6642
+  },
+  {
+   "name": "aspnet-client-validation",
+   "downloads": 6619
   },
   {
    "name": "@ddd-framework/collections",
@@ -13158,6 +13290,10 @@
   {
    "name": "@holistics/date-parser",
    "downloads": 6010
+  },
+  {
+   "name": "@swc-next/parser-binding-darwin-arm64",
+   "downloads": 5973
   },
   {
    "name": "hello-csv",
@@ -13552,6 +13688,10 @@
    "downloads": 3702
   },
   {
+   "name": "@googlicius/build-url",
+   "downloads": 3688
+  },
+  {
    "name": "@types/parcel-bundler",
    "downloads": 3678
   },
@@ -13588,6 +13728,10 @@
    "downloads": 3456
   },
   {
+   "name": "@wild-framework/database",
+   "downloads": 3451
+  },
+  {
    "name": "crypto-promise",
    "downloads": 3432
   },
@@ -13610,6 +13754,10 @@
   {
    "name": "urlparse-template",
    "downloads": 3393
+  },
+  {
+   "name": "@nocobase/app-websocket",
+   "downloads": 3372
   },
   {
    "name": "@gjsify/util",
@@ -13714,6 +13862,14 @@
   {
    "name": "json-csv",
    "downloads": 2825
+  },
+  {
+   "name": "xast-util-is-element",
+   "downloads": 2798
+  },
+  {
+   "name": "xast-util-has-attribute",
+   "downloads": 2784
   },
   {
    "name": "mercurius-validation",
@@ -14172,6 +14328,10 @@
    "downloads": 1113
   },
   {
+   "name": "@appport/transport-websocket",
+   "downloads": 1105
+  },
+  {
    "name": "@elysiajs/websocket",
    "downloads": 1085
   },
@@ -14186,6 +14346,10 @@
   {
    "name": "vuex-orm-json-api",
    "downloads": 1061
+  },
+  {
+   "name": "@nginstack/orm",
+   "downloads": 1056
   },
   {
    "name": "ppt-template",
