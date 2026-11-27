@@ -131,7 +131,7 @@
   },
   {
    "name": "workerd",
-   "version": "1.20261119.1",
+   "version": "1.20261127.1",
    "risk": "HIGH",
    "downloads": 18988497,
    "rows": [
@@ -184,7 +184,7 @@
   },
   {
    "name": "mongodb-memory-server",
-   "version": "11.3.0",
+   "version": "11.4.0",
    "risk": "SAFE",
    "downloads": 2084289,
    "rows": [
@@ -676,15 +676,15 @@
    ]
   }
  ],
- "generated_utc": "2026-11-26T05:01:58Z",
+ "generated_utc": "2026-11-27T05:02:25Z",
  "corpus_candidates": 5388,
  "requested": 3680,
  "resolved": 3680,
  "coverage": 1.0,
  "resolution": {
-  "refreshed": 263,
-  "from_cache": 3417,
+  "refreshed": 520,
+  "from_cache": 3160,
   "expired": 0
  },
- "audit_seconds": 35.1
+ "audit_seconds": 57.9
 }
